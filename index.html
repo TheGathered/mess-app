@@ -46,10 +46,11 @@
               <!-- nav-main -->
               <nav class="nav-main">
                 <ul class="list--inline">
-                  <li> <a href="#work-anchor">Work</a> </li>
+                  <li> <a href="#">Work</a>
+                    <!--<a href="#work-anchor">Work</a>--></li>
                   <li> <a href="blog.html">Blog</a> </li>
-                  <li> <a href="#">About</a> </li>
-                  <li> <a href="#">Tools</a> </li>
+                  <li> <a href="about.html">About</a> </li>
+                  <li> <a href="tools.html">Tools</a> </li>
                 </ul>
               </nav>
               <!-- /nav-main -->
@@ -71,24 +72,23 @@
                     <div class="block-cell">
                       <div class="section-content">
                         <h2>We build dreams</h2>
-                        <p> App development, design and consulting<br /> for those who want to be successfull </p>
+                        <p class="hidden-xs"> App development, design and consulting<br /> for those who want to be successfull </p>
+                        <p class="visible-xs"> App development, design and consulting<br /> for those who want to be successfull </p>
                       </div>
                       <div class="" href="samples/video.mp4" data-source="video" data-mp4="samples/video.mp4" data-webm="" data-loop="true" data-mute="true"></div>
-                      <!--<div class="">
-              <video src="samples/video.mp4" width="400" height="200" autoplay loop></video>
-            </div> --></div>
+                    </div>
                   </div>
                   <!--
-    <div class="mobile-viewport home-wp popup-trigger mfp-fade visible-xs">
-      <div class="mobile-video" data-target="video">
-      </div>
-      visible-xs removed from tip
+    <div class="mobile-viewport home-wp popup-trigger mfp-fade hidden-lg">
+      <div class="mobile-video" data-target="video"></div>
+    </div>
+-->
+                  <!--
       <div class="tip hidden-xs hidden-md hidden-lg">
           Play video to<br /> 
           learn about<br /> 
           our work
       </div>
-	</div>
 -->
                   <!--hidden-xs removed from button--><button type="button" data-scroll=".section--gc" class="btn--unstyled btn--start text--uppercase">Our Work</button>
                   <div class="section-info text--uppercase hidden-xs">100+ Projects Done</div>
@@ -96,8 +96,8 @@
                   <div data-marker="section-bottom"></div>
                 </section>
                 <!-- /section-start -->
-                <div class="page-viewport home-wp popup-trigger mfp-fade">
-                  <div class="viewport" data-target="video"> </div> <i class="icon icon-logo"></i>
+                <div class="page-viewport popup-trigger mfp-fade">
+                  <div class="viewport" data-target="video"></div> <i class="icon icon-logo"></i>
                   <div class="icon icon-line"></div> <button type="button" class="btn--unstyled btn--play visible-xs"></button>
                   <!--hidden-xs add--><svg class="phone-mask home-mask" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="57.4762mm" height="120.121mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                     viewBox="0 0 35361 73901" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -109,6 +109,7 @@
                   <!--visible-xs removed from tip-->
                   <div class="tip hidden-xs hidden-md hidden-lg"> Play video to<br /> learn about<br /> our work </div>
                 </div>
+                <div class="waypoint" id="basic-waypoint"></div>
                 <!--
             <div class="mobile-viewport home-wp popup-trigger mfp-fade">
 				<div class="mobile-video" data-target="video">
@@ -127,7 +128,7 @@
                     <div class="block-cell">
                       <div class="section-content">
                         <h2>Ground Central</h2>
-                        <p> “My dream was to help people to find the<br /> perfect movies based on their watch history!”<br /> - Tomas Gerard, CEO </p> <a href="article.html" data-load class="btn--unstyled btn--brand hidden-xs">View Work</a>
+                        <p> “My dream was to help people to find the<br /> perfect movies based on their watch history!”<br /> - Tomas Gerard, CEO </p> <a href="#" data-load-work class="btn--unstyled btn--brand hidden-xs">View Work</a>
                         <div class="mobile-side-text text--uppercase visible-xs">
                           <p>ground central</p>
                         </div>
@@ -145,7 +146,7 @@
                     <div class="block-cell">
                       <div class="section-content">
                         <h2>Runon</h2>
-                        <p> “My dream was to help people to find the<br /> perfect movies based on their watch history!”<br /> - Tomas Gerard, CEO </p> <a href="#" class="btn--unstyled btn--brand hidden-xs">View Work</a>
+                        <p> “I always wanted to have an app that would<br /> motivate me to run. With RunOn stories my!”<br /> dream came true!”<br /> - Julia Kim, CEO </p> <a href="#" class="btn--unstyled btn--brand hidden-xs">View Work</a>
                         <div class="mobile-side-text text--uppercase visible-xs">
                           <p>Runon</p>
                         </div>
@@ -234,8 +235,8 @@
                 <div class="page-title hidden-xs">
                   <h3 class="title-3 title-3--bold">Our portfolio helped us win some awards.</h3>
                 </div>
-                <div class="page-title text--center visible-xs">
-                  <h3 class="title-3">Our portfolio helped us win some awards.</h3>
+                <div class="page-title test text--center visible-xs">
+                  <h3 class="title-3">Our portfolio helped us win <br /> some awards.</h3>
                 </div>
                 <div class="page-content">
                   <!-- items-list -->
@@ -306,8 +307,11 @@
             <div class="container">
               <div class="page-body">
                 <div class="page-marquee text--uppercase"><span>press press press press press press press press press press press press press press press press press press press press press press press press press</span></div>
-                <div class="page-title">
+                <div class="page-title hidden-xs">
                   <h2 class="title-3 title-3--bold">And apps we’ve built got featured by top publishers.</h2>
+                </div>
+                <div class="page-title text--center visible-xs">
+                  <h3 class="title-3">And apps we’ve built got <br /> featured by top publishers.</h3>
                 </div>
                 <div class="page-content">
                   <!-- items-list -->
@@ -402,6 +406,9 @@
 								<option>Beauty</option>
 								<option>Business</option>
 								<option>Social Media</option>
+								<option>Entertainment</option>
+								<option>Food & Drink</option>
+								<option>Health</option>
 							</select> <button type="button" class="btn--unstyled btn--close"><i class="icon icon-close"></i></button> <button type="button" class="btn--unstyled btn--brand btn--apply">Continue</button> </div>
                             </div>
                             <div class="form-group"> <label class="control-label">What is your <b>goal</b>?</label>
@@ -590,6 +597,10 @@
           <div class="page page--article">
             <div data-target="article"></div> <button type="button" class="btn--unstyled btn--close"><i class="icon icon-close"></i></button> </div>
           <!-- /page-article -->
+          <!-- subpage-work -->
+          <div class="page page--work">
+            <div data-target="work"></div> <button type="button" class="btn--unstyled btn--close"><i class="icon icon-close"></i></button> </div>
+          <!-- /subpage-work -->
         </main>
         <!-- /.content -->
       </div>
@@ -764,6 +775,24 @@
         </div>
       </div>
       <!-- /nav-share -->
+    </div>
+    <div class="hidden" data-source="work">
+      <div class="page-wrapper">
+        <div class="page-header">
+          <div class="container"> <span>
+		  	<!-- logo -->
+		  	<a href="index.html" class="link--unstyled header-logo">Messapps</a><!-- /logo -->
+			  <div class="after-logo">ground central</div>
+		  </span> </div>
+        </div>
+        <div class="container">
+          <div class="page-body">
+            <div class="page-content">
+              <p>CONTENT HERE</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="page-loader"></div>
     <div class="visible-xs" data-flag="phone"></div>
