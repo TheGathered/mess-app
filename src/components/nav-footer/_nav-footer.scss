@@ -1,0 +1,47 @@
+.nav-footer {
+
+	a {
+		font-size: 14px;
+		color: rgba($text-color, .6);
+		transition: color .3s ease-in-out;
+		position: relative;
+		&::after {
+			content: '';
+			@include stretch-x;
+			bottom: 0;
+			border-bottom: 1px solid rgba($text-color, .6);
+			transition: transform .2s ease-in-out;
+			transform: scaleX(0);
+			transform-origin: 0 0;
+		}
+		&:hover {
+			color: $text-color;
+			&::after {
+				transform: scaleX(1);
+			}
+		}
+	}
+
+	ul {
+		margin-bottom: 0;
+		padding-left: 0;
+	}
+
+	li {
+		margin-bottom: 6px;
+		&.active a {
+			color: $text-color;
+			cursor: default;
+			&::after {
+				display: none;
+			}
+		}
+	}
+
+	[class^="col-"] {
+		&:nth-child(2) {
+			left: -5px;
+		}
+	}
+
+}

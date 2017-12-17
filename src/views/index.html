@@ -1,0 +1,16 @@
+{% set title = "main" %} <!-- page title -->
+{% set page = "index" %} <!-- page ID -->
+{% set headerFixed = "true" %}
+{% extends "layouts/default.html" %} <!-- used layout -->
+
+{% block content %}
+
+{% include "page-main/_page-main.html" %}
+
+{% include "page-awards/_page-awards.html" %}
+
+{% include "page-press/_page-press.html" %}
+
+{% include "page-contacts/_page-contacts.html" %}
+
+{% endblock %}

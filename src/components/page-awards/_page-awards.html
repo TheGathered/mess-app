@@ -1,0 +1,68 @@
+<!-- page-awards -->
+<div class="page" data-page="awards" id="awards">
+	<div class="container">
+		
+		<div class="page-body">
+
+			<div class="page-marquee text--uppercase"><span>awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards</span></div>
+
+			<div class="page-title hidden-xs">
+				<h3 class="title-3 title-3--bold">Our portfolio helped us win some awards.</h3>
+			</div>
+
+			<div class="page-title test text--center visible-xs">
+				<h3 class="title-3">Our portfolio helped us win <br /> some awards.</h3>
+			</div>
+
+			<div class="page-content">
+				<!-- items-list -->
+				<div class="items-list">
+					<div class="row block-in">
+						{% for item in [
+							{
+								title: "Top App Development Company, USA",
+								logo: "samples/logo-app-futura.png",
+								logo@2x: "samples/logo-app-futura@2x.png"
+							}, {
+								title: "Top App Developers, World",
+								logo: "samples/logo-mobile.png",
+								logo@2x: "samples/logo-mobile@2x.png"
+							}, {
+								title: "Top App Developers, New York",
+								logo: "samples/logo-carnival.png",
+								logo@2x: "samples/logo-carnival@2x.png"
+							}, {
+								title: "Top App Developers, New York",
+								logo: "samples/logo-app-developers.png",
+								logo@2x: "samples/logo-app-developers@2x.png"
+							}, {
+								title: "Top App Developers, New York",
+								logo: "samples/logo-new-clutch.png",
+								logo@2x: "samples/logo-new-clutch@2x.png"
+							}
+						] -%}
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+							<!-- item -->
+							<div class="item">
+								<div class="item-title text--center"><b>{{item.title}}</b></div>
+								<div class="item-logo text--center">
+									<div class="img--centered">
+										<img src="{{item.logo}}" srcset="{{item.logo}} 1x, {{item.logo@2x}} 2x" class="img--fluid img--inline" />
+									</div>
+								</div>
+							</div><!-- /item -->
+						</div>
+						{%- endfor %}
+					</div>
+				</div><!-- /items-list -->
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div data-marker="page-top"></div>
+	<div data-marker="page-bottom"></div>
+
+</div><!-- /page-awards -->

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <title>{{title}}</title>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#951d97">
+  <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#951d97">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:800" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+
+  <!-- build:css css/style.min.css -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- endbuild -->
+</head>
+
+<body>
+
+  <!-- .wrapper -->
+  <div class="wrapper">
+  
+    <div class="wrapper-in">
+
+      {% include "header/_header.html" %}
+    
+      <!-- .content -->
+      <main class="content">
+        {% block content %}{% endblock %}
+
+        <!-- page-article -->
+        <div class="page page--article">
+          <div data-target="article"></div>
+          <button type="button" class="btn--unstyled btn--close"><i class="icon icon-close"></i></button>
+        </div><!-- /page-article -->
+        
+        <!-- subpage-work -->
+        <div class="page page--work">
+          <div data-target="work"></div>
+          <button type="button" class="btn--unstyled btn--close"><i class="icon icon-close"></i></button>
+        </div><!-- /subpage-work -->
+        
+      </main><!-- /.content -->
+
+    </div>
+
+    {% if footer %}
+    {% include "footer/_footer.html" %}
+    {% endif %}
+
+  </div><!-- /.wrapper -->
+
+  <div class="hidden" data-source="article">
+    {% include "page-article/_page-article.html" %}
+  </div>
+   
+  <div class="hidden" data-source="work">
+    {% include "page-work/_page-work.html" %}
+  </div>
+  
+
+  <div class="page-loader"></div>
+
+  <div class="visible-xs" data-flag="phone"></div>
+    
+  <script src="js/jquery.min.js"></script>
+
+  <!-- build:js js/interface.min.js -->
+  <script src="node_modules/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+  <script src="node_modules/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+  <script src="node_modules/bootstrap-select/dist/js/bootstrap-select.js"></script>
+  <script src="node_modules/imagesloaded/imagesloaded.pkgd.js"></script>
+  <script src="node_modules/waypoints/lib/jquery.waypoints.js"></script>
+  <script src="node_modules/waypoints/lib/shortcuts/inview.js"></script>
+  <script src="node_modules/jquery.dotdotdot/dist/jquery.dotdotdot.js"></script>
+  <script src="node_modules/social-likes/dist/social-likes.min.js"></script>
+  <script src="node_modules/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+  <script src="bower_components/parallax/deploy/parallax.js"></script>
+
+  <script src="js/_images.js"></script>
+  <script src="components/header/_header.js"></script>
+  <script src="components/page/_page.js"></script>
+  <script src="components/parallax/_parallax.js"></script>
+  <script src="components/item-post/_item-post.js"></script>
+  <script src="js/interface.js"></script>
+  <!-- endbuild -->
+  
+  <!-- build:js js/forms.js -->
+  <script src="components/form-subscribe/_form-subscribe.js"></script>
+  <script src="components/form-proposal/_form-proposal.js"></script>
+  <script src="js/forms.js"></script>
+  <!-- endbuild -->
+  
+</body>
+</html>

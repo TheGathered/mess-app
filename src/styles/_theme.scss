@@ -1,0 +1,291 @@
+body[data-colour="white"]z {
+	$section-color: #1a1a1a;
+	$section-bg: white;
+	background-color: $section-bg;
+	color: $section-color;
+	h2 {
+		color: $text-color;
+	}
+	.btn--brand {
+		color: $section-color;
+		&::before {
+			background: $section-color;
+		}
+		&:hover,
+		&:active,
+		&:focus,
+		&:active:focus {
+			color: $section-color;
+		}
+	}
+	.btn--proposal {
+		color: $purple;
+		&::before {
+			background: $purple;
+		}
+		&:hover,
+		&:active,
+		&:focus,
+		&:active:focus {
+			color: $purple;
+		}
+	}
+	.page-viewport {
+		background-image: inline('#{$path-inline}/iphone-x-white.svg');		
+	}
+	.phone-mask {
+		fill: #263238;
+	}
+	.viewport {
+		&.video--available {
+			&::after {
+				background-image: inline('#{$path-inline}/spinner-purple.svg');
+			}
+		}
+	}
+	.section-info {
+		color: $section-color;
+	}
+	@include respond-to($respond-phone) {
+		.header--bordered {
+			background-color: $section-bg;
+			&::after {
+				border-bottom-color: #eeedf4;
+			}
+		}
+	}
+}
+
+body[data-colour="dark"] {
+	$section-color: white;
+	$section-bg: #242733;
+	background-color: $section-bg;
+	color: $section-color;
+	.btn--brand {
+		color: $section-color;
+		&::before {
+			background: $section-color;
+		}
+		&:hover,
+		&:active,
+		&:focus,
+		&:active:focus {
+			color: $section-color;
+		}
+	}
+	.page-viewport {
+		background-image: inline('#{$path-inline}/iphone-x-dark.svg');		
+	}
+	.phone-mask {
+		fill: #5e6377;
+	}
+	.viewport {
+		&.video--available {
+			&::after {
+				background-image: inline('#{$path-inline}/spinner-white.svg');
+			}
+		}
+	}
+	.section-info {
+		color: $section-color;
+	}
+	@include respond-to($respond-phone) {
+		.nav-main {
+			border-top-color: #e4e3ea;
+			background-color: $section-bg;
+			a,
+			li.active a {
+				color: $section-color;
+			}
+		}
+		.header--bordered {
+			background-color: $section-bg;
+			&::after {
+				border-bottom-color: #e4e3ea;
+			}
+		}
+	}
+}
+
+body[data-colour="yellow"] {
+	$section-color: #232e34;
+	$section-bg: $yellow;
+	background-color: $section-bg;
+	color: $section-color;
+	.btn--brand {
+		color: $section-color;
+		&::before {
+			background: $section-color;
+		}
+		&:hover,
+		&:active,
+		&:focus,
+		&:active:focus {
+			color: $section-color;
+		}
+	}
+	.page-marquee {
+		color: $section-color;
+	}
+	.page-viewport {
+		background-image: inline('#{$path-inline}/iphone-x-yellow.svg');
+	}
+	.phone-mask {
+		fill: #222e35;
+	}
+	.viewport {
+		&.video--available {
+			&::after {
+				background-image: inline('#{$path-inline}/spinner-purple.svg');
+			}
+		}
+	}
+	.section-info {
+		color: $section-color;
+	}
+	@include respond-to($respond-phone) {
+		.nav-main {
+			background-color: $section-bg;
+			border-top-color: rgba(#263238, .16);
+			a,
+			li.active a {
+				color: $section-color;
+			}
+		}
+		.header--bordered {
+			background-color: $section-bg;
+			&::after {
+				border-bottom-color: rgba(#263238, .16);
+			}
+		}
+	}
+}
+
+body[data-colour="purple"] {
+	$section-color: white;
+	$section-bg: #6812cb;
+	background-color: $section-bg;
+	color: $section-color;
+	.btn--brand {
+		color: $section-color;
+		&::before {
+			background: $section-color;
+		}
+		&:hover,
+		&:active,
+		&:focus,
+		&:active:focus {
+			color: $section-color;
+		}
+	}
+	.page-viewport {
+		background-image: inline('#{$path-inline}/iphone-x-purple.svg');		
+	}
+	.phone-mask {
+		fill: #3b116b;
+	}
+	.viewport {
+		&.video--available {
+			&::after {
+				background-image: inline('#{$path-inline}/spinner-white.svg');
+			}
+		}
+	}
+	.section-info {
+		color: $section-color;
+	}
+	@include respond-to($respond-phone) {
+		.nav-main {
+			background-color: $section-bg;
+			border-top-color: #e4e3ea;
+			a,
+			li.active a {
+				color: $section-color;
+			}
+		}
+		.header--bordered {
+			background-color: $section-bg;
+			&::after {
+				border-bottom-color: #e4e3ea;
+			}
+		}
+	}
+}
+
+body[data-colour="blue"] {
+	$section-bg: #1b1a30;
+	$section-color: white;
+	background-color: $section-bg;
+	color: $section-color;
+	.btn--brand {
+		color: $section-color;
+		&::before {
+			background: $section-color;
+		}
+		&:hover,
+		&:active,
+		&:focus,
+		&:active:focus {
+			color: $section-color;
+		}
+	}
+	.page-viewport {
+		background-image: inline('#{$path-inline}/iphone-x-blue.svg');		
+	}
+	.phone-mask {
+		fill: #494863;
+	}
+	.viewport {
+		&.video--available {
+			&::after {
+				background-image: inline('#{$path-inline}/spinner-white.svg');
+			}
+		}
+	}
+	.section-info {
+		color: $section-color;
+	}
+	@include respond-to($respond-phone) {
+		.nav-main {
+			background-color: $section-bg;
+			border-top-color: #e4e3ea;
+			a,
+			li.active a {
+				color: $section-color;
+			}
+		}
+		.header--bordered {
+			background-color: $section-bg;
+			&::after {
+				border-bottom-color: #e4e3ea;
+			}
+		}
+	}
+}
+
+
+body[data-colour="dark"],
+body[data-colour="purple"],
+body[data-colour="blue"] {
+	.header-logo::before {
+		background-image: inline('#{$path-inline}/logo-white.png');
+		@include retina('#{$path-inline}/logo-white@2x.png', true);
+	}
+	.header-logo,
+	.after-logo {
+		color: white;
+	}
+	.nav-main {
+		a:hover,
+		li.active a {
+			color: white;
+		}
+		a {
+			transition-duration: 0s;
+			color: white;
+			&::after {
+				border-bottom-color: white;
+			}
+		}
+	}
+}

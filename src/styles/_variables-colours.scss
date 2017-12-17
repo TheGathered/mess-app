@@ -1,0 +1,30 @@
+$blue: blue;
+$green: green;
+$orange: orange;
+$red: red;
+$pink: pink;
+$cyan: cyan;
+$purple: #951d97;
+$gray: #d8d8d8;
+$yellow: #fdd900;
+$dark: #1a1a1a;
+
+$brand-primary: $blue;
+$brand-secondary: $green;
+
+// --------------------------------------------------
+$body-bg: white !default;
+$text-color: #263238 !default;
+
+$link-color: $purple !default;
+$link-hover-color: darken($link-color, 15%) !default;
+
+.text--white {
+	color: white;
+}
+.text--black {
+	color: black;
+}
+.text--purple {
+	color: $purple;
+}

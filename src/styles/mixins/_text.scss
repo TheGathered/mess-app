@@ -1,0 +1,43 @@
+@mixin hide-text() {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+@mixin text-hide() {
+  @include hide-text;
+}
+
+@mixin list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+@mixin link-underline-colour($colour: $link-color) {
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0) 50%,$colour 50%);
+}
+
+@mixin link-underline($colour: $link-color, $size: 1px, $offset: 100%) {
+  @include link-underline-colour($colour);
+  background-repeat: repeat-x;
+  background-size: 1PX #{$size*2};
+  background-position: 0 $offset;
+  text-decoration: none !important;
+}
+
+@mixin force-wrap {
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -hp-pre-wrap;
+  word-wrap: break-word;
+}
+
+@function lineHeight($font-size: $font-size-base, $line-height: $line-height-base) {
+  @return $line-height/$font-size;
+}

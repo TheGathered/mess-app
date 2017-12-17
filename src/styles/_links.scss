@@ -1,0 +1,26 @@
+a {
+  color: $link-color;
+  text-decoration: none;
+  outline: none !important;
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: none;
+  }
+
+}
+
+.link--unstyled {//unstyles link
+  text-decoration: none !important;
+}
+
+.link--block {//block link
+  @extend .link--unstyled;
+  display: block;
+}
+
+a[href^="tel"] {
+  @extend .link--unstyled;
+  cursor: default;
+}

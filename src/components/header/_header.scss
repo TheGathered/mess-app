@@ -1,0 +1,86 @@
+$height: 77px;
+
+.header-wrapper {
+	position: relative;
+	margin-bottom: -$height;
+}
+
+.header {
+	@include stretch-x;
+	top: 0;
+	z-index: 9;
+	padding-top: 24px;
+	backface-visibility: hidden;
+
+	.container {
+		position: relative;
+		font-size: 0;
+		> * {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+
+}
+
+.header-wrapper,
+.header {
+	height: $height;
+}
+
+.content {
+	padding-top: $height;
+}
+
+.header-logo {
+	margin-left: -3px;
+	&::before {
+		content: '';
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		background-size: cover;
+		background-image: inline('#{$path-inline}/logo.png');
+		@include retina('#{$path-inline}/logo@2x.png', true);
+		width: 20px;
+		height: 20px;
+		margin-right: 9px;
+	}
+}
+
+.after-logo {
+	margin-left: 11px;
+	padding-left: 12px;
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 3px;
+		border-left: 2px solid $text-color;
+		height: 20px;
+	}
+}
+
+.header-logo,
+.after-logo {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	font-family: $font-family-alt;
+	font-weight: 800;
+	font-size: 18px;
+	text-transform: lowercase;
+	color: $text-color;
+}
+
+.header--fixed {
+	position: fixed;
+}
+
+.page[data-page="contacts"] {
+	margin-top: -$height;
+}
+
+.page + .page[data-page="contacts"] {
+	margin-top: 0;
+}

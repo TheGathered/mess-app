@@ -1,0 +1,98 @@
+/*
+	styles for Large Desktops
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-large) {}
+
+
+
+/*
+	styles for Desktop
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-desktop) {}
+
+
+
+/*
+	styles for Tablet and Desktops
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-tablet-up) {}
+
+
+
+/*
+	styles for Tablet
+ -------------------------------------------------------------------- */
+@include respond-to($respond-tablet) {
+
+	.page-marquee {
+		left: calc(50% + 120px);
+	}
+
+}
+
+
+
+/*
+	styles for Tablet and Phone
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-tablet-down) {}
+
+
+
+/*
+	styles for Phone
+ -------------------------------------------------------------------- */
+@include respond-to($respond-phone) {
+
+	.page-marquee {
+		top: 62px;
+		bottom: auto;
+		left: 0;
+		right: 0;
+		font-size: 48px;
+		letter-spacing: normal;
+		line-height: 58px;
+		width: auto;
+		overflow: visible;
+		height: 57px;
+		transition-duration: .6s;
+		> span {
+			transform: rotate(0);
+			position: relative;
+			top: 14px;
+			animation-name: marquee-x;
+			animation-duration: 60s;
+            //animation stop
+            //animation-play-state: paused;
+		}
+	}
+
+	.page-title {
+		margin-bottom: 20px;
+	}
+
+	.page-flex {
+		margin-bottom: 0;
+		.row {
+			display: block;
+		}
+		[class^="col-"] {
+			display: block;
+			margin-bottom: 32px;
+		}
+	}
+
+	.nav-tags + .page-flex {
+		margin-top: 0;
+	}
+
+}
+
+@keyframes marquee-x {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-500%);
+	}
+}

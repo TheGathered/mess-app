@@ -1,0 +1,84 @@
+[data-page="press"] {
+
+	.page-marquee {
+		color: #e6e5f1;
+	}
+
+	.page-title,
+	.page-content {
+		position: relative;
+		left: 15px;
+	}
+
+	.page-title {
+		max-width: 320px;
+	}
+	
+	.item {
+		width: 126px;
+		height: 126px;
+		background: white;
+		border-radius: 50%;
+		box-shadow: 0 7px 13px 0 rgba(61, 57, 122, 0.16);
+		margin: 0 auto 90px;
+	}
+
+	// .item-logo {
+	// }
+
+	.img--centered {
+		height: 126px;
+		line-height: 124px;
+		overflow: visible;
+	}
+
+	.items-list {
+		max-width: 600px;
+		position: relative;
+		z-index: 2;
+		text-align: center;
+
+		.row {
+			font-size: 0;
+		}
+
+		[class^="col-"] {
+			float: none;
+			display: inline-block;
+			vertical-align: top;
+			&:nth-child(10n+4),
+			&:nth-child(10n+5),
+			&:nth-child(10n+9),
+			&:nth-child(10n+10) {
+				width: 50%;
+			}
+			&:nth-child(10n+1),
+			&:nth-child(10n+6) {
+				top: 32px;
+				left: -13px;
+			}
+			&:nth-child(10n+2),
+			&:nth-child(10n+7) {
+				top: 133px;
+				left: -13px;
+			}
+			&:nth-child(10n+3),
+			&:nth-child(10n+8) {
+				top: -32px;
+				left: -87px;
+			}
+			&:nth-child(10n+4),
+			&:nth-child(10n+9) {
+				top: 60px;
+				left: 2px;
+			}
+			&:nth-child(10n+5),
+			&:nth-child(10n+10) {
+				top: 14px;
+				left: 35px;
+			}
+		}
+
+	}
+
+}

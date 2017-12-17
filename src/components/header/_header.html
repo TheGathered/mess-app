@@ -1,0 +1,24 @@
+<div class="header-wrapper{% if page == 'index' %} mobile--large{% endif %}">
+
+	<!-- .header -->
+	<header class="header{% if headerFixed %} header--fixed{% endif %}">
+	  <div class="container">
+	  	
+	  	<span>
+		  	<!-- logo -->
+		  	<a href="{% if page == 'index' %}#{% else %}index.html{% endif %}" {% if page == 'index' %}data-scroll="#main"{% endif %} class="link--unstyled header-logo">Messapps</a><!-- /logo -->
+			  {% if afterLogo %}
+			  <div class="after-logo">{{afterLogo}}</div>
+			  {% endif %}
+		  </span>
+
+	  	{% include "nav-main/_nav-main.html" %}
+
+	  	<div class="header-controls">
+	  		<a href="contacts.html" class="btn--unstyled btn--brand btn--proposal">Get Proposal</a>
+	  	</div>
+
+	  </div>
+	</header><!-- /.header -->
+
+</div>

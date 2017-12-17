@@ -1,0 +1,29 @@
+{% set title = "Make Dream a Reality" %} <!-- page title -->
+{% set page = "contacts" %} <!-- page ID -->
+{% extends "layouts/default.html" %} <!-- used layout -->
+
+{% block content %}
+<!-- page-contacts -->
+<div class="page" data-page="contacts">
+	<div class="container">
+		
+		<div class="page-body">
+
+			<div class="page-content">
+				{% include "form-proposal/_form-proposal.html" %}
+			</div>
+
+		</div>
+
+		<div class="page-meta hidden-xs">
+			<div class="container">
+				<div class="column column--left text--left">1460 Broadway, New York</div>
+				<div class="column column--center text--center"><a href="mailto:team@messapps.com">team@messapps.com</a></div>
+				<div class="column column--right text--right"><a href="tel:+16467414814">+1 (646) 741-4814</a></div>
+			</div>
+		</div>
+
+	</div>
+
+</div><!-- /page-contacts -->
+{% endblock %}

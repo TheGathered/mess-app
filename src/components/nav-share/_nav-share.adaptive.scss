@@ -1,0 +1,72 @@
+/*
+	styles for Large Desktops
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-large) {}
+
+
+
+/*
+	styles for Desktop
+ -------------------------------------------------------------------- */
+@include respond-to($respond-desktop) {
+
+	.nav-share--float {
+		left: calc(50% - 476px);
+	}
+
+}
+
+
+
+/*
+	styles for Tablet and Desktops
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-tablet-up) {}
+
+
+
+/*
+	styles for Tablet
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-tablet) {}
+
+
+
+/*
+	styles for Tablet and Phone
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-tablet-down) {}
+
+
+
+/*
+	styles for Phone
+ -------------------------------------------------------------------- */
+@include respond-to($respond-phone) {
+
+	.nav-share {
+		.footer & {
+			padding-top: 7px;
+		}
+	}
+
+	.social-likes {
+		.footer & {
+			padding-top: 3px;
+		}
+	}
+
+	.nav-share--horizontal {
+		padding-top: 0;
+	}
+
+	.nav-share--vertical {
+		.social-likes__widget {
+			display: inline-block;
+			vertical-align: middle;
+			margin-bottom: 0;
+			margin-right: 24px;
+		}
+	}
+
+}

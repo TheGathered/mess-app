@@ -1,0 +1,43 @@
+{% set title = "Our tools" %} <!-- page title -->
+{% set page = "tools" %} <!-- page ID -->
+{% extends "layouts/default.html" %} <!-- used layout -->
+
+{% block content %}
+<!-- page -->
+<div class="page">
+	<div class="container">
+
+		<div class="page-body">
+
+			<div class="page-title">
+				<h1 class="title-1">{{title}}</h1>
+			</div>
+
+			<div class="page-content">
+
+				<div class="page-flex">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<h3>Idea Generator</h3>
+							<p>
+								AR is something new to all of us and to find the right approach, we had to go through various proccesses in order to come up with the right solution.
+							</p>
+							<a href="#" data-load class="btn--unstyled btn--brand hidden-xs">View Tool</a>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<h3>Name Generator</h3>
+							<p>
+								The best work is done when everyone works together. Whether it's an opinion of a designer, developer or our cliend - the more we know & consider the better the product will be.
+							</p>
+							<a href="#" data-load class="btn--unstyled btn--brand hidden-xs">View Tool</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+</div><!-- /page -->
+{% endblock %}

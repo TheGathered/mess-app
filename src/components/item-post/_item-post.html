@@ -1,0 +1,43 @@
+{% if not item.inline %}
+<div class="col-lg-4 col-md-4 col-sm-4">
+{% endif %}
+	
+	<!-- item -->
+	<div class="item-post{% if item.inline %} item--inline{% else %} item--block{% endif %}">
+		<a href="article.html" data-load class="link--block">
+
+			{% if item.poster %}
+			<div class="item-poster">
+				<div class="ratio" data-img-loader>
+					<img src="{{item.poster}}" srcset="{{item.poster}} 1x, {{item.poster@2x}} 2x" />
+				</div>
+			</div>
+			{% endif %}
+
+			<div class="item-body">
+			
+				<div class="item-in" data-ellipsis>
+					
+					<div class="item-title">{{item.title|safe}}</div>
+
+					{% if item.text %}
+					<div class="item-text">{{item.text|safe}}</div>
+					{% endif %}
+
+				</div>
+			
+				<div class="item-meta">
+					<ul class="list--inline">
+						{% if item.tag1 %}<li>{{item.tag1}}</li>{% endif %}
+						{% if item.tag2 %}<li>{{item.tag2}}</li>{% endif %}
+					</ul>
+				</div>
+			
+			</div>
+
+		</a>
+	</div><!-- /item -->
+
+{% if not item.inline %}
+</div>
+{% endif %}

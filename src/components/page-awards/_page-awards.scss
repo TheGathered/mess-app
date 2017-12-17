@@ -1,0 +1,117 @@
+[data-page="awards"] {
+
+	.page-marquee {
+		color: #e6e5f1;
+	}
+
+	.page-body {
+		padding-top: 80px;
+	}
+
+	.page-title,
+	.page-content {
+		position: relative;
+		z-index: 2;
+		left: 15px;
+	}
+
+//	.section-content {
+//		top: -100px;
+//	}
+//	.test {
+//		top: -300px;
+//	}
+
+	.page-title {
+		max-width: 320px;
+	}
+
+	.item {
+		$width: 152px;//126px
+		$height: $width*140px/126px;
+		width: $width;
+		height: $height;
+		background-size: 100% 100%;
+		background-image: inline('#{$path-inline}/awards-bg.svg');
+		padding: 35px 25px 0;
+		margin-bottom: 55px;
+	}
+
+	.item-title {
+		font-size: 14px;
+		line-height: 18px;
+		letter-spacing: -.1px;
+	}
+
+	// .item-logo {
+	// }
+
+	.img--centered {
+		overflow: visible;
+		height: 51px;
+		line-height: 45px;
+	}
+
+	.items-list {
+		z-index: 2;
+		max-width: 600px;
+		position: relative;
+		text-align: center;
+
+		.row {
+			font-size: 0;
+		}
+
+		[class^="col-"] {
+			float: none;
+			display: inline-block;
+			vertical-align: top;
+			&:nth-child(10n+4),
+			&:nth-child(10n+5),
+			&:nth-child(10n+9),
+			&:nth-child(10n+10) {
+				width: 50%;
+			}
+			&:nth-child(10n+1) {
+				top: 8px;
+				left: -38px;
+			}
+			&:nth-child(10n+2) {
+				top: 61px;
+				left: -13px;
+			}
+			&:nth-child(10n+3) {
+				top: -43px;
+				left: -33px;
+			}
+			&:nth-child(10n+4) {
+				left: 46px;
+			}
+			&:nth-child(10n+5) {
+				top: 8px;
+				left: 23px;
+			}
+			&:nth-child(10n+6) {
+				top: 8px;
+				left: -48px;
+			}
+			&:nth-child(10n+7) {
+				top: -61px;
+				left: -33px;
+			}
+			&:nth-child(10n+8) {
+				top: 23px;
+				left: -33px;
+			}
+			&:nth-child(10n+9) {
+				left: 20px;
+			}
+			&:nth-child(10n+10) {
+				top: 8px;
+				left: -23px;
+			}
+		}
+
+	}
+
+}

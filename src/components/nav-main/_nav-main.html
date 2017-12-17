@@ -1,0 +1,23 @@
+<!-- nav-main -->
+<nav class="nav-main{% if page != 'index' %} hidden-xs{% endif %}">
+	<ul class="list--inline">
+
+		<li>
+			<a href="#">Work</a>
+			<!--<a href="#work-anchor">Work</a>-->
+		</li>
+
+		<li{% if page == 'blog' or page == 'blog-category' %} class="active"{% endif %}>
+			<a href="blog.html">Blog</a>
+		</li>
+
+        <li{% if page == 'about' %} class="active"{% endif %}>
+        	<a href="about.html">About</a>
+        </li>
+
+		<li{% if page == 'tools' %} class="active"{% endif %}>
+			<a href="tools.html">Tools</a>
+		</li>
+
+	</ul>
+</nav><!-- /nav-main -->

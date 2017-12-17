@@ -1,0 +1,54 @@
+{
+  "name": "messapps",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "foo": "npm install"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.1",
+    "browser-sync": "^2.2.1",
+    "connect-history-api-fallback": "^1.3.0",
+    "del": "^1.1.1",
+    "gulp": "^3.9.0",
+    "gulp-cache": "^0.4.5",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.0.0",
+    "gulp-extname": "^0.2.2",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-load-plugins": "^1.2.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-postcss": "^6.1.0",
+    "gulp-prettify": "^0.4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.0",
+    "gulp-sourcemaps": "^1.5.0",
+    "gulp-typograf": "^1.2.0",
+    "gulp-uglify": "^1.1.0",
+    "gulp-useref": "^3.0.0",
+    "main-bower-files": "^2.13.1",
+    "postcss": "^5.0.16",
+    "postcss-assets": "^4.0.1",
+    "postcss-pxtorem": "^3.3.1",
+    "postcss-selector-matches": "^2.0.1",
+    "postcss-sprites": "^3.1.0"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "bootstrap-select": "^1.12.4",
+    "imagesloaded": "^4.1.3",
+    "jquery": "~2.1.1",
+    "jquery.dotdotdot": "^3.0.5",
+    "magnific-popup": "^1.1.0",
+    "normalize-css": "^2.3.1",
+    "social-likes": "^3.1.2",
+    "waypoints": "^4.0.1"
+  }
+}

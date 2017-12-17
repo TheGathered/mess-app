@@ -1,0 +1,181 @@
+<!-- form-proposal -->
+<div class="form--proposal">
+	<form action="/">
+
+		<fieldset data-step="1">
+			<div class="form-columns clearfix">
+				<div class="column column--left">
+					<div class="form-info">
+						<h3>Make Dream a Reality</h3>
+						<p>
+							At Messapps, we don’t just develop apps.<br class="visible-xs" /> We build<br /> 
+							dreams. Let’s build yours!
+						</p>
+					</div>
+				</div>
+				<div class="column column--right">
+					<div class="form-group">
+						<label class="control-label">Choose <b>category</b> of your project:</label>
+						<div class="controls">
+							<select class="form-control" title="Select" name="category" required>
+								<option>Art & Design</option>
+								<option>Auto & Vehicles</option>
+								<option>Beauty</option>
+								<option>Business</option>
+								<option>Social Media</option>
+								<option>Entertainment</option>
+								<option>Food & Drink</option>
+								<option>Health</option>
+							</select>
+							<button type="button" class="btn--unstyled btn--close"><i class="icon icon-close"></i></button>
+							<button type="button" class="btn--unstyled btn--brand btn--apply">Continue</button>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label">What is your <b>goal</b>?</label>
+						<div class="controls">
+							<select class="form-control" title="Select" name="goal" required>
+								<option>Point 1</option>
+								<option>Point 2</option>
+								<option>Point 3</option>
+								<option>Point 4</option>
+								<option>Point 5</option>
+							</select>
+							<button type="button" class="btn--unstyled btn--close"><i class="icon icon-close"></i></button>
+							<button type="button" class="btn--unstyled btn--brand btn--apply">Continue</button>
+						</div>
+					</div>
+					<div class="form-controls">
+						<button type="button" class="btn--unstyled btn--brand btn--next" data-next="2"><span>Continue</span></button>
+					</div>
+				</div>
+			</div>
+		</fieldset>
+
+		<fieldset data-step="2" style="display: none;">
+			<div class="form-columns clearfix">
+				<div class="column column--left">
+					<div class="form-info">
+						<h3>Hey! Great Start</h3>
+						<p>
+							Same ideas can be implemented in different ways<br /> 
+							depending on whether it’s a low cost MVP or a<br /> 
+							complex polished version that will take the world by<br /> 
+							storm.
+						</p>
+					</div>
+				</div>
+				<div class="column column--right">
+					<div class="form-group">
+						<label class="control-label">What is your <b>budget</b>?</label>
+						<div class="controls">
+							<select class="form-control" title="Select" name="budget" required>
+								<option>Budget 1</option>
+								<option>Budget 2</option>
+								<option>Budget 3</option>
+								<option>Budget 4</option>
+								<option>Budget 5</option>
+							</select>
+							<button type="button" class="btn--unstyled btn--close"><i class="icon icon-close"></i></button>
+							<button type="button" class="btn--unstyled btn--brand btn--apply">Continue</button>
+						</div>
+					</div>
+					<div class="form-controls">
+						<button type="button" class="btn--unstyled btn--brand btn--next" data-next="3"><span>Continue</span></button>
+					</div>
+				</div>
+			</div>
+		</fieldset>
+
+		<fieldset data-step="3" style="display: none;">
+			<div class="form-columns clearfix">
+				<div class="column column--left">
+					<div class="form-info">
+						<h3>Nice! Almost There!</h3>
+					</div>
+				</div>
+				<div class="column column--right">
+					<div class="form-group">
+						<label class="control-label">What’s your <b>name</b>?</label>
+						<div class="controls">
+							<input type="text" class="form-control" name="name" required />
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label">What’s your <b>email</b>?</label>
+						<div class="controls">
+							<input type="email" class="form-control" name="email" required />
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label">What’s your <b>phone</b>? (optional)</label>
+						<div class="controls">
+							<input type="tel" class="form-control" name="phone" />
+						</div>
+					</div>
+					<div class="form-controls">
+						<button type="submit" class="btn--unstyled btn--brand btn--submit"><span>Get Proposal</span></button>
+					</div>
+				</div>
+			</div>
+		</fieldset>
+
+		<fieldset data-step="4" style="display: none;">
+			<div class="form-columns clearix">
+				<div class="column column--left">
+					<div class="form-info">
+						<h3>Thank You!</h3>
+						<p>
+							We are so excited to work with you, we’ll get back<br /> 
+							within 24 hours! Meanwhile, you can read our blog.
+						</p>
+						<a href="blog.html" class="btn--unstyled btn--brand btn--more hidden-xs">Read Blog</a>
+					</div>
+				</div>
+				<div class="column column--right">
+					<!-- list-post -->
+					<div class="list-post">
+						<div class="row block-in">
+							{% for item in [
+								{
+									title: "3&nbsp;hack that any developer should know",
+									text: "Before creating your own app, you have to&nbsp;go&nbsp;through these 3&nbsp;main steps.",
+									poster: "samples/pic-poster-02.png",
+									poster@2x: "samples/pic-poster-02@2x.png",
+									tag1: "#development"
+								}, {
+									title: "Why you should focus on&nbsp;UX design?",
+									text: "If&nbsp;you think that your users won&rsquo;t care about user experience of&nbsp;your app&nbsp;&mdash; you are wrong.",
+									poster: "samples/pic-poster-03.png",
+									poster@2x: "samples/pic-poster-03@2x.png",
+									tag1: "#strategy",
+									tag2: "#development"
+								}, {
+									title: "How to&nbsp;use design strategy",
+									text: "One of&nbsp;the most important things that you would have to&nbsp;spend time on&nbsp;is&nbsp;strategy. Learn 3&nbsp;top skills to&nbsp;improve your app.",
+									poster: "samples/pic-poster-04.png",
+									poster@2x: "samples/pic-poster-04@2x.png",
+									tag1: "#strategy",
+									tag2: "#development"
+								}, {
+									title: "3&nbsp;hacks that will make you stand out",
+									text: "Learn how to&nbsp;improve your personal brand and gain more audience.",
+									poster: "samples/pic-poster-05.png",
+									poster@2x: "samples/pic-poster-05@2x.png",
+									tag1: "#strategy",
+									tag2: "#development"
+								}
+							] -%}
+							{% include "item-post/_item-post.html" %}
+							{%- endfor %}
+						</div>
+					</div><!-- /list-post -->
+					<div class="visible-xs text--right">
+						<a href="blog.html" class="btn--unstyled btn--brand btn--more">Read Blog</a>
+					</div>
+				</div>
+			</div>
+		</fieldset>
+
+	</form>
+</div><!-- /form-proposal -->

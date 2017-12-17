@@ -1,0 +1,65 @@
+// @font-face {
+//   font-family: 'regular';
+//   src:  url('#{$path-fonts}/NAME.eot');
+//   src: 	url('#{$path-fonts}/NAME.eot?#iefix') format('embedded-opentype'),
+//   			url('#{$path-fonts}/NAME.woff2') format('woff2'),
+//   			url('#{$path-fonts}/NAME.woff') format('woff'),
+//   			url('#{$path-fonts}/NAME.ttf') format('truetype'),
+//   			url('#{$path-fonts}/NAME.svg#regular') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+@font-face {//regular
+  font-family: 'Proxima Nova';
+  src: 	url('#{$path-fonts}/proximanovaregular.woff2') format('woff2'),
+  			url('#{$path-fonts}/proximanovaregular.woff') format('woff'),
+  			url('#{$path-fonts}/proximanovaregular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {//light
+  font-family: 'Proxima Nova';
+  src: 	url('#{$path-fonts}/proximanovalight.woff2') format('woff2'),
+  			url('#{$path-fonts}/proximanovalight.woff') format('woff'),
+  			url('#{$path-fonts}/proximanovalight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {//bold
+  font-family: 'Proxima Nova';
+  src: 	url('#{$path-fonts}/proximanovabold.woff2') format('woff2'),
+  			url('#{$path-fonts}/proximanovabold.woff') format('woff'),
+  			url('#{$path-fonts}/proximanovabold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {//extra-bold
+  font-family: 'Proxima Nova';
+  src:  url('#{$path-fonts}/proximanovaextrabold.woff2') format('woff2'),
+        url('#{$path-fonts}/proximanovaextrabold.woff') format('woff'),
+        url('#{$path-fonts}/proximanovaextrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {//extra-black
+  font-family: 'Proxima Nova';
+  src:  url('#{$path-fonts}/proximanovablack.woff2') format('woff2'),
+        url('#{$path-fonts}/proximanovablack.woff') format('woff'),
+        url('#{$path-fonts}/proximanovablack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+// @font-face {//alt extra-bold
+//   font-family: 'Raleway';
+//   src:  url('#{$path-fonts}/RalewayExtraBold.woff2') format('woff2'),
+//         url('#{$path-fonts}/RalewayExtraBold.woff') format('woff'),
+//         url('#{$path-fonts}/RalewayExtraBold.ttf') format('truetype');
+//   font-weight: 800;
+//   font-style: normal;
+// }

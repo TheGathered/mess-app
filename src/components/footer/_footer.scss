@@ -1,0 +1,38 @@
+$height: 230px;
+$column-right: 45px;
+
+.footer {
+	position: relative;
+	margin-top: -$height;
+	height: $height;
+
+	.column--left {
+		width: 100%;
+		padding-right: $column-right + 23px;
+	}
+
+	.column--right {
+		width: $column-right;
+		margin-left: -$column-right;
+	}
+
+	h6 {
+		font-weight: 700;
+		margin-bottom: 8px;
+		font-size: 16px;
+	}
+
+}
+
+.footer-in {
+	margin: 0 auto;
+	max-width: 754px;
+}
+
+.content {
+	padding-bottom: $height + 25px;
+}
+
+.wrapper-in:last-child .content {
+	padding-bottom: 0;
+}

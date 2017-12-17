@@ -1,0 +1,154 @@
+$design-width: 1024px;
+$design-height: 640px;
+
+@mixin position($size, $x: 0, $y: 0) {
+	$top: $design-height/2 - $y;
+	$left: $design-width/2 - $x;
+	width: vw($size);
+	height: vw($size);
+	// margin-top: - vw($top);
+	// margin-left: - vw($left);
+	margin-top: -$top;
+	margin-left: -$left;
+}
+
+.bubbles {
+	pointer-events: none;
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transition: transform 1s;
+	transform: translateY(100%);
+	transform-origin: 50% 50%;
+
+	[data-show="press"] &,
+	[data-show="awards"] & {
+		transform: translateY(0);
+	}
+
+	[data-show="contacts"] & {
+		transform: translateY(-130%);
+	}
+
+	.parallax {
+		@include stretch;
+	}
+
+	li {
+		margin: 0;
+		position: absolute;
+		border-radius: 50%;
+		left: 50% !important;
+		top: 50% !important;
+
+		&.red {
+			background: #e31f73;
+		}
+		&.purple {
+			background: #ab42b1;
+		}
+		&.dark {
+			background: #0d3778;
+		}
+		&.blue {
+			background: #7b20ff;
+		}
+
+		&:nth-child(1) {
+			@include position(13px, 37px, 90px);
+		}
+
+		&:nth-child(2) {
+			@include position(28px, 505px, 80px);
+		}
+
+		&:nth-child(3) {
+			@include position(15px, 673px, 80px);
+		}
+
+		&:nth-child(4) {
+			@include position(27px, 825px, 95px);
+		}
+
+		&:nth-child(5) {
+			@include position(13px, 28px, 212px);
+		}
+
+		&:nth-child(6) {
+			@include position(13px, 365px, 212px);
+		}
+
+		&:nth-child(7) {
+			@include position(47px, 916px, 231px);
+		}
+
+		&:nth-child(8) {
+			@include position(38px, 41px, 320px);
+		}
+
+		&:nth-child(9) {
+			@include position(10px, 282px, 322px);
+		}
+
+		&:nth-child(10) {
+			@include position(10px, 643px, 363px);
+		}
+
+		&:nth-child(11) {
+			@include position(10px, 815px, 419px);
+		}
+
+		&:nth-child(12) {
+			@include position(20px, 107px, 429px);
+		}
+
+		&:nth-child(13) {
+			@include position(27px, 943px, 493px);
+		}
+
+		&:nth-child(14) {
+			@include position(19px, 155px, 592px);
+		}
+
+		&:nth-child(15) {
+			@include position(10px, 436px, 587px);
+		}
+
+		&:nth-child(16) {
+			@include position(47px, -100px, 587px);
+		}
+
+		&:nth-child(17) {
+			@include position(27px, -150px, 10px);
+		}
+
+		&:nth-child(18) {
+			@include position(15px, -170px, 300px);
+		}
+
+		&:nth-child(19) {
+			@include position(27px, 500px, 600px);
+		}
+
+		&:nth-child(20) {
+			@include position(27px, 1150px, 10px);
+		}
+
+		&:nth-child(21) {
+			@include position(20px, 1000px, 200px);
+		}
+
+		&:nth-child(22) {
+			@include position(15px, 900px, 350px);
+		}
+
+		&:nth-child(23) {
+			@include position(47px, 1200px, 600px);
+		}
+
+	}
+
+}

@@ -1,0 +1,161 @@
+.clearfix {
+  @include clearfix;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.hide,
+.hidden {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.img--fluid {
+  @include img-responsive;
+}
+
+.img--inline {
+  display: inline-block;
+}
+
+.img--circle {
+  border-radius: 50%;
+}
+
+.text--hide       { @include text-hide; }
+.text--left       { text-align: left; }
+.text--right      { text-align: right; }
+.text--center     { text-align: center; }
+.text--justify    { text-align: justify; }
+.text--nowrap     { white-space: nowrap; }
+
+// Transformation
+.text--lowercase  { text-transform: lowercase; }
+.text--uppercase  { text-transform: uppercase; }
+.text--capitalize { text-transform: capitalize; }
+
+.fade {
+  opacity: 0;
+  transition: opacity .15s linear;
+  &.in {
+    opacity: 1;
+  }
+}
+
+.text--ellipsis {
+  @include text-overflow;
+}
+
+[data-ellipsis] {
+  overflow: hidden;
+}
+
+.ratio {
+  position: relative;
+  overflow: hidden;
+  > * {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+.column {
+  float: left;
+  min-height: 1px;
+  &.pull-right {
+    float: right;
+  }
+}
+
+.bg--cover {
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.img--centered {
+  overflow: hidden;
+  text-align: center;
+  img {
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 100%;
+  }
+}
+
+[data-img-loader] {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    transition: opacity .5s;
+    background-image: inline('#{$path-inline}/spinner-purple.svg');
+  }
+  img {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  &.loaded {
+    &::before {
+      opacity: 0;
+    }
+    img {
+      opacity: 1;
+    }
+  }
+}
+
+.block-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.block-cell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  position: relative;
+}
+
+
+// background: linear-gradient(#695f74, #bdaeb7);
+// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#695f74', endColorstr='#bdaeb7',GradientType=0 );
+
+// [class^="col-"]
+
+// {% for item in [
+// ] -%}
+// {% include "item/_item.template" %}
+// {%- endfor %}
+
+// {% for i in range(0, 2) -%}
+// {% include "item/_item.template" %}
+// {%- endfor %}

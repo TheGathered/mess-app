@@ -1,0 +1,106 @@
+<div class="page-wrapper">
+	
+	<div class="page-header">
+		<div class="container">
+	  	<span>
+		  	<!-- logo -->
+		  	<a href="index.html" class="link--unstyled header-logo">Messapps</a><!-- /logo -->
+			  <div class="after-logo">blog</div>
+		  </span>
+		</div>
+	</div>
+
+	<div class="container">
+		
+		<div class="page-body">
+
+			<div class="page-content">
+
+				<article class="item-article">
+					<div class="item-title">
+						<h2 class="title-1">3 hacks that any developer should know"</h2>
+					</div>
+
+					<div class="item-content">
+						<p><big>Before creating your own app, you have to go through these 3 main steps, which will help you improve your skills.</big></p>
+						<div class="item-meta">
+							<div class="item-author">
+								<div class="ava">
+									<img src="samples/pic-ava.png" srcset="samples/pic-ava.png 1x, samples/pic-ava@2x.png 2x" />
+								</div>
+								<div class="name">Vasily Malishev - CEO</div>
+							</div>
+							<div class="nav-tags">
+								<div class="block-in">
+									<a href="blog-category.html">#strategy</a>
+									<a href="blog-category.html">#design</a>
+								</div>
+							</div>
+						</div>
+						<img src="sample/pic-sample-01.png" srcset="samples/pic-sample-01.png 1x, samples/pic-sample-01@2x.png 2x" class="hidden-xs" />
+						<img src="sample/pic-sample-01-mobile.png" srcset="samples/pic-sample-01-mobile.png 1x, samples/pic-sample-01-mobile@2x.png 2x" class="visible-xs" />
+						<p class="small--phone">So, your company wants to increase revenue and adoption by making some marketing site tweaks. They want more conversions, more clicks, more shares, and more users. What do they tell you to do first? Well, A/B test! Compare two versions of a page, define a key goal (ex. clicks), and see if you get more clicks. But, does this actually work? Is it really the approach you should take? Let’s look at the data.</p>
+						<h3>1. Do it fast</h3>
+						<p>No matter what case study you look at, the results are unanimous. Using high quality images within any form of digital media massively increases audience engagement. Spending that extra time finding the perfect photograph to go with a post is almost always worth it, and if you're anything like us - you probably spend quite a bit of time on it!</p>
+						<h4>2. Create unique content</h4>
+						<p>It sure would be nice if it didn't take quite as much time, though, which is why today we're announcing the official integration for Unsplash inside Ghost. In the space of a couple of clicks, you now have access to hundreds of thousands of stunningly beautiful photographs which can be used completely for free.</p>
+						<img src="sample/pic-sample-02.png" srcset="samples/pic-sample-02.png 1x, samples/pic-sample-02@2x.png 2x" class="hidden-xs" />
+						<img src="sample/pic-sample-02-mobile.png" srcset="samples/pic-sample-02-mobile.png 1x, samples/pic-sample-02-mobile@2x.png 2x" class="visible-xs" />
+						<p>So, your company wants to increase revenue and adoption by making some marketing site tweaks. They want more conversions, more clicks, more shares, and more users. What do they tell you to do first? Well, A/B test! Compare two versions of a page, define a key goal (ex. clicks), and see if you get more clicks. But, does this actually work? Is it really the approach you should take? Let’s look at the data.</p>
+						<h4>3. Provide value</h4>
+						<p>It sure would be nice if it didn't take quite as much time, though, which is why today we're announcing the official integration for Unsplash inside Ghost. In the space of a couple of clicks, you now have access to hundreds of thousands of stunningly beautiful photographs which can be used completely for free. Well, A/B test! Compare two versions of a page, define a key goal (ex. clicks), and see if you get more clicks. But, does this actually work? Is it really the approach you should take? Let’s look at the data.</p>
+						<div class="item-share">
+							<h4>Did you like this article? Please share it! It will mean a lot to us!</h4>
+				    	<!-- nav-share -->
+							<div class="nav-share nav-share--horizontal">
+					    	{% include "nav-share/_nav-share.html" %}
+							</div><!-- /nav-share -->
+						</div>
+					</div>
+
+				</article>
+
+				{% include "form-subscribe/_form-subscribe.html" %}
+
+				<!-- list-post -->
+				<div class="list-post">
+					<div class="row block-in">
+						{% for item in [
+							{
+								title: "How to&nbsp;use design strategy",
+								text: "One of&nbsp;the most important things that you would have to&nbsp;spend time on&nbsp;is&nbsp;strategy. Learn 3&nbsp;top skills to&nbsp;improve your app.",
+								poster: "samples/pic-poster-04.png",
+								poster@2x: "samples/pic-poster-04@2x.png",
+								tag1: "#strategy",
+								tag2: "#development"
+							}, {
+								title: "3&nbsp;hacks that will make you stand out",
+								text: "Learn how to&nbsp;improve your personal brand and gain more audience.",
+								poster: "samples/pic-poster-05.png",
+								poster@2x: "samples/pic-poster-05@2x.png",
+								tag1: "#strategy",
+								tag2: "#development"
+							}, {
+								title: "10&nbsp;common issues you&rsquo;ll face as&nbsp;appenure",
+								text: "If&nbsp;you think that creating an&nbsp;app is&nbsp;easy&nbsp;&mdash; ready this article, it&nbsp;will change your mind forever.",
+								poster: "samples/pic-poster-06.png",
+								poster@2x: "samples/pic-poster-06@2x.png",
+								tag1: "#strategy",
+								tag2: "#development"
+							}
+						] -%}
+						{% include "item-post/_item-post.html" %}
+						{%- endfor %}
+					</div>
+				</div><!-- /list-post -->
+
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+<div class="nav-share nav-share--vertical nav-share--float hidden-sm hidden-xs">
+	{% include "nav-share/_nav-share.html" %}
+</div><!-- /nav-share -->

@@ -1,0 +1,166 @@
+/*
+	styles for Large Desktops
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-large) {}
+
+
+
+/*
+	styles for Desktop
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-desktop) {}
+
+
+
+/*
+	styles for Tablet and Desktops
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-tablet-up) {}
+
+
+
+/*
+	styles for Tablet
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-tablet) {}
+
+
+
+/*
+	styles for Tablet and Phone
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-tablet-down) {}
+
+
+
+/*
+	styles for Phone
+ -------------------------------------------------------------------- */
+@include respond-to($respond-phone) {
+
+	.title-1 {
+	  font-size: 28px;
+	  line-height: 30px;
+	}
+
+	.title-2 {
+	  font-size: 24px;
+	  line-height: 26px;
+	  margin-bottom: 33px;
+	  a {
+	    &::after {
+	      bottom: 0;
+	    }
+	  }
+	}
+
+	.title-3 {
+	  font-size: 14px;
+	  line-height: 17px;
+	  letter-spacing: .1px;
+	  font-weight: 900;
+	}
+
+}
+
+@include respond-to("(max-width: 1199px) and (min-width: 1100px)") {
+	html {
+		font-size: 17PX;
+	}
+}
+@include respond-to("(max-width: 1299px) and (min-width: 1200px)") {
+	html {
+		font-size: 17.5PX;
+	}
+}
+@include respond-to("(max-width: 1399px) and (min-width: 1300px)") {
+	html {
+		font-size: 18PX;
+	}
+}
+@include respond-to("(max-width: 1499px) and (min-width: 1400px)") {
+	html {
+		font-size: 18.5PX;
+	}
+}
+@include respond-to("(max-width: 1599px) and (min-width: 1500px)") {
+	html {
+		font-size: 19PX;
+	}
+}
+@include respond-to("(max-width: 1699px) and (min-width: 1600px)") {
+	html {
+		font-size: 19.5PX;
+	}
+}
+@include respond-to("(max-width: 1799px) and (min-width: 1700px)") {
+	html {
+		font-size: 20PX;
+	}
+}
+@include respond-to("(max-width: 1899px) and (min-width: 1800px)") {
+	html {
+		font-size: 20.5PX;
+	}
+}
+@include respond-to("(min-width: 1900px)") {
+	html {
+		font-size: 21PX;
+	}
+}
+
+@include respond-to("(max-width: 767px) and (min-width: 640px)") {
+	$size: 640 * 16 / 320;
+	html {
+		font-size: $size + 0PX;
+	}
+}
+
+@include respond-to("(max-width: 639px) and (min-width: 600px)") {
+	$size: 600 * 16 / 320;
+	html {
+		font-size: $size + 0PX;
+	}
+}
+
+@include respond-to("(max-width: 599px) and (min-width: 414px)") {
+	$size: 414 * 16 / 320;
+	html {
+		font-size: $size + 0PX;
+	}
+}
+
+@include respond-to("(max-width: 413px) and (min-width: 412px)") {
+	$size: 412 * 16 / 320;
+	html {
+		font-size: $size + 0PX;
+	}
+}
+
+@include respond-to("(max-width: 411px) and (min-width: 384px)") {
+	$size: 384 * 16 / 320;
+	html {
+		font-size: $size + 0PX;
+	}
+}
+
+@include respond-to("(max-width: 383px) and (min-width: 375px)") {
+	$size: 375 * 16 / 320;
+	html {
+		font-size: $size + 0PX;
+	}
+}
+
+@include respond-to("(max-width: 374px) and (min-width: 360px)") {
+	$size: 360 * 16 / 320;
+	html {
+		font-size: $size + 0PX;
+	}
+}
+
+@include respond-to("(max-width: 359px) and (min-width: 321px)") {
+	$size: 321 * 16 / 320;
+	html {
+		font-size: $size + 0PX;
+	}
+}

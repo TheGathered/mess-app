@@ -1,0 +1,113 @@
+@function parseInt($n) { /* 2 */
+	@return $n / ($n * 0 + 1);
+}
+
+@function ratio($width, $max-value:$max) {
+  @return (parseInt($width)*100%/parseInt($max-value));
+}
+
+@function fluid($width, $max-value:$max) {
+  @return (parseInt($width)*100%/parseInt($max-value));
+}
+
+@mixin respond-to($media) {
+	@media #{$media} {
+		@content;
+	}
+}
+
+@mixin stretch($top: 0, $right: 0, $bottom: 0, $left: 0) {
+	position: absolute;
+	left: $left;
+	right: $right;
+	top: $top;
+	bottom: $bottom;
+}
+
+@mixin stretch-x($left: 0, $right: 0) {
+	position: absolute;
+	left: $left;
+	right: $right;
+}
+
+@mixin stretch-y($top: 0, $bottom: 0) {
+	position: absolute;
+	top: $top;
+	bottom: $bottom;
+}
+
+/// Returns the opposite direction of each direction in a list
+/// @author Hugo Giraudel
+/// @param {List} $directions - List of initial directions
+/// @return {List} - List of opposite directions
+@function opposite-direction($directions) {
+  $opposite-directions: ();
+  $direction-map: (
+    'top':    'bottom',
+    'right':  'left',
+    'bottom': 'top',
+    'left':   'right',
+    'center': 'center',
+    'ltr':    'rtl',
+    'rtl':    'ltr'
+  );
+ 
+  @each $direction in $directions {
+    $direction: to-lower-case($direction);
+    
+    @if map-has-key($direction-map, $direction) { 
+      $opposite-directions: append($opposite-directions, unquote(map-get($direction-map, $direction)));
+    } @else {
+      @warn "No opposite direction can be found for `#{$direction}`. Direction omitted.";
+    }
+  }
+ 
+  @return $opposite-directions;
+}
+
+@mixin triangle-mod($direction, $height, $width, $color) {
+	$opp: opposite-direction($direction);
+	border-#{$direction}-width: $height;
+	border-#{$direction}-color: $color;
+	border-#{$opp}-width: 0;
+  @if( $direction == 'top' or $direction == 'bottom' ) {
+  	border-left-width: $width/2;
+  	border-right-width: $width/2;
+  }
+  @if( $direction == 'left' or $direction == 'right' ) {
+  	border-top-width: $width/2;
+  	border-bottom-width: $width/2;
+  }
+}
+
+@mixin triangle($direction, $height, $width, $color: inherit) {
+	@if not index(top right bottom left, $direction) {
+    @warn "Direction must be one of `top`, `right`, `bottom` or `left`; currently `#{$direction}`.";
+  } @else {
+  	content: '';
+  	display: inline-block;
+  	vertical-align: middle;
+	  width: 0;
+	  height: 0;
+	  border-style: solid;
+	  border-color: transparent;
+	  @include triangle-mod($direction, $height, $width ,$color);
+  }
+}
+
+@function vw($px, $viewport-width: 1024px) {
+  @return parseInt($px)*100/parseInt($viewport-width) + 0VW;
+}
+
+@mixin retina($path,$inline: false) {
+  @media  all and (-webkit-min-device-pixel-ratio : 1.5),
+          all and (-o-min-device-pixel-ratio: 3/2),
+          all and (min--moz-device-pixel-ratio: 1.5),
+          all and (min-device-pixel-ratio: 1.5) {
+    @if ($inline) {
+      background-image: inline(#{$path});
+    } @else {
+      background-image: url(#{$path});
+    }
+  }
+}

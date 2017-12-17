@@ -1,0 +1,56 @@
+<!-- form-subscribe -->
+<div class="form--subscribe">
+	<form action="/">
+
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-6">
+
+				<h3>
+					How much is it to<br /> 
+					learn about mobile<br /> 
+					industry? It’s free!
+				</h3>
+
+				<p>
+					Just subscribe and you are going<br /> 
+					to be pretty much all set
+				</p>
+
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6">
+
+				<fieldset data-step="1">
+					<div class="form-group">
+						<label class="control-label"><b>Email</b></label>
+						<div class="controls">
+							<input type="email" class="form-control" name="email" required />
+						</div>
+					</div>
+
+					<div class="form-group">
+						{% if page == 'blog-category' %}
+						<label class="control-label hidden-xs"><b>Interested in:</b> (ex. #design, #everything)</label>
+						{% else %}
+						<label class="control-label hidden-xs"><b>Interests</b> (ex. #design, #everything)</label>
+						{% endif %}
+						<label class="control-label visible-xs"><b>Intrested in: #design</b></label>
+						<div class="controls">
+							<input type="text" class="form-control" name="tags" placeholder="ex. #design, #everything" required />
+						</div>
+					</div>
+
+					<div class="form-controls text--right">
+						<button type="submit" class="btn--unstyled btn--brand btn--submit"><span>Subscribe</span></button>
+					</div>
+				</fieldset>
+
+				<fieldset data-step="2" style="display: none;">
+					<h6>Thank You!</h6>
+					<p>Some text</p>
+				</fieldset>
+
+			</div>
+		</div>
+
+	</form>
+</div><!-- /form-subscribe -->

@@ -1,0 +1,166 @@
+/*
+	styles for Large Desktops
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-large) {}
+
+
+
+/*
+	styles for Desktop
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-desktop) {}
+
+
+
+/*
+	styles for Tablet and Desktops
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-tablet-up) {}
+
+
+
+/*
+	styles for Tablet
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-tablet) {}
+
+
+
+/*
+	styles for Tablet and Phone
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-tablet-down) {}
+
+
+
+/*
+	styles for Phone
+ -------------------------------------------------------------------- */
+@include respond-to($respond-phone) {
+
+	.open-select,
+	.open-selected {
+		margin-bottom: 0;
+		position: fixed;
+		top: 60px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 9;
+		background: white;
+
+		.btn--close {
+			display: block;
+			position: fixed;
+			right: 19px;
+			top: 13px;
+			z-index: 1001;
+			.icon-close {
+				width: 12px;
+				height: 12px;
+			}
+		}
+
+		.btn--apply {
+			display: inline-block;
+			z-index: 1001;
+			position: relative;
+			float: right;
+			clear: both;
+			font-size: 13px;
+			margin: 0 20px 0 0;
+		}
+
+		.control-label {
+			margin: 0 20px 24px;
+		}
+
+		.dropdown-toggle {
+			display: none;
+		}
+
+		.bootstrap-select.open .dropdown-menu.inner {
+			max-height: 70vh !important;
+		}
+
+  	.dropdown-menu {
+  		display: block;
+  		padding-top: 0;
+  		background: none;
+  		box-shadow: none;
+  		position: relative;
+  		left: auto;
+  		top: auto;
+  		float: none;
+  		&:not(.inner) {
+  			top: 0;
+  			&::before {
+  				display: none;
+  			}
+  		}
+  		> li {
+  			> a {
+  				font-size: 16px;
+  				letter-spacing: -.1px;
+  				padding: 15.5px 20px 15.5px 72px;
+  				position: relative;
+  				&::before,
+  				&::after {
+  					content: '';
+  					position: absolute;
+  					border-radius: 50%;
+  				}
+  				&::before {
+  					left: 20px;
+  					top: 15px;
+  					width: 17px;
+  					height: 17px;
+  					border: 1px solid black;
+  				}
+  				&::after {
+  					left: 24px;
+  					top: 19px;
+  					width: 9px;
+  					height: 9px;
+  					background: $purple;
+  					transform: scale(0);
+  					transition: transform .2s;
+  				}
+  			}
+  			&.selected > a {
+  				&::before {
+  					border-color: $purple;
+  				}
+  				&::after {
+  					transform: scale(1);
+  				}
+  			}
+  		}
+  	}
+
+		.dropdown-menu > li > a {
+		  &:hover,
+		  &:focus {
+		    background: none;
+		  }
+		}
+
+		// Active state
+		.dropdown-menu > .active > a,
+		.dropdown-menu > .selected > a {
+		  &,
+		  &:hover,
+		  &:focus {
+		    background: none;
+		  }
+		}
+	}
+
+	body.show--select {
+		overflow: hidden;
+		.btn--proposal {
+			display: none;
+		}
+	}
+
+}

@@ -1,0 +1,207 @@
+button {
+  cursor: pointer;
+  outline: none !important;
+}
+
+.btn,
+.btn--unstyled {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+  font-weight: normal;
+  touch-action: manipulation;
+  cursor: pointer;
+  outline: none !important;
+  text-decoration: none !important;
+  line-height: 1.428571428571429;
+  line-height: normal;
+  user-select: none;
+  white-space: nowrap;
+  background-image: none;
+  position: relative;
+}
+
+.btn--unstyled {
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+.btn {
+  text-align: center;
+  border: 1px solid transparent;
+  font-size: 14px;
+  transition-property: box-shadow, background-color, color;
+  transition-duration: .2s;
+  padding: 6px 12px;
+
+  &:active,
+  &.active {
+    &:not([disabled]) {
+      box-shadow: inset 0 3px 5px rgba(black, .125);
+    }
+  }
+
+}
+
+button {
+  &.disabled,
+  &[disabled] {
+    cursor: not-allowed;
+    // opacity: .65;
+  }
+}
+
+a.btn {
+  &.disabled,
+  fieldset[disabled] & {
+    pointer-events: none;
+  }
+}
+
+.btn--block {
+  display: block;
+  width: 100%;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn--block {
+    width: 100%;
+  }
+}
+
+.btn--brand {
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: .05em;
+  color: $purple;
+  &::before {
+    content: '';
+    width: 48px;
+    height: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    position: relative;
+    top: -1px;
+    background: $purple;
+  }
+  &:hover,
+  &:focus,
+  &:active,
+  &:focus:active {
+    color: $purple;
+  }
+}
+
+.btn--next,
+.btn--submit {
+  color: $purple;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: .7px;
+  &::before {
+    background: $purple;
+  }
+}
+
+.btn--start {
+  position: fixed;
+  left: -170px;
+  bottom: 27px;
+  font-weight: 700;
+  font-size: 14px;
+  color: $text-color;
+  transform-origin: 100% 100%;
+  transform: rotate(90deg) translateX(100%);
+  transition: all .4s;
+  opacity: 0;
+  z-index: 2;
+  width: 200px;
+  text-align: right;
+  &::after {
+    $width: 10px;//10px;
+    $height: $width*61px/10px;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background-size: 100% 100%;
+    background-image: inline('#{$path-inline}/arrow-right.svg');
+    height: $width;
+    width: $height;
+    margin-left: 9px;
+    position: relative;
+    top: -1px;
+    transition: transform .2s;
+  }
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:focus {
+    color: $text-color;
+  }
+  &:hover {
+    &::after {
+      transform: translateX(3px);
+    }
+  }
+  .section.active & {
+    opacity: 1;
+    transform: rotate(90deg) translateX(0);
+  }
+}
+
+.btn--proposal {
+  color: $purple;
+  transform: rotate(90deg);
+  letter-spacing: 0;
+  position: fixed;
+  right: -43px;
+  top: 96px;
+  font-size: 14px;
+  &::before {
+    background: $purple;
+  }
+  &:hover,
+  &:focus,
+  &:active,
+  &:active:focus {
+    color: $purple;
+  }
+}
+
+.btn--play {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  width: 40px; //48
+  height: 40px; //48
+  background-image: inline('#{$path-inline}/icon-play.svg');
+}
+
+.btn--close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9;
+}
+
+.btn--submit {
+  &::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transition: transform .2s;
+    background-size: cover;
+    transform: translateY(-50%) scale(0);
+    background-image: inline('#{$path-inline}/spinner-purple.svg');
+  }
+}

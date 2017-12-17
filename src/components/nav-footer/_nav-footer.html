@@ -1,0 +1,37 @@
+<!-- nav-footer -->
+<div class="nav-footer">
+	<div class="row">
+
+		<div class="col-lg-4 col-md-4 col-sm-4">
+			<h6>Company</h6>
+			<ul class="list--unstyled">
+				<li><a href="#">Work</a></li>
+				<li{% if page == 'blog' or page == 'blog-category' %} class="active"{% endif %}><a href="blog.html">Blog</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Team</a></li>
+			</ul>
+		</div>
+
+		<div class="col-lg-4 col-md-4 col-sm-4">
+			<h6>Blog</h6>
+			<ul class="list--unstyled">
+				<li><a href="blog-category.html">#strategy</a></li>
+				<li{% if page == 'blog-category' %} class="active"{% endif %}><a href="blog-category.html">#design</a></li>
+				<li><a href="blog-category.html">#development</a></li>
+				<li><a href="blog-category.html">#marketing</a></li>
+				<li><a href="blog-category.html">#casestudies</a></li>
+			</ul>
+		</div>
+
+		<div class="col-lg-4 col-md-4 col-sm-4">
+			<h6>Community</h6>
+			<ul class="list--unstyled">
+				<li><a href="#">Appenure Academy</a></li>
+				<li><a href="#">Tools</a></li>
+				<li><a href="#">Careers</a></li>
+				<li><a href="#">Meetings</a></li>
+			</ul>
+		</div>
+
+	</div>
+</div><!-- /nav-footer -->

@@ -1,0 +1,123 @@
+{% set title = "Learn #design" %} <!-- page title -->
+{% set page = "blog-category" %} <!-- page ID -->
+{% set footer = "true" %}
+{% set afterLogo = "blog" %}
+{% extends "layouts/default.html" %} <!-- used layout -->
+
+{% block content %}
+<!-- page -->
+<div class="page">
+	<div class="container">
+		
+		<div class="page-body">
+
+			<div class="page-title">
+				<h1 class="title-1">Learn <strong>#design</strong></h1>
+			</div>
+
+			<div class="page-content">
+
+				{% include "nav-tags/_nav-tags.html" %}
+
+				<!-- list-post -->
+				<div class="list-post">
+					<div class="row block-in">
+						{% for item in [
+							{
+								title: "How to research competition",
+								text: "Whatever your idea is&nbsp;the chances are you have competition.",
+								poster: "samples/pic-poster-01.png",
+								poster@2x: "samples/pic-poster-01@2x.png",
+								tag1: "#strategy",
+								tag2: "#development"
+							}, {
+								title: "3&nbsp;hack that any developer should know",
+								text: "Before creating your own app, you have to&nbsp;go&nbsp;through these 3&nbsp;main steps.",
+								poster: "samples/pic-poster-02.png",
+								poster@2x: "samples/pic-poster-02@2x.png",
+								tag1: "#development"
+							}, {
+								title: "Why you should focus on&nbsp;UX design?",
+								text: "If&nbsp;you think that your users won&rsquo;t care about user experience of&nbsp;your app&nbsp;&mdash; you are wrong.",
+								poster: "samples/pic-poster-03.png",
+								poster@2x: "samples/pic-poster-03@2x.png",
+								tag1: "#strategy",
+								tag2: "#development"
+							}, {
+								title: "How to&nbsp;use design strategy",
+								text: "One of&nbsp;the most important things that you would have to&nbsp;spend time on&nbsp;is&nbsp;strategy. Learn 3&nbsp;top skills to&nbsp;improve your app.",
+								poster: "samples/pic-poster-04.png",
+								poster@2x: "samples/pic-poster-04@2x.png",
+								tag1: "#strategy",
+								tag2: "#development"
+							}, {
+								title: "3&nbsp;hacks that will make you stand out",
+								text: "Learn how to&nbsp;improve your personal brand and gain more audience.",
+								poster: "samples/pic-poster-05.png",
+								poster@2x: "samples/pic-poster-05@2x.png",
+								tag1: "#strategy",
+								tag2: "#development"
+							}, {
+								title: "10&nbsp;common issues you&rsquo;ll face as&nbsp;appenure",
+								text: "If&nbsp;you think that creating an&nbsp;app is&nbsp;easy&nbsp;&mdash; ready this article, it&nbsp;will change your mind forever.",
+								poster: "samples/pic-poster-06.png",
+								poster@2x: "samples/pic-poster-06@2x.png",
+								tag1: "#strategy",
+								tag2: "#development"
+							}, {
+								title: "How to research competition",
+								text: "Whatever your idea is&nbsp;the chances are you have competition.",
+								poster: "samples/pic-poster-01.png",
+								poster@2x: "samples/pic-poster-01@2x.png",
+								tag1: "#strategy",
+								tag2: "#development"
+							}, {
+								title: "3&nbsp;hack that any developer should know",
+								text: "Before creating your own app, you have to&nbsp;go&nbsp;through these 3&nbsp;main steps.",
+								poster: "samples/pic-poster-02.png",
+								poster@2x: "samples/pic-poster-02@2x.png",
+								tag1: "#development"
+							}, {
+								title: "Why you should focus on&nbsp;UX design?",
+								text: "If&nbsp;you think that your users won&rsquo;t care about user experience of&nbsp;your app&nbsp;&mdash; you are wrong.",
+								poster: "samples/pic-poster-03.png",
+								poster@2x: "samples/pic-poster-03@2x.png",
+								tag1: "#strategy",
+								tag2: "#development"
+							}, {
+								title: "How to&nbsp;use design strategy",
+								text: "One of&nbsp;the most important things that you would have to&nbsp;spend time on&nbsp;is&nbsp;strategy. Learn 3&nbsp;top skills to&nbsp;improve your app.",
+								poster: "samples/pic-poster-04.png",
+								poster@2x: "samples/pic-poster-04@2x.png",
+								tag1: "#strategy",
+								tag2: "#development"
+							}, {
+								title: "3&nbsp;hacks that will make you stand out",
+								text: "Learn how to&nbsp;improve your personal brand and gain more audience.",
+								poster: "samples/pic-poster-05.png",
+								poster@2x: "samples/pic-poster-05@2x.png",
+								tag1: "#strategy",
+								tag2: "#development"
+							}, {
+								title: "10&nbsp;common issues you&rsquo;ll face as&nbsp;appenure",
+								text: "If&nbsp;you think that creating an&nbsp;app is&nbsp;easy&nbsp;&mdash; ready this article, it&nbsp;will change your mind forever.",
+								poster: "samples/pic-poster-06.png",
+								poster@2x: "samples/pic-poster-06@2x.png",
+								tag1: "#strategy",
+								tag2: "#development"
+							}
+						] -%}
+						{% include "item-post/_item-post.html" %}
+						{%- endfor %}
+					</div>
+				</div><!-- /list-post -->
+
+				{% include "form-subscribe/_form-subscribe.html" %}
+
+			</div>
+			
+		</div>
+
+	</div>
+</div><!-- /page -->
+{% endblock %}

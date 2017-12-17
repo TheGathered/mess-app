@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="152px" height="166px" viewBox="0 0 152 166" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>F7FD9676-3679-4436-B7A7-20BCCBF9210E</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M0.295138358,20.0220245 C1.01150912,18.4267101 37.7617329,15.2717792 63.3350776,0 C82.2049118,10.786766 103.093219,17.5176095 126,20.1925307 C125.850261,57.8315437 120.556907,86.517481 110.11994,106.250343 C99.682972,125.983205 84.088018,137.23309 63.3350776,140 C42.7358875,138.358498 26.832096,127.108612 15.6237033,106.250343 C-1.18888573,74.9629382 -0.421232403,21.6173388 0.295138358,20.0220245 Z" id="path-1"></path>
+        <filter x="-23.0%" y="-15.7%" width="146.0%" height="141.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="7" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.239215686   0 0 0 0 0.223529412   0 0 0 0 0.478431373  0 0 0 0.16 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.239215686   0 0 0 0 0.223529412   0 0 0 0 0.478431373  0 0 0 0.08 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="awards" transform="translate(-308.000000, -274.000000)">
+            <g transform="translate(90.000000, 172.000000)" id="itfirms">
+                <g transform="translate(231.000000, 108.000000)">
+                    <g id="Path-2">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,65 @@
+<!-- page-press -->
+<div class="page" data-page="press" id="press">
+	<div class="container">
+		
+		<div class="page-body">
+
+			<div class="page-marquee text--uppercase"><span>press press press press press press press press press press press press press press press press press press press press press press press press press</span></div>
+
+			<div class="page-title hidden-xs">
+				<h2 class="title-3 title-3--bold">And apps we’ve built got featured by top publishers.</h2>
+			</div>
+			
+			<div class="page-title text--center visible-xs">
+				<h3 class="title-3">And apps we’ve built got <br /> featured by top publishers.</h3>
+			</div>
+
+			<div class="page-content">
+
+				<!-- items-list -->
+				<div class="items-list">
+					<div class="row block-in">
+						{% for item in [
+							{
+								logo: "samples/logo-huffpost.png",
+								logo@2x: "samples/logo-huffpost@2x.png"
+							}, {
+								logo: "samples/logo-the-guardian.png",
+								logo@2x: "samples/logo-the-guardian@2x.png"
+							}, {
+								logo: "samples/logo-mashable.png",
+								logo@2x: "samples/logo-mashable@2x.png"
+							}, {
+								logo: "samples/logo-vanity-fair.png",
+								logo@2x: "samples/logo-vanity-fair@2x.png"
+							}, {
+								logo: "samples/logo-tech-crunch.png",
+								logo@2x: "samples/logo-tech-crunch@2x.png"
+							}
+						] -%}
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+							<!-- item -->
+							<div class="item">
+								<a href="#" class="link--block" target="_blank">
+									<div class="item-logo">
+										<div class="img--centered">
+											<img src="{{item.logo}}" srcset="{{item.logo}} 1x, {{item.logo@2x}} 2x" class="img--fluid" />
+										</div>
+									</div>
+								</a>
+							</div><!-- /item -->
+						</div>
+						{%- endfor %}
+					</div>
+				</div><!-- /items-list -->
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div data-marker="page-top"></div>
+	<div data-marker="page-bottom"></div>
+
+</div><!-- /page-press -->

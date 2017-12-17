@@ -1,0 +1,69 @@
+/*
+	styles for Large Desktops
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-large) {}
+
+
+
+/*
+	styles for Desktop
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-desktop) {}
+
+
+
+/*
+	styles for Tablet and Desktops
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-tablet-up) {}
+
+
+
+/*
+	styles for Tablet
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-tablet) {}
+
+
+
+/*
+	styles for Tablet and Phone
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-tablet-down) {}
+
+
+
+/*
+	styles for Phone
+ -------------------------------------------------------------------- */
+@include respond-to($respond-phone) {
+
+	.page-preview {
+	  font-size: 14px;
+	  line-height: 18px;
+	  a {
+		  min-height: 220px;
+		  padding: 24px 16px 20px;
+	  }
+	  .block-in {
+	  	max-width: 100%;
+	  }
+	  h3 {
+	  	font-size: 18px;
+	  	line-height: 22px;
+	  	margin-bottom: 8px;
+	  }
+	  .item-cat {
+	  	&::after {
+	  		margin-top: 3px;
+	  	}
+	  }
+	  .item-meta {
+	  	padding-top: 24px;
+	  }
+	  p {
+	  	margin-bottom: 18px;
+	  }
+	}
+
+}

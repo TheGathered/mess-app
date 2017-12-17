@@ -1,0 +1,22 @@
+// variables
+$font-family-base: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-alt: "Raleway";
+$font-family-meta: "Montserrat", "Proxima Nova";
+
+$font-size-base: 16px !default;
+$line-height-base: 26px !default;
+
+// paths
+// *************************************************************************
+$path-fonts:		"../fonts";
+$path-img:			"../images";
+
+$path-inline: 	"#{$path-img}/inline";
+//will be converted to base64
+// background-image: inline('#{$path-inline}/somepic.png');
+
+//will be converted to sprite
+// background-image: url(#{$path-sprite}/somepic.png);
+$path-sprite: 	"#{$path-img}/sprites";
+
+$layout-offset-mobile: 24px;

@@ -1,0 +1,134 @@
+/*
+	styles for Large Desktops
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-large) {}
+
+
+
+/*
+	styles for Desktop
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-desktop) {}
+
+
+
+/*
+	styles for Tablet and Desktops
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-tablet-up) {}
+
+
+
+/*
+	styles for Tablet
+ -------------------------------------------------------------------- */
+@include respond-to($respond-tablet) {
+
+	[data-page="press"] {
+		.page-title,
+		.page-content {
+			left: 40px;
+		}
+	}
+
+}
+
+
+
+/*
+	styles for Tablet and Phone
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-tablet-down) {}
+
+
+
+/*
+	styles for Phone
+ -------------------------------------------------------------------- */
+@include respond-to($respond-phone) {
+
+	[data-page="press"] {
+		.page-marquee {
+			color: #1D262A;
+			font-size: 48px;
+			letter-spacing: normal;
+			line-height: 58px;
+		}
+		
+		.page-title 
+			.title-3 {
+				color: #1D262A;
+				font-size: 18px;
+				font-weight: 700;
+				line-height: 21px;
+			}
+		
+		.page-title,
+		.page-content {
+			left: auto;
+		}
+
+		.item {
+			width: 111px;
+			height: 111px;
+			margin-bottom: 55px;
+		}
+
+		.item-logo {
+			padding: 0 10px;
+		}
+
+		.img--centered {
+			height: 111px;
+			line-height: 109px;
+		}
+
+		.items-list {
+			max-width: 100%;
+			padding: 36px 0;
+			[class^="col-"] {
+				&:nth-child(10n+1) {
+					top: 0;
+					left: -12px;
+				}
+				&:nth-child(10n+2) {
+					top: 60px;
+					left: 7px;
+				}
+				&:nth-child(10n+3) {
+					top: 1px;
+					left: 11px;
+				}
+				&:nth-child(10n+4) {
+					top: 85px;
+					left: 0;
+				}
+				&:nth-child(10n+5) {
+					top: 55px;
+					left: -30px;
+				}
+				&:nth-child(10n+6) {
+					top: 70px;
+					left: 0;
+				}
+				&:nth-child(10n+7) {
+					top: 60px;
+					left: 7px;
+				}
+				&:nth-child(10n+8) {
+					top: 100px;
+					left: 11px;
+				}
+				&:nth-child(10n+9) {
+					top: 85px;
+					left: 0;
+				}
+				&:nth-child(10n+10) {
+					top: 125px;
+					left: 10px;
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,201 @@
+/*
+	styles for Large Desktops
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-large) {}
+
+
+
+/*
+	styles for Desktop
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-desktop) {}
+
+
+
+/*
+	styles for Tablet and Desktops
+ -------------------------------------------------------------------- */
+@include respond-to($respond-tablet-up) {
+
+	.page-viewport {
+		transform: none !important;
+	}
+
+}
+
+
+
+/*
+	styles for Tablet
+ -------------------------------------------------------------------- */
+@include respond-to($respond-tablet) {
+
+	[data-page="main"] {
+		.section-content {
+			left: 40px;
+		}
+		h2 {
+			font-size: 62px;
+			line-height: 65px;
+		}
+	}
+
+	.page-viewport {
+		left: calc(50% + 11px);
+	}
+
+}
+
+
+
+/*
+	styles for Tablet and Phone
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-tablet-down) {}
+
+
+
+/*
+	styles for Phone
+ -------------------------------------------------------------------- */
+@include respond-to($respond-phone) {
+
+	[data-page="main"] {
+		transform: scale(1);
+		&.viewport--fixed {
+			transform: unset;
+		}
+		.section-content {
+			left: auto;
+			max-width: 260px;
+			line-height: 23px;
+			margin: 0 auto;
+			br {
+				display: none;
+			}
+		}
+		h2 {
+			display: none;
+		}
+	}
+
+	.page-viewport {
+		$width: 160px;//290.264px;
+		$height: $width*523.916px/290.264px;
+      
+        width: 15rem;
+        height: 10rem;
+      
+		position: fixed;
+		left: 50%;
+		top: 50vh;
+		width: $width;
+		height: $height;
+		transform: scale(1.1) translate(-125px, 15px);
+		transition: all .2s;
+            
+        // MOBILE FIX
+        .home-mask, .icon-logo, .icon-line {
+          display: none;
+        }
+        .btn--start {
+          position: fixed;
+          left: -10.625rem;
+          bottom: 1.6875rem;
+          width: 12.5rem;
+          text-align: right;
+        }
+        // END MOBILE FIX
+      
+		.viewport {
+			left: 20px;
+			top: 10px;
+			right: 20px;
+			bottom: 20px;
+			border-radius: 10px;
+		}
+		.icon-logo {
+			width: 13px;
+			height: 13px;
+			top: 26px;
+		}
+		.icon-line {
+			bottom: 27px;
+			width: 30px;
+			height: 3px;
+		}
+		.btn--play {
+			//top: calc(50% - 40px);
+		}
+		.tip {
+			position: absolute;
+			left: calc(100% + 25px);
+			top: calc(50% - 80px);
+			font-size: 12px;
+			line-height: 13px;
+			letter-spacing: .1px;
+			white-space: nowrap;
+			transition: top .2s;
+		}
+		.viewport--fixed & {
+			transform: scale(1) translate(-50%, -50%);
+			transition-duration: .4s;
+			.tip {
+				display: none !important;
+			}
+		}
+		.viewport--moved & {
+			.btn--play {
+				top: 50%;
+			}
+			.tip {
+				top: calc(50% - 20px);
+			}
+		}
+	}
+
+	.phone-mask {
+		$width: 128px;//209.362px;
+		$height: $width*446.079px/209.362px;
+		left: 16px;
+		top: 4px;
+		width: $width;
+		height: $height;
+	}
+
+	.viewport {
+		left: 22px;
+		top: 12px;
+		right: 22px;
+		bottom: 23px;
+	}
+    
+    // mobile video
+    .mobile-viewport {
+		$width: 15rem;//290.264px;
+		$height: $width*523.916px/290.264px;
+        
+        width: 15rem;
+        height: 10rem;
+      
+		position: fixed;
+		left: 65%;
+		top: 50vh; //30vh;
+		width: $width;
+		height: $height;
+		transform: scale(1.1) translate(-125px, 15px);
+		transition: all .2s;
+        clip: rect(0px, 300px, 200px, 0px);  
+      
+		.mobile-video {
+			left: 20px;
+			top: 10px;
+			right: 20px;
+			bottom: 20px;
+		}
+        video {
+            width: 90%;
+            //border-radius: 10px;
+        }
+    }
+}

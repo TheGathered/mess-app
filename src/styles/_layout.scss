@@ -1,0 +1,25 @@
+// html,
+// body,
+// .wrapper {
+// 	height: 100%;
+// }
+
+body {
+	min-width: $layout-min-width;
+}
+
+.wrapper-in { // wrapper
+	position: relative;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.section {
+	position: relative;
+}
+
+body {
+	// transition: background 1s ease;
+	transition: background-color .75s;
+	backface-visibility: hidden;
+}

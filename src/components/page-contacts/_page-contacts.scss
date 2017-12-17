@@ -1,0 +1,49 @@
+[data-page="contacts"] {
+	padding-top: 0;
+	
+	> .container {
+		padding-left: 0;
+		padding-right: 0;
+		height: 100vh;
+	}
+
+	.page-body {
+		display: table;
+		width: 100%;
+		height: 100%;
+		max-width: 735px;
+	}
+
+	.page-content {
+		display: table-cell;
+		vertical-align: middle;
+		width: 100%;
+	}
+
+	.page-meta {
+		@include stretch-x;
+		bottom: 24px;
+		font-size: 13px;
+		line-height: 14px;
+		font-family: $font-family-meta;
+		a {
+			color: $text-color;
+		}
+		.column {
+			position: relative;
+			width: (100%/3);
+		}
+		.column--left {
+			left: -5px;
+		}
+	}
+
+}
+
+[data-show="contacts"] {
+	.btn--proposal {
+		display: none;
+	}
+	.page-marquee {
+	}
+}

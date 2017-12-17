@@ -1,0 +1,43 @@
+$links-offset: 26px;
+
+.nav-main {
+	margin-left: 42px;
+	font-size: 15px;
+	line-height: 1;
+
+	a {
+		position: relative;
+		transition: color .3s ease-in-out;
+		color: $dark;
+		&::after {
+			content: '';
+			@include stretch-x(-2px, -2px);
+			bottom: -4px;
+			border-bottom: 2px solid $purple;
+			transform-origin: 50% 50%;
+			transform: scaleX(0);
+			transition: transform .2s;
+		}
+	}
+
+	ul {
+		margin-left: -$links-offset/2;
+		margin-right: -$links-offset/2;
+		margin-bottom: 0;
+	}
+
+	li {
+		padding-left: $links-offset/2;
+		padding-right: $links-offset/2;
+	}
+
+	a:hover,
+	li.active a {
+		color: $purple;
+		font-weight: 700;
+		&::after {
+			transform: scaleX(1);
+		}
+	}
+
+}

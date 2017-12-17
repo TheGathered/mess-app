@@ -1,0 +1,166 @@
+/*
+	styles for Large Desktops
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-large) {}
+
+
+
+/*
+	styles for Desktop
+ -------------------------------------------------------------------- */
+@include respond-to($respond-desktop) {
+
+	.header {
+		.header-logo {
+			margin-left: 5px;
+		}
+	}
+
+}
+
+
+
+/*
+	styles for Tablet and Desktops
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-tablet-up) {}
+
+
+
+/*
+	styles for Tablet
+ -------------------------------------------------------------------- */
+@include respond-to($respond-tablet) {
+
+	.header {
+		.header-logo {
+			margin-left: 0;
+		}
+	}
+
+	.header:not(.header--fixed) .header-controls {
+		@include stretch-x;
+		top: 0;
+		.btn--proposal {
+			right: 10px;
+			top: 5px;
+		}
+	}
+
+}
+
+
+
+/*
+	styles for Tablet and Phone
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-tablet-down) {}
+
+
+
+/*
+	styles for Phone
+ -------------------------------------------------------------------- */
+@include respond-to($respond-phone) {
+
+	$height: 45px;
+	$height-large: 54px;
+
+	.header-wrapper {
+		margin-bottom: -$height;
+	}
+
+	.header {
+		padding-top: 11px;
+
+		.container {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+	}
+
+	.header-wrapper,
+	.header {
+		height: $height;
+	}
+
+	.content {
+		padding-top: $height;
+	}
+
+	.header-logo {
+		margin-left: 0;
+		image-rendering: pixelated;
+		&::before {
+			width: 13px;
+			height: 13px;
+		}
+	}
+
+	.after-logo {
+		&::before {
+			top: 6px;
+			height: 16px;
+		}
+	}
+
+	.header-logo,
+	.after-logo {
+		font-size: 14px;
+	}
+
+	.header-logo:only-child {
+		font-size: 17px;
+		letter-spacing: .1px;
+		&::before {
+			width: 17px;
+			height: 17px;
+		}
+	}
+
+	.header:not(.header--fixed) .header-controls {
+		@include stretch-x;
+		top: 0;
+		.btn--proposal {
+			right: 7px;
+			top: 6px;
+		}
+	}
+
+	.mobile--large {
+		margin-bottom: -$height-large;
+		.header {
+			padding-top: 14px;
+		}
+	}
+
+	.mobile--large,
+	.mobile--large .header {
+		height: $height-large;
+	}
+
+	.mobile--large + .content {
+		padding-top: $height-large;
+	}
+
+	.header--bordered {
+		transition: background-color .6s;
+		background-color: white;
+		&::after {
+			content: '';
+			@include stretch-x;
+			bottom: 0;
+			border-bottom: 1px solid #eeedf4;
+		}
+	}
+
+	body.show--select .header--bordered::after {
+		display: none;
+	}
+
+	.page[data-page="contacts"] {
+		margin-top: 0;
+	}
+
+}

@@ -1,0 +1,7 @@
+{
+  "name": "messapps",
+  "private": true,
+  "dependencies": {
+    "parallax": "^2.1.3"
+  }
+}

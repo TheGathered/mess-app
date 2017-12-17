@@ -1,0 +1,129 @@
+/*
+	styles for Large Desktops
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-large) {}
+
+
+
+/*
+	styles for Desktop
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-desktop) {}
+
+
+
+/*
+	styles for Tablet and Desktops
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-tablet-up) {}
+
+
+
+/*
+	styles for Tablet
+ -------------------------------------------------------------------- */
+@include respond-to($respond-tablet) {
+
+	$column-offset: 40px;
+
+	.form--subscribe {
+		padding: 44px 40px 17px;
+		h3 {
+			font-size: 30px;
+			line-height: 36px;
+			margin-right: 0;
+		}
+		[class^="col-"] {
+			padding-left: $column-offset/2;
+			padding-right: $column-offset/2;
+		}
+		.row {
+			margin-left: -$column-offset/2;
+			margin-right: -$column-offset/2;
+		}
+
+	}
+
+}
+
+
+
+/*
+	styles for Tablet and Phone
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-tablet-down) {}
+
+
+
+/*
+	styles for Phone
+ -------------------------------------------------------------------- */
+@include respond-to($respond-phone) {
+
+	.form--subscribe {
+		box-shadow: none;
+		margin: 0 (-$layout-offset-mobile) 17px;
+		border-radius: 0;
+		padding: 33px $layout-offset-mobile 31px;
+		font-size: 15px;
+		line-height: 20px;
+
+		h6 {
+			margin-bottom: 6px;
+		}
+
+		h3 {
+			font-size: 26px;
+			line-height: 31px;
+			margin-right: 0;
+		}
+
+		.control-label {
+			top: 8px;
+		}
+
+		[class^="col-"] {
+			padding-left: 0;
+			padding-right: 0;
+			&:nth-child(2) {
+				padding-top: 8px;
+			}
+		}
+
+		.row {
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		.form-group {
+			margin-bottom: 26px;
+		}
+
+		.form-controls {
+			padding-top: 27px;
+		}
+
+		.btn--submit {
+			font-size: 13px;
+			letter-spacing: .2px;
+			&::after {
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				right: auto;
+				top: 0;
+				margin-left: 10px;
+				margin-right: -40px;
+				transform: translateY(0) scale(0);
+				transition: all .2s;
+			}
+		}
+
+		form.loading .btn--submit::after {
+			margin-right: 0;
+			transform: translateY(0) scale(1);
+		}
+
+	}
+
+}

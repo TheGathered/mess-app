@@ -1,0 +1,151 @@
+/*
+	styles for Large Desktops
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-large) {}
+
+
+
+/*
+	styles for Desktop
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-desktop) {}
+
+
+
+/*
+	styles for Tablet and Desktops
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-tablet-up) {}
+
+
+
+/*
+	styles for Tablet
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-tablet) {}
+
+
+
+/*
+	styles for Tablet and Phone
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-tablet-down) {}
+
+
+
+/*
+	styles for Phone
+ -------------------------------------------------------------------- */
+@include respond-to($respond-phone) {
+
+	$design-width-phone: 320px;
+	$design-height-phone: 569px;
+
+	@mixin position-phone($size, $x: 0, $y: 0) {
+		width: $size;
+		height: $size;
+		margin-top: -($design-height-phone/2 - $y);
+		margin-left: -($design-width-phone/2 - $x);
+	}
+
+	.bubbles {
+
+		li {
+
+			&:nth-child(1) {
+				@include position-phone(13px, 18px, 143px);
+			}
+
+			&:nth-child(2) {
+				@include position-phone(29px, 270px, 385px);
+			}
+
+			&:nth-child(3) {
+				@include position-phone(20px, 167px, 363px);
+			}
+
+			&:nth-child(4) {
+				@include position-phone(8px, 125px, 159px);
+			}
+
+			&:nth-child(5) {
+				@include position-phone(10px, 138px, 290px);
+			}
+
+			&:nth-child(6) {
+				@include position-phone(10px, 180px, 193px);
+			}
+
+			&:nth-child(7) {
+				@include position-phone(30px, 0, 0);
+			}
+
+			&:nth-child(8) {
+				@include position-phone(27px, 246px, 166px);
+			}
+
+			&:nth-child(9) {
+				@include position-phone(10px, 282px, 322px);
+			}
+
+			&:nth-child(10) {
+				@include position-phone(10px, 643px, 363px);
+			}
+
+			&:nth-child(11) {
+				@include position-phone(10px, 8px, 368px);
+			}
+
+			&:nth-child(12) {
+				@include position-phone(20px, 107px, 429px);
+			}
+
+			&:nth-child(13) {
+				@include position-phone(34px, 29px, 486px);
+			}
+
+			&:nth-child(14) {
+				@include position-phone(19px, 155px, 592px);
+			}
+
+			&:nth-child(15) {
+				@include position-phone(10px, 436px, 587px);
+			}
+
+			&:nth-child(16) {
+				@include position-phone(47px, -100px, 587px);
+			}
+
+			&:nth-child(17) {
+				@include position-phone(27px, -150px, 10px);
+			}
+
+			&:nth-child(18) {
+				@include position-phone(15px, -170px, 300px);
+			}
+
+			&:nth-child(19) {
+				@include position-phone(27px, 500px, 600px);
+			}
+
+			&:nth-child(20) {
+				@include position-phone(27px, 1100px, 10px);
+			}
+
+			&:nth-child(21) {
+				@include position-phone(20px, 1000px, 200px);
+			}
+
+			&:nth-child(22) {
+				@include position-phone(15px, 900px, 350px);
+			}
+
+			&:nth-child(23) {
+				@include position-phone(47px, 1200px, 600px);
+			}
+
+		}
+
+	}
+
+}
