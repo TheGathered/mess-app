@@ -130,14 +130,13 @@
 //		var $text = $pages.find(".test"); //.find('[data-page="awards"]');
 //		
 //		var scroll = function() {
-//			var block_y = $text.offset().top;
-//			var block_h = $text.height();
-//			var viewport_y = $(window).scrollTop();
-//			
-//			var viewport_h = $(window).height();
+//			var block_y = $text.offset().top; //block offset top
+//			var block_h = $text.height(); // block height
+//			var viewport_y = $(window).scrollTop(); //window offset
+//			var viewport_h = $(window).height(); //window height
 //			var start_y = viewport_y + viewport_h;
 //			var delta = start_y - block_y;
-//			var progress = (delta*100/block_h/2).toFixed(2);
+//			var progress = (delta*25/block_h).toFixed(2); //2
 //			var opacity = 1;
 //			if (progress<=40) opacity = progress/100;
 //			if (progress>=70) opacity = (200-progress)/100;
@@ -177,39 +176,58 @@
 		  // exited: function(direction) {}
 		});
         
-      
-        // new waypoint
-//        var testways = new Waypoint({
-//          element: document.getElementById('basic-waypoint'),
-//          handler: function() {
-//            //notify('Basic waypoint triggered');
-//            //console.log('yo');
-//            $( ".mobile-viewport" ).hide();
-//            $( ".page-viewport" ).show();
-//          },
-//          //offset: 20;
-//        });
 		
 		// new & better waypoint
 		
 //		$('#basic-waypoint').waypoint(function(direction) {
-//
-//			if (direction ==='down') {
+//            var y = $(window).scrollTop();
+//            $('.mobile-viewport').css('opacity', 1);
+//            $('.page-viewport').css('opacity', 0);
+//			
+//            if (direction ==='down') {
 //				//$( ".mobile-viewport" ).show();
-//				//$(".mobile-viewport").fadeTo(1000, 0);
-//				$( ".page-viewport" ).fadeTo(10, 1);
-//				$( ".mobile-viewport" ).fadeTo(10, 0);
+//				//$(".mobile-viewport").fadeTo("fast", 0);
+//				$( ".page-viewport" ).animate({ opacity: 1 })
+//				$( ".mobile-viewport" ).animate({ opacity: 0 })
 //				
 //			}
-//			else {
-//				$(".page-viewport").fadeTo(10, 0);
-//				$( ".mobile-viewport" ).fadeTo(10, 1);
+//			else if (direction ==='up') {
+//				//$(".page-viewport").fadeTo(10, 0);
+//				$( ".mobile-viewport" ).animate({ opacity: 1 })
+//                $( ".page-viewport" ).animate({ opacity: 0 })
 //				//$( ".page-viewport" ).show();
 //				//$( ".page-viewport" ).fadeTo(1000, 1);
 //			}
 //		},{
-//			offset: 0
+//			offset: 'bottom-in-view'
 //		});
+      	
+//		var $things = $('#basic-waypoint');
+//        $things.waypoint(function(direction) {
+//			$('.mobile-viewport').css('opacity', 1);
+//            $('.page-viewport').css('opacity', 0);
+//			//var y = $(window).scrollTop();
+//			//console.log(y);
+//			
+//		  if (direction === 'down') {
+//			//$( ".page-viewport" ).animate({ opacity: 1 })
+//			//$( ".mobile-viewport" ).animate({ opacity: 0 })
+//			$('.mobile-viewport').fadeTo("fast", 0);  
+//			$('.page-viewport').fadeTo("fast", 1);  
+//		  }
+//		}, {
+//		  offset: 800
+//		});
+//
+//		$things.waypoint(function(direction) {
+//		  if (direction === 'up') {
+//			$( ".page-viewport" ).animate({ opacity: 0 })
+//			$( ".mobile-viewport" ).animate({ opacity: 1 })    
+//		  }
+//		}, {
+//		  offset: -500
+//		});
+
 
 
 	});

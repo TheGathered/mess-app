@@ -18,10 +18,18 @@
 //	.section-content {
 //		top: -100px;
 //	}
-//	.test {
-//		top: -300px;
-//	}
 
+	.test-title {
+		position: fixed;
+		//display: none;
+		visibility: hidden;
+		font-size: 50px;
+    	top: 12%;
+    	left: 17%;
+		color: red;
+    	z-index: 9999;
+	}
+	
 	.page-title {
 		max-width: 320px;
 	}
@@ -114,4 +122,13 @@
 
 	}
 
+}
+
+[data-show="awards"] {
+	[data-page="awards"] {
+		.test-title {
+			visibility: visible;
+			pointer-events: unset;
+		}
+	}
 }
