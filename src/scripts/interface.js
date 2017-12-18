@@ -100,7 +100,3 @@ $(document).ready(function() {
 //    var div = document.getElementById(id);
 //    div.style.display = div.style.display == "none" ? "block" : "none";
 //}
-
-//AOS.init({
-//  duration: 1000
-//});

@@ -19,14 +19,14 @@
 //		top: -100px;
 //	}
 
-	.test-title {
+	.title--fade {
 		position: fixed;
 		//display: none;
 		visibility: hidden;
-		font-size: 50px;
+		opacity: 0;
+		transition: visibility 0s linear 500ms, opacity 500ms;
     	top: 12%;
-    	left: 17%;
-		color: red;
+    	left: 20%;
     	z-index: 9999;
 	}
 	
@@ -126,9 +126,11 @@
 
 [data-show="awards"] {
 	[data-page="awards"] {
-		.test-title {
+		.title--fade {
 			visibility: visible;
-			pointer-events: unset;
+			opacity: 1;
+			transition: visibility 0s linear 0s, opacity 1500ms;
+			//display: block;
 		}
 	}
 }

@@ -165,6 +165,13 @@
 	}
 }
 
+[data-section="start"] {
+	.page-viewport {
+		visibility: hidden;
+		pointer-events: unset;
+	}
+}
+
 // popup transition
 
 /* overlay at start */

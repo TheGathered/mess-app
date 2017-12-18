@@ -3,11 +3,22 @@
 	.page-marquee {
 		color: #e6e5f1;
 	}
-
+	
 	.page-title,
 	.page-content {
 		position: relative;
 		left: 15px;
+	}
+	
+	.title--fade {
+		position: fixed;
+		//display: none;
+		visibility: hidden;
+		opacity: 0;
+		transition: visibility 0s linear 500ms, opacity 500ms;
+		top: 12%;
+		left: 20%;
+		z-index: 9999;
 	}
 
 	.page-title {
@@ -81,4 +92,15 @@
 
 	}
 
+}
+
+[data-show="press"] {
+	[data-page="press"] {
+		.title--fade {
+			visibility: visible;
+			opacity: 1;
+			transition: visibility 0s linear 0s, opacity 500ms;
+			//display: block;
+		}
+	}
 }
