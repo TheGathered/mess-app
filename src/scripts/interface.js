@@ -62,41 +62,16 @@ $(document).ready(function() {
 //  }
 //});
 
-//$(window).scroll(function(){
-//    var top = ($(window).scrollTop() > 0) ? $(window).scrollTop() : 1;
-//    $('.fade').stop(true, true).fadeTo(0, 1 / (top/2000));
-//    $('.fade').css('top', top * 1);             
-//});
 
-//var divs = $('.test');
-//$(window).scroll(function(){
-//   if($(window).scrollTop()>50){
-//         divs.stop(true,true).fadeIn("fast");
-//   } else {
-//         divs.stop(true,true).fadeOut("fast");
-//   }
-//});
-
-//$(window).scroll(function(){
-//    var top = ($(window).scrollTop() > 0) ? $(window).scrollTop() : 1;
-//    $('.test-title').stop(true, true).fadeTo(0, 1 / top);
-//    $('.test-title').css('top', top * 1.3);             
-//});
-
-
-$(document).ready(function() {
-	//if ($( "body" ).data( "data-show", "awards" )) {
-	if ($( "body" ).attr('data-show') == 'awards'){
-		
-		console.log('y');	
-	}
-	else {
-		//$('.test-title').css('display', 'none');
-		console.log('n');
-	}
-  });
-
-//function togglediv(id) {
-//    var div = document.getElementById(id);
-//    div.style.display = div.style.display == "none" ? "block" : "none";
-//}
+//
+//$(document).ready(function() {
+//	//if ($( "body" ).data( "data-show", "awards" )) {
+//	if ($( "body" ).attr('data-show') == 'awards'){
+//		
+//		console.log('y');	
+//	}
+//	else {
+//		//$('.test-title').css('display', 'none');
+//		console.log('n');
+//	}
+//  });

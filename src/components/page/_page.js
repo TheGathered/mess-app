@@ -54,10 +54,11 @@
 			};
 
 			if (video.mp4||video.webm) {
-				video.html = 	'<video autoplay'+ (video.loop?' loop':'') + (video.muted?' muted':'') +'>' +
+				video.html = 	'<video autoplay'+ (video.loop?' loop':'') + (video.muted?' muted':'') + '>' +
 												(video.mp4?'<source src="'+ video.mp4 +'" type="video/mp4">':'') +
 												(video.webm?'<source src="'+ video.webm +'" type="video/webm">':'') +
 											'</video>';
+				$('.mobile-video').attr('poster', 'samples/video-poster.png');
 			}
 
 		}
@@ -234,23 +235,25 @@
 	var scroll = function() {
 		var y = $(window).scrollTop();
 		
+		if (y===0) {
+			$('.mobile-viewport').css('display', 'block');
+			//$('.page-viewport').css('display', 'none');
+			$('.page-viewport').css('visibility', 'hidden');
+		}
 		
-//		if ((y>=500) && (window.innerWidth > 1024)) {
-//			$('.mobile-viewport').css('display', 'none');
-//			$('.page-viewport').css('visibility', 'visible');
-//		} else {
-//			$('.mobile-viewport').css('display', 'block');
-//			$('.page-viewport').css('visibility', 'hidden');
-//		}
+		if ((y>=500) && (window.innerWidth < 400)) {
+			$('.mobile-viewport').css('display', 'none');
+			$('.page-viewport').css('visibility', 'visible');
+		} else if (window.innerWidth > 400) {
+			$('.page-viewport').css('visibility', 'visible');
+		} else {
+			$('.mobile-viewport').css('display', 'block');
+			$('.page-viewport').css('visibility', 'hidden');
+		}
 		
-//		if (window.innerWidth > 1024) {
-//			$('.mobile-viewport').css('display', 'none');
-//			$('.page-viewport').css('visibility', 'visible');
-//		} 
-//		else {
-//			$('.mobile-viewport').css('display', 'block');
-//			$('.page-viewport').css('visibility', 'hidden');
-//		}
+		if (y>=2900) {
+			$('.page-viewport').css('visibility', 'hidden');
+		}
 		
 		if (y>=75) {
 			$page.addClass('viewport--moved');
@@ -266,6 +269,7 @@
 			pos = false;
 			$page.removeClass('viewport--fixed');
 		}
+		
 	};
 
 	scroll();

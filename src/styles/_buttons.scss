@@ -184,6 +184,11 @@ input[type="button"] {
   background-image: inline('#{$path-inline}/icon-play.svg');
 }
 
+.btn--custom {
+	left: 45%; 
+	top: 16%;
+}
+
 .btn--close {
   position: absolute;
   right: 0;
