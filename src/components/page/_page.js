@@ -153,30 +153,7 @@
 		});
         
 		
-		// new & better waypoint
-		
-//		$('#basic-waypoint').waypoint(function(direction) {
-//            var y = $(window).scrollTop();
-//            $('.mobile-viewport').css('opacity', 1);
-//            $('.page-viewport').css('opacity', 0);
-//			
-//            if (direction ==='down') {
-//				//$( ".mobile-viewport" ).show();
-//				//$(".mobile-viewport").fadeTo("fast", 0);
-//				$( ".page-viewport" ).animate({ opacity: 1 })
-//				$( ".mobile-viewport" ).animate({ opacity: 0 })
-//				
-//			}
-//			else if (direction ==='up') {
-//				//$(".page-viewport").fadeTo(10, 0);
-//				$( ".mobile-viewport" ).animate({ opacity: 1 })
-//                $( ".page-viewport" ).animate({ opacity: 0 })
-//				//$( ".page-viewport" ).show();
-//				//$( ".page-viewport" ).fadeTo(1000, 1);
-//			}
-//		},{
-//			offset: 'bottom-in-view'
-//		});
+		// new waypoint
 		
 //		//var of = $(window).scrollTop();
 //		//console.log(of);
