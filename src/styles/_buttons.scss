@@ -210,3 +210,9 @@ input[type="button"] {
     background-image: inline('#{$path-inline}/spinner-purple.svg');
   }
 }
+
+.btn--responsive {
+	left: -14.4rem;
+    bottom: 18rem;
+	transition: unset;
+}

@@ -41,19 +41,19 @@
 	[data-page="main"] {
 		.section--gc {
 			.mobile-side-text {
-				bottom: 16.3rem;
+				bottom: 14.4rem;
 				position: fixed;
 				left: calc(23%);
 				pointer-events: none;
 				z-index: 1;
-				font-weight: 900;
-				font-size: 2rem; //3rem
+				font-weight: 800;
+				font-size: 46px;
 				overflow: hidden;
-				color: #656667; //#1D262A - base color; #656667 - preview color?!
-				transition: opacity .2s;
+				color: #656667;
+				//transition: opacity .2s;
 				transform: rotate(90deg);
-				line-height: normal;
-				opacity: 0.5;
+				line-height: 56px;
+				//opacity: 0.5;
 				width: 100%;
 			}
 		}

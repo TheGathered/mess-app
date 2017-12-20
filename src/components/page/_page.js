@@ -241,7 +241,7 @@
 			$('.page-viewport').css('visibility', 'hidden');
 		}
 		
-		if ((y>=500) && (window.innerWidth < 400)) {
+		if ((y>=450) && (window.innerWidth < 400)) {
 			$('.mobile-viewport').css('display', 'none');
 			$('.page-viewport').css('visibility', 'visible');
 		} else if (window.innerWidth > 400) {
@@ -261,7 +261,8 @@
 		} else {
 			$page.removeClass('viewport--moved');
 		}
-		if (y>=150) {
+		//if (y>=150)
+		if (y>=450) {
 			pos = y;
 			$page.addClass('viewport--fixed');
 		}
