@@ -1,0 +1,12 @@
+[data-show="main"][data-colour="dark"] {
+	[data-page="main"] {
+		.mobile-text {
+			position: fixed;
+			width: 100%;
+			text-align: center;
+			bottom: 8%;
+			left: 50%;
+			transform: translate(-50%, 0);
+		}
+	}
+}

@@ -27,6 +27,9 @@
 	.page-marquee {
 		left: calc(50% + 120px);
 	}
+//	.desktop-text {
+//		visibility: visible;
+//	}
 
 }
 
@@ -84,6 +87,10 @@
 
 	.nav-tags + .page-flex {
 		margin-top: 0;
+	}
+	
+	.desktop-text {
+		visibility: hidden;
 	}
 
 }
