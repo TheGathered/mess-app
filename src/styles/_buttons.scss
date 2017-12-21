@@ -213,6 +213,9 @@ input[type="button"] {
 
 .btn--responsive {
 	left: -14.4rem;
-    bottom: 18rem;
+    bottom: 25rem;
 	transition: unset;
+	&::after {
+    	width: 3.2rem;
+  }
 }

@@ -165,12 +165,16 @@
 	}
 }
 
-[data-section="start"] {
-	.page-viewport {
-		visibility: hidden;
-		pointer-events: unset;
+[data-show="main"][data-colour="white"] {
+	[data-page="main"] {
+		p {
+			color: #171719;
+		}
 	}
 }
+
+
+
 
 // popup transition
 

@@ -68,4 +68,15 @@
 			vertical-align: top;
 		}
 	}
+	
+	[data-show="main"][data-colour="white"] {
+	[data-page="main"] {
+		.mobile-viewport {
+			display: block;
+		}
+		.page-viewport {
+			visibility: hidden;
+		}
+	}
+	}
 }

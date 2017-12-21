@@ -39,16 +39,9 @@
 @include respond-to($respond-phone) {
 
 	[data-page="main"] {
-		.section--darts {
-//			.page-marquee {
-//				color: #FFFFFF;
-//				font-size: 48px;
-//				letter-spacing: normal;
-//				line-height: 58px;
-//			}
-			
+		.section--darts {		
 			.mobile-side-text {
-				bottom: 13.5rem;
+				bottom: 37%;
 				position: fixed;
 				left: calc(23%);
 				pointer-events: none;
@@ -56,7 +49,7 @@
 				font-weight: 800;
 				font-size: 46px;
 				overflow: hidden;
-				color: #302E48;
+				color: #252239;
 				//transition: opacity .2s;
 				transform: rotate(90deg);
 				line-height: 56px;
@@ -65,5 +58,16 @@
 			}
 		}
 	}
+	
+//	[data-show="main"][data-colour="dark"] {
+//	[data-page="main"] {
+//		.mobile-viewport {
+//			display: none;
+//		}
+//		.page-viewport {
+//			visibility: visible;
+//		}
+//	}
+//	}
 
 }

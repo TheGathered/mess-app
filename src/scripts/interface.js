@@ -55,23 +55,3 @@ $(document).ready(function() {
     //preload: [0,2], // read about this option in next Lazy-loading section
   });
 });
-
-//$(document).ready(function() {
-//  if ((screen.width < 600) && $(".section").data('colour') == 'white') {
-//    $( ".page-viewport" ).hide();
-//  }
-//});
-
-
-//
-//$(document).ready(function() {
-//	//if ($( "body" ).data( "data-show", "awards" )) {
-//	if ($( "body" ).attr('data-show') == 'awards'){
-//		
-//		console.log('y');	
-//	}
-//	else {
-//		//$('.test-title').css('display', 'none');
-//		console.log('n');
-//	}
-//  });
