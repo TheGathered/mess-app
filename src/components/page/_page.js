@@ -237,15 +237,5 @@ $(document).ready(function() {
 //			}	
 //		});
 //	}
-	var viewportWidth = $(window).width();
-	
-		if ($('fieldset.test').hasClass('active')) {
-			console.log("active");
-			//$('body').css('overflow','hidden');
-		}	
 });
 // ----------------------------------------------------------------------
-if ($('fieldset.test').hasClass('active')) {
-			console.log("active");
-			//$('body').css('overflow','hidden');
-		}	
