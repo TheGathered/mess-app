@@ -104,6 +104,9 @@
 	var $btns = $form.find('.btn--next, .btn--submit');
 	var $phone = $('[data-flag="phone"]');
 
+//	if($('[data-step="2"]')) {
+//		console.log('one');
+//	}
 
 	//custom selects
 	$inps.filter('select').selectpicker({
