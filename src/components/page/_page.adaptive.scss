@@ -92,6 +92,10 @@
 	.desktop-text {
 		visibility: hidden;
 	}
+	
+	.dropdown-menu.inner {
+		overflow: hidden !important;
+	}
 
 }
 

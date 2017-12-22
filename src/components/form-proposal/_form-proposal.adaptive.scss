@@ -58,7 +58,7 @@
 		.column--left {
 			width: auto;
 			padding-right: 0;
-			margin-bottom: 40px;
+			margin-bottom: 15%; //40px;
 		}
 
 		.column--right {
@@ -158,6 +158,14 @@
 					}
 				}
 			}
+		}
+		
+		
+		.controls--padding {
+			padding-bottom: 15%;
+		}
+		.button--padding {
+			padding-top: 10%;
 		}
 
 	} 

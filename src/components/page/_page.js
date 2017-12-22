@@ -231,14 +231,11 @@
 $(document).ready(function() {
 	var viewportWidth = $(window).width();
 	if (viewportWidth <= 450) {
-		$('.form-control').on("focus", function(){
+		$('.control--fixed').on("focus", function(){
 			if ($(this).is( ":focus" )) {
 				$('body').css('overflow','hidden');
 			}	
 		});
-//		$('.form-control').on("focusout", function(){
-//			$('body').css('overflow','hidden');
-//		});
 	}
 });
 // ----------------------------------------------------------------------
