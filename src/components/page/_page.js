@@ -229,13 +229,23 @@
 	----------------------------------------------------------------------- */
 
 $(document).ready(function() {
+//	var viewportWidth = $(window).width();
+//	if (viewportWidth <= 450) {
+//		$('.control--fixed').on("focus", function(){
+//			if ($(this).is( ":focus" )) {
+//				$('body').css('overflow','hidden');
+//			}	
+//		});
+//	}
 	var viewportWidth = $(window).width();
-	if (viewportWidth <= 450) {
-		$('.control--fixed').on("focus", function(){
-			if ($(this).is( ":focus" )) {
-				$('body').css('overflow','hidden');
-			}	
-		});
-	}
+	
+		if ($('fieldset.test').hasClass('active')) {
+			console.log("active");
+			//$('body').css('overflow','hidden');
+		}	
 });
 // ----------------------------------------------------------------------
+if ($('fieldset.test').hasClass('active')) {
+			console.log("active");
+			//$('body').css('overflow','hidden');
+		}	
