@@ -104,10 +104,6 @@
 	var $btns = $form.find('.btn--next, .btn--submit');
 	var $phone = $('[data-flag="phone"]');
 
-//	if($('[data-step="2"]')) {
-//		console.log('one');
-//	}
-
 	//custom selects
 	$inps.filter('select').selectpicker({
 		style: null
@@ -117,7 +113,15 @@
 		var $label = $(this);
 		$label.attr('data-text', $label.text());
 	});
-
+	
+	//long-select 
+	var bs_select = $form.find('.bootstrap-select').find('.open');
+	$(bs_select).addClass('select--overflow');
+	
+	var select_ul = $form.find('.bootstrap-select').find('.inner');
+	$(select_ul).addClass('list--long');
+	//end long-select
+	
 	$inps.filter('select')
 		.on('show.bs.select', function (e) {
 	  	$(this).parents('.form-group').addClass('open-select');
@@ -185,6 +189,14 @@
 	$btns.filter('[data-next]').on('click', function() {
 		var step = $(this).attr('data-next');
 		change_step(step);
+		
+		//prevent-scroll
+		if (step >=2 ) {
+			$('body').addClass('stop-scrolling');
+		} else {
+			$('body').removeClass('stop-scrolling');
+		}
+		//end prevent-scroll
 	});
 
 

@@ -28,30 +28,34 @@
 
 })();
 
-// video popup; magnific-popup lib.
 
+// video popup; magnific-popup lib.
 $(document).ready(function() {
   $('.popup-trigger').magnificPopup({
-  //delegate: 'a', // child items selector, by clicking on it popup will open
+    disableOn: function() {
+      if( $(window).width() < 600 ) {
+        return false;
+      }
+      return true;
+    },
     items: [
       {
         src: 'samples/video.mp4'
       },
-//      {
-//        src: 'samples/video.mp4',
-//      },
-//      {
-//        src: 'samples/video.mp4',
-//      },
-//      {
-//        src: 'samples/video.mp4',
-//      },
+  //      {
+  //        src: 'samples/video.mp4',
+  //      },
+  //      {
+  //        src: 'samples/video.mp4',
+  //      },
+  //      {
+  //        src: 'samples/video.mp4',
+  //      },
     ],
+    // content type
     type: 'iframe',
-    // Delay in milliseconds before popup is removed
-    removalDelay: 400,
-    // Class that is added to popup wrapper and background; make it unique to apply your CSS animations just to this exact popup
-    mainClass: 'mfp-fade',
-    //preload: [0,2], // read about this option in next Lazy-loading section
+    
+    // Class to apply your CSS animations just to this exact popup
+    mainClass: 'mfp-fade'
   });
 });

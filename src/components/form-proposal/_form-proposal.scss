@@ -135,3 +135,8 @@ $column-right: 270px;
 	}
 
 } 
+
+.stop-scrolling {
+	//height: 100%;
+	overflow: hidden;
+}

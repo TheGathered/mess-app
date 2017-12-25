@@ -180,5 +180,10 @@
 	    display: block;
 	  }
 	}
-
+	.select--overflow {
+		overflow: visible !important;
+	}
+	.list--long {
+		max-height: 580px !important;
+	}
 }

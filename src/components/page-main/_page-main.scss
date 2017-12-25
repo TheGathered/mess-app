@@ -182,9 +182,9 @@
 .mfp-fade.mfp-bg {
   opacity: 0;
 
-  -webkit-transition: all 0.15s ease-out;
-  -moz-transition: all 0.15s ease-out;
-  transition: all 0.15s ease-out;
+  -webkit-transition: all 0.35s ease-out;
+  -moz-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out;
 }
 /* overlay animate in */
 .mfp-fade.mfp-bg.mfp-ready {
@@ -199,9 +199,9 @@
 .mfp-fade.mfp-wrap .mfp-content {
   opacity: 0;
 
-  -webkit-transition: all 0.15s ease-out;
-  -moz-transition: all 0.15s ease-out;
-  transition: all 0.15s ease-out;
+  -webkit-transition: all 0.35s ease-out;
+  -moz-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out;
 }
 /* content animate it */
 .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
@@ -210,4 +210,7 @@
 /* content animate out */
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
   opacity: 0;
+}
+.mfp-iframe-scaler {
+  padding-top: 62.25%;
 }

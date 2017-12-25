@@ -80,9 +80,10 @@
                     </div>
                   </div>
                   <!-- mobile video box -->
-                  <div class="mobile-viewport home-wp mfp-fade"> <video class="mobile-video" poster="samples/video-poster.png">
+                  <div class="mobile-viewport home-wp"> <video class="mobile-video" poster="samples/video-poster.png">
   		<source src="samples/video.mp4" type="video/mp4">
-	  </video> <button type="button" class="btn--unstyled btn--play btn--custom popup-trigger visible-xs"></button> <button type="button" data-scroll=".section--gc" class="btn--unstyled btn--start text--uppercase btn--responsive">Our Work</button> </div>
+	  </video>
+                    <!-- deleted class: popup-trigger --><button type="button" class="btn--unstyled btn--play btn--custom visible-xs"></button> <button type="button" data-scroll=".section--gc" class="btn--unstyled btn--start text--uppercase btn--responsive">Our Work</button> </div>
                   <!-- /mobile video box -->
                   <!--
       <div class="tip hidden-xs hidden-md hidden-lg">
@@ -96,7 +97,6 @@
                   <div data-marker="section-bottom"></div>
                 </section>
                 <!-- /section-start -->
-                <!--			<div class="waypoint" id="basic-waypoint"></div>-->
                 <div class="page-viewport popup-trigger mfp-fade">
                   <div class="viewport" data-target="video"></div> <i class="icon icon-logo"></i>
                   <div class="icon icon-line"></div> <button type="button" class="btn--unstyled btn--play visible-xs"></button>
@@ -110,13 +110,6 @@
                   <!--visible-xs removed from tip-->
                   <div class="tip"> Play video to<br /> learn about<br /> our work </div>
                 </div>
-                <!--
-				<div class="tip hidden-xs hidden-md hidden-lg">
-					Play video to<br /> 
-					learn about<br /> 
-					our work
-				</div>
--->
                 <!-- section-gc -->
                 <section class="section section--gc" data-colour="dark" id="work-anchor">
                   <div class="block-table">
@@ -400,25 +393,23 @@
                           <div class="column column--right">
                             <div class="form-group"> <label class="control-label">Choose <b>category</b> of your project:</label>
                               <div class="controls"> <select class="form-control" title="Select" name="category" required>
-								<option>Art & Design</option>
-								<option>Auto & Vehicles</option>
-								<option>Beauty</option>
-								<option>Business</option>
-								<option>Social Media</option>
-<!--
+								<option>Education</option>
 								<option>Entertainment</option>
+								<option>Finance</option>
 								<option>Food & Drink</option>
-								<option>Health</option>
--->
+								<option>Health & Fitness</option>
+								<option>Music</option>
+								<option>Travel</option>
+								<option>Other</option>
 							</select> <button type="button" class="btn--unstyled btn--close"><i class="icon icon-close"></i></button> <button type="button" class="btn--unstyled btn--brand btn--apply">Continue</button> </div>
                             </div>
                             <div class="form-group"> <label class="control-label">What is your <b>goal</b>?</label>
                               <div class="controls"> <select class="form-control" title="Select" name="goal" required>
-								<option>Point 1</option>
-								<option>Point 2</option>
-								<option>Point 3</option>
-								<option>Point 4</option>
-								<option>Point 5</option>
+								<option>Earn revenue</option>
+								<option>Solve a problem</option>
+								<option>Help others</option>
+								<option>Create something unique</option>
+<!--								<option>Point 5</option>-->
 							</select> <button type="button" class="btn--unstyled btn--close"><i class="icon icon-close"></i></button> <button type="button" class="btn--unstyled btn--brand btn--apply">Continue</button> </div>
                             </div>
                             <div class="form-controls"> <button type="button" class="btn--unstyled btn--brand btn--next" data-next="2"><span>Continue</span></button> </div>
