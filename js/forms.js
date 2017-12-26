@@ -191,14 +191,16 @@
 		change_step(step);
 		
 		//prevent-scroll
-		if (step >=2 ) {
-			$('body').addClass('stop-scrolling');
-		} else {
-			$('body').removeClass('stop-scrolling');
+		if (step >= 2 && step <= 3) {
+            $("#press, #awards, #main").hide();
+          console.log(step);
 		}
 		//end prevent-scroll
 	});
-
+  
+    $('.header-logo, .tab--work').on('click', function() {
+        $("#press, #awards, #main").show();
+    });
 
 	$form.on('submit', function() {
 		send();
@@ -256,6 +258,10 @@
 			$target.empty();
 		});
 	});
+	
+//	if($('body').hasClass('page--loaded')) {
+//				console.log("load");
+//			}
 	
 })();
 // ----------------------------------------------------------------------
