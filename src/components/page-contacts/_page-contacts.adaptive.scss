@@ -39,6 +39,8 @@
 @include respond-to($respond-phone) {
 
 	[data-page="contacts"] {
+        overflow: scroll;
+      
 		> .container {
 			padding-left: 16px;
 			padding-right: 16px;
