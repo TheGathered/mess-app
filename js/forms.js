@@ -193,7 +193,7 @@
 		//prevent-scroll
 		if (step >= 2 && step <= 3) {
             $("#press, #awards, #main").hide();
-          console.log(step);
+          //console.log(step);
 		}
 		//end prevent-scroll
 	});
