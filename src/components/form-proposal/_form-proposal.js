@@ -103,15 +103,15 @@
 		//prevent-scroll
 		if (step >= 2 && step <= 3) {
             $("#press, #awards, #main").hide();
-          //console.log(step);
 		}
-		//end prevent-scroll
+		
 	});
   
-    $('.header-logo, .tab--work').on('click', function() {
-        $("#press, #awards, #main").show();
-    });
-
+        $('.header-logo, .tab--work').on('click', function() {
+            $("#press, #awards, #main").show();
+        });
+        //end prevent-scroll
+  
 	$form.on('submit', function() {
 		send();
 		return false;
@@ -126,9 +126,9 @@
 //            document.body.scrollTop = $(this).offset().top;
 //        });
 //    });
-$(document).on('blur', 'input, textarea', function () {
-    setTimeout(function () {
-        window.scrollTo(document.body.scrollLeft, document.body.scrollTop);
-    }, 0);
-});
+//$(document).on('blur', 'input, textarea', function () {
+//    setTimeout(function () {
+//        window.scrollTo(document.body.scrollLeft, document.body.scrollTop);
+//    }, 0);
+//});
 
