@@ -1,5 +1,6 @@
 [data-page="contacts"] {
 	padding-top: 0;
+  overflow: scroll;
 	
 	> .container {
 		padding-left: 0;
@@ -16,8 +17,9 @@
 
 	.page-content {
 		display: table-cell;
-		vertical-align: middle;
+		//vertical-align: middle;
 		width: 100%;
+      overflow: scroll;
 	}
 
 	.page-meta {
