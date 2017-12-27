@@ -191,30 +191,26 @@
     
     // mobile video frame
     .mobile-viewport {
-		//$width: 160px;//290.264px;
-		//$height: $width*523.916px/290.264px;
-        
-		width: 15rem; //47vw; //15rem;
-		//height: 10rem;//70vh; //35rem;
-		max-height: 70vh;
-      
-		position: fixed;
-		left: 25%;
-		top: 5%;
-		
-		//top: 25vh; //30vh;
-		//width: $width;
-		//height: $height;
-		
-		//transform: scale(1.0) translate(3rem, -18rem); //px
-		//transition: all .2s;
-        //clip: rect(0px, 300px, 200px, 0px);  
-
+//		position: fixed;
+//		width: 15rem; 
+//		max-height: 70vh;
+//		left: 25%;
+//		top: 5%;
+	
         video {
             width: 90%;
 			height: 35%;
             //border-radius: 10px;
         }
     }
+	
+	.mobile-viewport {
+		position: fixed;
+		width: 15rem;
+		height: 35rem;
+		transform: scale(1.0) translate(3rem, -18.5rem); //15% -55%
+		//transition: all .2s;
+    }
+	
 	
 }

@@ -20,6 +20,9 @@
 
 		var $section = $(this);
 		var $text = $section.find('.section-content');
+		
+		//var $text2 = $section.find('.mobile-viewport');
+		
 		var colour = $section.attr('data-colour');
 		var $video = $section.find('[data-source="video"]');
 		var video = false;
@@ -36,6 +39,8 @@
 			if (progress<=40) opacity = progress/100;
 			if (progress>=70) opacity = (200-progress)/100; //200
             $text.css('opacity', opacity);
+            
+			//$text2.css('opacity', opacity);
           
             //if (progress>=70 && $(window).width() < 600) opacity = (400-progress)/100; //200
             //if (progress>=70 && $(window).width() < 600) $text.css('opacity', opacity+2);
@@ -188,8 +193,8 @@
 		} else {
 			$page.removeClass('viewport--moved');
 		}
-		//if (y>=150)
-		if (y>=450) {
+		//if (y>=150) 450
+		if (y>=420) {
 			pos = y;
 			$page.addClass('viewport--fixed');
 		}
@@ -210,17 +215,15 @@
 
 
 /*
-	mobile scroll prevent
 	----------------------------------------------------------------------- */
 
 $(document).ready(function() {
-//	var viewportWidth = $(window).width();
-//	if (viewportWidth <= 450) {
-//		$('.control--fixed').on("focus", function(){
-//			if ($(this).is( ":focus" )) {
-//				$('body').css('overflow','hidden');
-//			}	
-//		});
-//	}
+	var viewportHeight = $( window ).height();
+	console.log(viewportHeight);
+	
+	if (viewportHeight > 800) {
+		$('.mobile-viewport').css('transform', 'translate(3rem, -30rem)');
+	}
+	
 });
 // ----------------------------------------------------------------------
