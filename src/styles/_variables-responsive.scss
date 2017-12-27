@@ -45,7 +45,7 @@ $container-lg:            $container-large-desktop !default;
 
 // breakpoints
 // **********************************************************************************
-$respond-phone: 		"(max-width: #{($screen-tablet - 1)})";
+$respond-phone: 		"(min-width: 320px) and (max-width: 480px)";// "(max-width: #{($screen-tablet - 1)})";
 $respond-tablet:		"(min-width: #{($screen-tablet)}) and (max-width: #{($screen-desktop - 1)})";
 $respond-desktop:		"(min-width: #{($screen-desktop)}) and (max-width: #{($screen-lg-desktop - 1)})";
 $respond-large:			"(min-width: #{($screen-lg-desktop)})";

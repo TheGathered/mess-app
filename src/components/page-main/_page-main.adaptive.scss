@@ -191,18 +191,22 @@
     
     // mobile video frame
     .mobile-viewport {
-		//$width: 15rem;//290.264px;
+		//$width: 160px;//290.264px;
 		//$height: $width*523.916px/290.264px;
         
-        width: 15rem;
-        height: 35rem;
+		width: 15rem; //47vw; //15rem;
+		//height: 10rem;//70vh; //35rem;
+		max-height: 70vh;
       
 		position: fixed;
-		//left: 65%;
-		//top: 45vh; //30vh;
+		left: 25%;
+		top: 5%;
+		
+		//top: 25vh; //30vh;
 		//width: $width;
 		//height: $height;
-		transform: scale(1.1) translate(3rem, -18rem); //px
+		
+		//transform: scale(1.0) translate(3rem, -18rem); //px
 		//transition: all .2s;
         //clip: rect(0px, 300px, 200px, 0px);  
 
@@ -212,16 +216,5 @@
             //border-radius: 10px;
         }
     }
-	
-}
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 667px) {
-	  
-//	  [data-page="main"] {
-//		.section--start h2 {
-//			color: red;
-//		}
-//	  }
 	
 }

@@ -179,14 +179,15 @@ input[type="button"] {
   top: 50%;
   transform: translate(-50%, -50%);
   background-size: cover;
-  width: 40px; //48
-  height: 40px; //48
+  width: 50px; //48
+  height: 50px; //48
   background-image: inline('#{$path-inline}/icon-play.svg');
 }
 
-.btn--custom {
-	left: 45%; 
-	top: 16%;
+.play--custom {
+	//left: 45%; 
+	//top: 16%;
+	transform: translate(-75%, -70%);
 }
 
 .btn--close {
@@ -212,8 +213,9 @@ input[type="button"] {
 }
 
 .btn--responsive {
-	left: -14.4rem;
-    bottom: 25rem;
+	//left: -10.4rem;
+	//bottom: 154.7rem;
+	bottom: 86.2%;
 	transition: unset;
 	&::after {
     	width: 3.2rem;
