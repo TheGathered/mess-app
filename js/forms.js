@@ -198,7 +198,8 @@
 	});
   
         $('.header-logo, .tab--work').on('click', function() {
-            $("#press, #awards, #main").show();
+			location.reload();
+			$("#press, #awards, #main").delay(1000).show(0);
         });
         //end prevent-scroll
   
@@ -209,20 +210,6 @@
 
 
 })();
-// ----------------------------------------------------------------------
-//jQuery(function ($) {
-//        $(".control--fixed").focus(function () {
-//          console.log('yo');
-//            document.body.scrollTop = $(this).offset().top;
-//        });
-//    });
-//$(document).on('blur', 'input, textarea', function () {
-//    setTimeout(function () {
-//        window.scrollTo(document.body.scrollLeft, document.body.scrollTop);
-//    }, 0);
-//});
-
-
 /*
 	load Article page
 	used Library:
