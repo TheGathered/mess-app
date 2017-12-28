@@ -21,7 +21,6 @@
 		var $section = $(this);
 		var $text = $section.find('.section-content');
 		
-		//var $text2 = $section.find('.mobile-viewport');
 		
 		var colour = $section.attr('data-colour');
 		var $video = $section.find('[data-source="video"]');
@@ -37,14 +36,27 @@
 			var progress = (delta*100/block_h/2).toFixed(2);
 			var opacity = 1;
 			if (progress<=40) opacity = progress/100;
-			if (progress>=70) opacity = (200-progress)/100; //200
+			if (progress>=70) opacity = (200-progress)/100;
             $text.css('opacity', opacity);
-            
-			//$text2.css('opacity', opacity);
           
             //if (progress>=70 && $(window).width() < 600) opacity = (400-progress)/100; //200
             //if (progress>=70 && $(window).width() < 600) $text.css('opacity', opacity+2);
+			var $page = $('[data-page=main]');
+			var $text2 = $page.find('.section--start');
+			var $cont = $text2.find('.section-content');
 			
+			if (viewport_h <= 820) {
+				var opacity = 1;
+				$cont.css('opacity', opacity);
+				
+//				var progress = (delta*100/block_h/2).toFixed(2); //*50
+//				console.log(progress);
+//				if (progress<=40) opacity = progress/100;
+//				console.log('opacity1 -> ' + opacity);
+//				if (progress>=70) opacity = (200-progress)/100;
+//				console.log('opacity2 -> ' + opacity);
+//				$text.css('opacity', opacity);
+			}
 		};
 
 		scroll();
@@ -193,8 +205,8 @@
 		} else {
 			$page.removeClass('viewport--moved');
 		}
-		//if (y>=150) 450
-		if (y>=420) {
+		//if (y>=150) 420
+		if (y>=150) {
 			pos = y;
 			$page.addClass('viewport--fixed');
 		}

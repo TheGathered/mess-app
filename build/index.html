@@ -77,22 +77,6 @@
                         <p class="visible-xs"> App development, design and consulting<br /> for those who want to be successfull </p>
                       </div>
                       <div class="" href="samples/video.mp4" data-source="video" data-mp4="samples/video.mp4" data-webm="" data-loop="true" data-mute="true"></div>
-                      <!-- mobile video box -->
-                      <!--
-			<div class="mobile-viewport home-wp">
-
-				<video class="mobile-video" poster="samples/video-poster.png">
-					<source src="samples/video.mp4" type="video/mp4">
-				</video>
-
-				
-				<button type="button" class="btn--unstyled btn--play play--custom visible-xs"></button>
-
-				<button type="button" data-scroll=".section--gc" class="btn--unstyled btn--start text--uppercase btn--responsive">Our Work</button>
-
-			</div>
--->
-                      <!-- /mobile video box -->
                     </div>
                   </div>
                   <!-- mobile video box -->
@@ -106,15 +90,16 @@
           learn about<br /> 
           our work
       </div>
--->
-                  <!--	<button type="button" data-scroll=".section--gc" class="btn--unstyled btn--start text--uppercase hidden-xs">Our Work</button>-->
+--><button type="button" data-scroll=".section--gc" class="btn--unstyled btn--start text--uppercase hidden-xs">Our Work</button>
                   <div class="section-info text--uppercase hidden-xs">100+ Projects Done</div>
                   <div data-marker="section-top"></div>
                   <div data-marker="section-bottom"></div>
                 </section>
                 <!-- /section-start -->
                 <div class="page-viewport popup-trigger mfp-fade">
-                  <div class="viewport" data-target="video"></div> <i class="icon icon-logo"></i>
+                  <div class="viewport" data-target="video"></div> <video class="mobile-video visible-xs" poster="samples/video-poster.png">
+  					<source src="samples/video.mp4" type="video/mp4">
+	  			</video> <i class="icon icon-logo"></i>
                   <div class="icon icon-line"></div> <button type="button" class="btn--unstyled btn--play visible-xs"></button>
                   <!--hidden-xs add--><svg class="phone-mask home-mask" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="57.4762mm" height="120.121mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                     viewBox="0 0 35361 73901" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -124,8 +109,7 @@
 					</g>
 				</svg>
                   <!--visible-xs removed from tip-->
-                  <div class="tip"> Play video to<br /> learn about<br /> our work </div>
-                </div>
+                  <div class="tip"> Play video to<br /> learn about<br /> our work </div> <button type="button" data-scroll=".section--gc" class="btn--unstyled btn--start text--uppercase">Our Work</button> </div>
                 <!-- section-gc -->
                 <section class="section section--gc" data-colour="dark" id="work-anchor">
                   <div class="block-table">
