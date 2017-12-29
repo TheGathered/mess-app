@@ -41,21 +41,20 @@
           
             //if (progress>=70 && $(window).width() < 600) opacity = (400-progress)/100; //200
             //if (progress>=70 && $(window).width() < 600) $text.css('opacity', opacity+2);
-			var $page = $('[data-page=main]');
-			var $text2 = $page.find('.section--start');
-			var $cont = $text2.find('.section-content');
+			var $page = $('[data-page=main]').find('.section--start');
+			var $cont = $page.find('.section-content');
 			
 			if (viewport_h <= 820) {
 				var opacity = 1;
 				$cont.css('opacity', opacity);
 				
-//				var progress = (delta*100/block_h/2).toFixed(2); //*50
-//				console.log(progress);
-//				if (progress<=40) opacity = progress/100;
-//				console.log('opacity1 -> ' + opacity);
-//				if (progress>=70) opacity = (200-progress)/100;
-//				console.log('opacity2 -> ' + opacity);
-//				$text.css('opacity', opacity);
+				//if (progress<=40) opacity = progress/100;
+				//if (progress>=70) opacity = (400-progress)/100; //600 for 800+ height
+				
+            	//$text.css({'opacity': opacity, 'transition': 'all .7s' });
+				//$text.css('opacity', opacity);
+				//$text.css('transition', 'all .5s'); //1s for 800+ height
+				//$text.fadeIn("slow");
 			}
 		};
 
@@ -231,11 +230,10 @@
 
 $(document).ready(function() {
 	var viewportHeight = $( window ).height();
-	console.log(viewportHeight);
 	
-	if (viewportHeight > 800) {
-		$('.mobile-viewport').css('transform', 'translate(3rem, -30rem)');
-	}
+//	if (viewportHeight > 800) {
+//		$('.mobile-viewport').css('transform', 'translate(3rem, -30rem)');
+//	}
 	
 });
 // ----------------------------------------------------------------------
