@@ -29,6 +29,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:800" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css" />
     <link rel="stylesheet" href="css/style.min.css">
   </head>
 
@@ -64,7 +65,7 @@
         <main class="content">
           <!-- page-main -->
           <div class="page" data-page="main" id="main">
-            <div class="container">
+            <div class="container hidden-xs">
               <div class="page-body">
                 <div class="page-marquee text--uppercase"><span>work work work work work work work work work work work work work work work work work work work work work work work work work</span></div>
                 <!-- section-start -->
@@ -217,182 +218,256 @@
             </div>
             <div data-marker="page-top"></div>
             <div data-marker="page-bottom"></div>
-          </div>
-          <!-- /page-main -->
-          <!-- page-awards -->
-          <div class="page" data-page="awards" id="awards">
-            <div class="container">
-              <div class="page-body">
-                <div class="page-marquee text--uppercase"><span>awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards</span></div>
-                <div class="page-title title--fade hidden-xs">
-                  <h3 class="title-3">Our portfolio helped us win some awards.</h3>
-                </div>
-                <div class="page-title text--center title--fade visible-xs">
-                  <h3 class="title-3">Our portfolio helped us win <br /> some awards.</h3>
-                </div>
-                <div class="page-content">
-                  <!-- items-list -->
-                  <div class="items-list">
-                    <div class="row block-in">
-                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                        <!-- item -->
-                        <div class="item">
-                          <div class="item-title text--center"><b>Top App Development Company, USA</b></div>
-                          <div class="item-logo text--center">
-                            <div class="img--centered"> <img src="samples/logo-app-futura.png" srcset="samples/logo-app-futura.png 1x, samples/logo-app-futura@2x.png 2x" class="img--fluid img--inline" /> </div>
-                          </div>
-                        </div>
-                        <!-- /item -->
-                      </div>
-                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                        <!-- item -->
-                        <div class="item">
-                          <div class="item-title text--center"><b>Top App Developers, World</b></div>
-                          <div class="item-logo text--center">
-                            <div class="img--centered"> <img src="samples/logo-mobile.png" srcset="samples/logo-mobile.png 1x, samples/logo-mobile@2x.png 2x" class="img--fluid img--inline" /> </div>
-                          </div>
-                        </div>
-                        <!-- /item -->
-                      </div>
-                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                        <!-- item -->
-                        <div class="item">
-                          <div class="item-title text--center"><b>Top App Developers, New York</b></div>
-                          <div class="item-logo text--center">
-                            <div class="img--centered"> <img src="samples/logo-carnival.png" srcset="samples/logo-carnival.png 1x, samples/logo-carnival@2x.png 2x" class="img--fluid img--inline" /> </div>
-                          </div>
-                        </div>
-                        <!-- /item -->
-                      </div>
-                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                        <!-- item -->
-                        <div class="item">
-                          <div class="item-title text--center"><b>Top App Developers, New York</b></div>
-                          <div class="item-logo text--center">
-                            <div class="img--centered"> <img src="samples/logo-app-developers.png" srcset="samples/logo-app-developers.png 1x, samples/logo-app-developers@2x.png 2x" class="img--fluid img--inline" /> </div>
-                          </div>
-                        </div>
-                        <!-- /item -->
-                      </div>
-                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                        <!-- item -->
-                        <div class="item">
-                          <div class="item-title text--center"><b>Top App Developers, New York</b></div>
-                          <div class="item-logo text--center">
-                            <div class="img--centered"> <img src="samples/logo-new-clutch.png" srcset="samples/logo-new-clutch.png 1x, samples/logo-new-clutch@2x.png 2x" class="img--fluid img--inline" /> </div>
-                          </div>
-                        </div>
-                        <!-- /item -->
+            <!-- page-main-mob -->
+            <div class="visible-xs" id="test">
+              <div id="fullpage">
+                <!--home section-->
+                <div class="section">
+                  <div class="block-table">
+                    <div class="block-cell-mobile">
+                      <div class="">
+                        <h2 class="mobile-header visible-xs">We <br /> build <br /> dreams</h2>
+                        <p class="mobile-intro visible-xs"> App development, design and consulting<br /> for those who want to be successfull </p>
                       </div>
                     </div>
                   </div>
-                  <!-- /items-list -->
+                  <!-- mobile video box -->
+                  <div class="mobile-viewport home-wp"> <video class="mobile-video" poster="samples/video-poster.png">
+							<source src="samples/video.mp4" type="video/mp4">
+						</video>
+                    <!--play button--><button type="button" class="btn--unstyled btn--play play--custom visible-xs"></button>
+                    <!--side button--><button type="button" data-scroll=".section--gc" class="btn--unstyled btn--start text--uppercase btn--responsive">Our Work</button> </div>
                 </div>
-              </div>
-            </div>
-            <div data-marker="page-top"></div>
-            <div data-marker="page-bottom"></div>
-          </div>
-          <!-- /page-awards -->
-          <!-- page-press -->
-          <div class="page" data-page="press" id="press">
-            <div class="container">
-              <div class="page-body">
-                <div class="page-marquee text--uppercase"><span>press press press press press press press press press press press press press press press press press press press press press press press press press</span></div>
-                <div class="page-title title--fade hidden-xs">
-                  <h2 class="title-3">And apps we’ve built got featured by top publishers.</h2>
-                </div>
-                <div class="page-title text--center title--fade visible-xs">
-                  <h3 class="title-3">And apps we’ve built got <br /> featured by top publishers.</h3>
-                </div>
-                <div class="page-content">
-                  <!-- items-list -->
-                  <div class="items-list">
-                    <div class="row block-in">
-                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                        <!-- item -->
-                        <div class="item">
-                          <a href="#" class="link--block" target="_blank">
-                            <div class="item-logo">
-                              <div class="img--centered"> <img src="samples/logo-huffpost.png" srcset="samples/logo-huffpost.png 1x, samples/logo-huffpost@2x.png 2x" class="img--fluid" /> </div>
-                            </div>
-                          </a>
+                <!--/home section-->
+                <div class="section dark-section" data-section="dark">
+                  <!-- section-gc -->
+                  <div class="block-table-mobile" id="work-anchor">
+                    <div class="block-cell-mobile">
+                      <div class="content-gc">
+                        <div class="page-marquee text--uppercase"><span>work work work work work work work work work work work work work work work work work work work work work work work work work</span></div> <i class="icon icon-logo"></i>
+                        <div class="icon icon-line"></div> <button type="button" class="btn--unstyled btn--play visible-xs"></button> <svg class="phone-mask-mobile home-mask" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="57.4762mm" height="120.121mm" version="1.1"
+                          style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 35361 73901" xmlns:xlink="http://www.w3.org/1999/xlink">
+									<g>
+										<path class="mask" d="M4278 0l26805 0c2362,0 4278,1916 4278,4278l0 65345c0,2362 -1916,4278 -4278,4278l-26805 0c-2362,0 -4278,-1916 -4278,-4278l0 -65345c0,-2362 1916,-4278 4278,-4278l0 0zm27021 1260c-1481,0 -3943,0 -4089,0 -355,0 -584,264 -668,739 -282,1689 -1200,1805 -1471,1805 -229,0 -14542,0 -14782,0 -271,0 -1199,-127 -1470,-1805 -73,-475 -303,-739 -668,-739 -157,0 -2608,0 -4089,0 -1482,0 -2806,1583 -2806,3093 0,1509 0,63612 0,65406 0,1869 1877,2882 2774,2882 491,0 26810,0 27300,0 897,0 2775,-1013 2775,-2882 0,-1794 0,-64551 0,-65406 11,-1510 -1325,-3093 -2806,-3093z"/>
+										<path class="mask" d="M4424 146l26512 0c2363,1 4278,1916 4278,4278l0 65053c0,2362 -1915,4278 -4278,4278l-26512 0c-2362,0 -4277,-1916 -4277,-4278l-1 -65053c1,-2362 1916,-4277 4278,-4277l0 -1zm26875 1114c-1481,0 -3943,0 -4089,0 -355,0 -584,264 -668,739 -282,1689 -1200,1805 -1471,1805 -229,0 -14542,0 -14782,0 -271,0 -1199,-127 -1470,-1805 -73,-475 -303,-739 -668,-739 -157,0 -2608,0 -4089,0 -1482,0 -2806,1583 -2806,3093 0,1509 0,63612 0,65406 0,1869 1877,2882 2774,2882 491,0 26810,0 27300,0 897,0 2775,-1013 2775,-2882 0,-1794 0,-64551 0,-65406 11,-1510 -1325,-3093 -2806,-3093z"/>
+									</g>
+								</svg>
+                        <!--
+								<video class="mobile-video">
+									<source src="samples/video.mp4" type="video/mp4">
+								</video>
+-->
+                        <p class="text-mobile visible-xs"> “My dream was to help people to find the perfect movies based on their watch history!” - Tomas Gerard, CEO </p> <a href="#" data-load-work class="btn--unstyled btn--brand hidden-xs">View Work</a>
+                        <div class="mobile-side-text text--uppercase visible-xs">
+                          <p>Ar Darts</p>
                         </div>
-                        <!-- /item -->
-                      </div>
-                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                        <!-- item -->
-                        <div class="item">
-                          <a href="#" class="link--block" target="_blank">
-                            <div class="item-logo">
-                              <div class="img--centered"> <img src="samples/logo-the-guardian.png" srcset="samples/logo-the-guardian.png 1x, samples/logo-the-guardian@2x.png 2x" class="img--fluid" /> </div>
-                            </div>
-                          </a>
-                        </div>
-                        <!-- /item -->
-                      </div>
-                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                        <!-- item -->
-                        <div class="item">
-                          <a href="#" class="link--block" target="_blank">
-                            <div class="item-logo">
-                              <div class="img--centered"> <img src="samples/logo-mashable.png" srcset="samples/logo-mashable.png 1x, samples/logo-mashable@2x.png 2x" class="img--fluid" /> </div>
-                            </div>
-                          </a>
-                        </div>
-                        <!-- /item -->
-                      </div>
-                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                        <!-- item -->
-                        <div class="item">
-                          <a href="#" class="link--block" target="_blank">
-                            <div class="item-logo">
-                              <div class="img--centered"> <img src="samples/logo-vanity-fair.png" srcset="samples/logo-vanity-fair.png 1x, samples/logo-vanity-fair@2x.png 2x" class="img--fluid" /> </div>
-                            </div>
-                          </a>
-                        </div>
-                        <!-- /item -->
-                      </div>
-                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                        <!-- item -->
-                        <div class="item">
-                          <a href="#" class="link--block" target="_blank">
-                            <div class="item-logo">
-                              <div class="img--centered"> <img src="samples/logo-tech-crunch.png" srcset="samples/logo-tech-crunch.png 1x, samples/logo-tech-crunch@2x.png 2x" class="img--fluid" /> </div>
-                            </div>
-                          </a>
-                        </div>
-                        <!-- /item -->
                       </div>
                     </div>
                   </div>
-                  <!-- /items-list -->
+                  <!-- /section-gc -->
                 </div>
-              </div>
-            </div>
-            <div data-marker="page-top"></div>
-            <div data-marker="page-bottom"></div>
-          </div>
-          <!-- /page-press -->
-          <!-- page-contacts -->
-          <div class="page" data-page="contacts" id="contacts">
-            <div class="container">
-              <div class="page-body">
-                <div class="page-content">
-                  <!-- form-proposal -->
-                  <div class="form--proposal">
-                    <form action="/">
-                      <fieldset data-step="1">
-                        <div class="form-columns clearfix">
-                          <div class="column column--left">
-                            <div class="form-info">
-                              <h3>Make Dream a Reality</h3>
-                              <p> At Messapps, we don’t just develop apps.<br class="visible-xs" /> We build<br /> dreams. Let’s build yours! </p>
+                <div class="section yellow-section" data-section="yellow">
+                  <!-- section-gc -->
+                  <div class="block-table-mobile">
+                    <div class="block-cell-mobile">
+                      <div class="content-gc">
+                        <div class="page-marquee text--uppercase"><span>work work work work work work work work work work work work work work work work work work work work work work work work work</span></div> <i class="icon icon-logo"></i>
+                        <div class="icon icon-line"></div> <button type="button" class="btn--unstyled btn--play visible-xs"></button> <svg class="phone-mask-mobile home-mask" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="57.4762mm" height="120.121mm" version="1.1"
+                          style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 35361 73901" xmlns:xlink="http://www.w3.org/1999/xlink">
+									<g>
+										<path class="mask" d="M4278 0l26805 0c2362,0 4278,1916 4278,4278l0 65345c0,2362 -1916,4278 -4278,4278l-26805 0c-2362,0 -4278,-1916 -4278,-4278l0 -65345c0,-2362 1916,-4278 4278,-4278l0 0zm27021 1260c-1481,0 -3943,0 -4089,0 -355,0 -584,264 -668,739 -282,1689 -1200,1805 -1471,1805 -229,0 -14542,0 -14782,0 -271,0 -1199,-127 -1470,-1805 -73,-475 -303,-739 -668,-739 -157,0 -2608,0 -4089,0 -1482,0 -2806,1583 -2806,3093 0,1509 0,63612 0,65406 0,1869 1877,2882 2774,2882 491,0 26810,0 27300,0 897,0 2775,-1013 2775,-2882 0,-1794 0,-64551 0,-65406 11,-1510 -1325,-3093 -2806,-3093z"/>
+										<path class="mask" d="M4424 146l26512 0c2363,1 4278,1916 4278,4278l0 65053c0,2362 -1915,4278 -4278,4278l-26512 0c-2362,0 -4277,-1916 -4277,-4278l-1 -65053c1,-2362 1916,-4277 4278,-4277l0 -1zm26875 1114c-1481,0 -3943,0 -4089,0 -355,0 -584,264 -668,739 -282,1689 -1200,1805 -1471,1805 -229,0 -14542,0 -14782,0 -271,0 -1199,-127 -1470,-1805 -73,-475 -303,-739 -668,-739 -157,0 -2608,0 -4089,0 -1482,0 -2806,1583 -2806,3093 0,1509 0,63612 0,65406 0,1869 1877,2882 2774,2882 491,0 26810,0 27300,0 897,0 2775,-1013 2775,-2882 0,-1794 0,-64551 0,-65406 11,-1510 -1325,-3093 -2806,-3093z"/>
+									</g>
+								</svg>
+                        <p class="text-mobile visible-xs"> “My dream was to help people to find the perfect movies based on their watch history!” - Tomas Gerard, CEO </p> <a href="#" data-load-work class="btn--unstyled btn--brand hidden-xs">View Work</a>
+                        <div class="mobile-side-text text--uppercase visible-xs">
+                          <p>Runon</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /section-gc -->
+                </div>
+                <div class="section">
+                  <!-- page-awards -->
+                  <div class="page" data-page="awards" id="awards">
+                    <div class="container">
+                      <div class="page-body">
+                        <div class="page-marquee text--uppercase"><span>awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards</span></div>
+                        <div class="page-title title--fade hidden-xs">
+                          <h3 class="title-3">Our portfolio helped us win some awards.</h3>
+                        </div>
+                        <div class="page-title text--center title--fade visible-xs">
+                          <h3 class="title-3">Our portfolio helped us win <br /> some awards.</h3>
+                        </div>
+                        <div class="page-content">
+                          <!-- items-list -->
+                          <div class="items-list">
+                            <div class="row block-in">
+                              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                <!-- item -->
+                                <div class="item">
+                                  <div class="item-title text--center"><b>Top App Development Company, USA</b></div>
+                                  <div class="item-logo text--center">
+                                    <div class="img--centered"> <img src="samples/logo-app-futura.png" srcset="samples/logo-app-futura.png 1x, samples/logo-app-futura@2x.png 2x" class="img--fluid img--inline" /> </div>
+                                  </div>
+                                </div>
+                                <!-- /item -->
+                              </div>
+                              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                <!-- item -->
+                                <div class="item">
+                                  <div class="item-title text--center"><b>Top App Developers, World</b></div>
+                                  <div class="item-logo text--center">
+                                    <div class="img--centered"> <img src="samples/logo-mobile.png" srcset="samples/logo-mobile.png 1x, samples/logo-mobile@2x.png 2x" class="img--fluid img--inline" /> </div>
+                                  </div>
+                                </div>
+                                <!-- /item -->
+                              </div>
+                              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                <!-- item -->
+                                <div class="item">
+                                  <div class="item-title text--center"><b>Top App Developers, New York</b></div>
+                                  <div class="item-logo text--center">
+                                    <div class="img--centered"> <img src="samples/logo-carnival.png" srcset="samples/logo-carnival.png 1x, samples/logo-carnival@2x.png 2x" class="img--fluid img--inline" /> </div>
+                                  </div>
+                                </div>
+                                <!-- /item -->
+                              </div>
+                              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                <!-- item -->
+                                <div class="item">
+                                  <div class="item-title text--center"><b>Top App Developers, New York</b></div>
+                                  <div class="item-logo text--center">
+                                    <div class="img--centered"> <img src="samples/logo-app-developers.png" srcset="samples/logo-app-developers.png 1x, samples/logo-app-developers@2x.png 2x" class="img--fluid img--inline" /> </div>
+                                  </div>
+                                </div>
+                                <!-- /item -->
+                              </div>
+                              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                <!-- item -->
+                                <div class="item">
+                                  <div class="item-title text--center"><b>Top App Developers, New York</b></div>
+                                  <div class="item-logo text--center">
+                                    <div class="img--centered"> <img src="samples/logo-new-clutch.png" srcset="samples/logo-new-clutch.png 1x, samples/logo-new-clutch@2x.png 2x" class="img--fluid img--inline" /> </div>
+                                  </div>
+                                </div>
+                                <!-- /item -->
+                              </div>
                             </div>
                           </div>
-                          <div class="column column--right">
-                            <div class="form-group"> <label class="control-label">Choose <b>category</b> of your project:</label>
-                              <div class="controls"> <select class="form-control" title="Select" name="category" required>
+                          <!-- /items-list -->
+                        </div>
+                      </div>
+                    </div>
+                    <div data-marker="page-top"></div>
+                    <div data-marker="page-bottom"></div>
+                  </div>
+                  <!-- /page-awards -->
+                </div>
+                <div class="section">
+                  <!-- page-press -->
+                  <div class="page" data-page="press" id="press">
+                    <div class="container">
+                      <div class="page-body">
+                        <div class="page-marquee text--uppercase"><span>press press press press press press press press press press press press press press press press press press press press press press press press press</span></div>
+                        <div class="page-title title--fade hidden-xs">
+                          <h2 class="title-3">And apps we’ve built got featured by top publishers.</h2>
+                        </div>
+                        <div class="page-title text--center title--fade visible-xs">
+                          <h3 class="title-3">And apps we’ve built got <br /> featured by top publishers.</h3>
+                        </div>
+                        <div class="page-content">
+                          <!-- items-list -->
+                          <div class="items-list">
+                            <div class="row block-in">
+                              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                <!-- item -->
+                                <div class="item">
+                                  <a href="#" class="link--block" target="_blank">
+                                    <div class="item-logo">
+                                      <div class="img--centered"> <img src="samples/logo-huffpost.png" srcset="samples/logo-huffpost.png 1x, samples/logo-huffpost@2x.png 2x" class="img--fluid" /> </div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <!-- /item -->
+                              </div>
+                              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                <!-- item -->
+                                <div class="item">
+                                  <a href="#" class="link--block" target="_blank">
+                                    <div class="item-logo">
+                                      <div class="img--centered"> <img src="samples/logo-the-guardian.png" srcset="samples/logo-the-guardian.png 1x, samples/logo-the-guardian@2x.png 2x" class="img--fluid" /> </div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <!-- /item -->
+                              </div>
+                              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                <!-- item -->
+                                <div class="item">
+                                  <a href="#" class="link--block" target="_blank">
+                                    <div class="item-logo">
+                                      <div class="img--centered"> <img src="samples/logo-mashable.png" srcset="samples/logo-mashable.png 1x, samples/logo-mashable@2x.png 2x" class="img--fluid" /> </div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <!-- /item -->
+                              </div>
+                              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                <!-- item -->
+                                <div class="item">
+                                  <a href="#" class="link--block" target="_blank">
+                                    <div class="item-logo">
+                                      <div class="img--centered"> <img src="samples/logo-vanity-fair.png" srcset="samples/logo-vanity-fair.png 1x, samples/logo-vanity-fair@2x.png 2x" class="img--fluid" /> </div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <!-- /item -->
+                              </div>
+                              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                                <!-- item -->
+                                <div class="item">
+                                  <a href="#" class="link--block" target="_blank">
+                                    <div class="item-logo">
+                                      <div class="img--centered"> <img src="samples/logo-tech-crunch.png" srcset="samples/logo-tech-crunch.png 1x, samples/logo-tech-crunch@2x.png 2x" class="img--fluid" /> </div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <!-- /item -->
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /items-list -->
+                        </div>
+                      </div>
+                    </div>
+                    <div data-marker="page-top"></div>
+                    <div data-marker="page-bottom"></div>
+                  </div>
+                  <!-- /page-press -->
+                </div>
+                <!--
+				<div class="section">
+					<!-- page-contacts -->
+                <div class="page" data-page="contacts" id="contacts">
+                  <div class="container">
+                    <div class="page-body">
+                      <div class="page-content">
+                        <!-- form-proposal -->
+                        <div class="form--proposal">
+                          <form action="/">
+                            <fieldset data-step="1">
+                              <div class="form-columns clearfix">
+                                <div class="column column--left">
+                                  <div class="form-info">
+                                    <h3>Make Dream a Reality</h3>
+                                    <p> At Messapps, we don’t just develop apps.<br class="visible-xs" /> We build<br /> dreams. Let’s build yours! </p>
+                                  </div>
+                                </div>
+                                <div class="column column--right">
+                                  <div class="form-group"> <label class="control-label">Choose <b>category</b> of your project:</label>
+                                    <div class="controls"> <select class="form-control" title="Select" name="category" required>
 								<option>Education</option>
 								<option>Entertainment</option>
 								<option>Finance</option>
@@ -402,200 +477,571 @@
 								<option>Travel</option>
 								<option>Other</option>
 							</select> <button type="button" class="btn--unstyled btn--close"><i class="icon icon-close"></i></button> <button type="button" class="btn--unstyled btn--brand btn--apply">Continue</button> </div>
-                            </div>
-                            <div class="form-group"> <label class="control-label">What is your <b>goal</b>?</label>
-                              <div class="controls"> <select class="form-control" title="Select" name="goal" required>
+                                  </div>
+                                  <div class="form-group"> <label class="control-label">What is your <b>goal</b>?</label>
+                                    <div class="controls"> <select class="form-control" title="Select" name="goal" required>
 								<option>Earn revenue</option>
 								<option>Solve a problem</option>
 								<option>Help others</option>
 								<option>Create something unique</option>
 <!--								<option>Point 5</option>-->
 							</select> <button type="button" class="btn--unstyled btn--close"><i class="icon icon-close"></i></button> <button type="button" class="btn--unstyled btn--brand btn--apply">Continue</button> </div>
-                            </div>
-                            <div class="form-controls"> <button type="button" class="btn--unstyled btn--brand btn--next" data-next="2"><span>Continue</span></button> </div>
-                          </div>
-                        </div>
-                      </fieldset>
-                      <fieldset data-step="2" style="display: none;">
-                        <div class="form-columns clearfix">
-                          <div class="column column--left">
-                            <div class="form-info">
-                              <h3>Hey! Great Start</h3>
-                              <p> Same ideas can be implemented in different ways<br /> depending on whether it’s a low cost MVP or a<br /> complex polished version that will take the world by<br /> storm. </p>
-                            </div>
-                          </div>
-                          <div class="column column--right">
-                            <div class="form-group"> <label class="control-label">What is your <b>budget</b>?</label>
-                              <div class="controls controls--padding"> <select class="form-control" title="Select" name="budget" required>
+                                  </div>
+                                  <div class="form-controls"> <button type="button" class="btn--unstyled btn--brand btn--next" data-next="2"><span>Continue</span></button> </div>
+                                </div>
+                              </div>
+                            </fieldset>
+                            <fieldset data-step="2" style="display: none;">
+                              <div class="form-columns clearfix">
+                                <div class="column column--left">
+                                  <div class="form-info">
+                                    <h3>Hey! Great Start</h3>
+                                    <p> Same ideas can be implemented in different ways<br /> depending on whether it’s a low cost MVP or a<br /> complex polished version that will take the world by<br /> storm. </p>
+                                  </div>
+                                </div>
+                                <div class="column column--right">
+                                  <div class="form-group"> <label class="control-label">What is your <b>budget</b>?</label>
+                                    <div class="controls controls--padding"> <select class="form-control" title="Select" name="budget" required>
 								<option>Budget 1</option>
 								<option>Budget 2</option>
 								<option>Budget 3</option>
 								<option>Budget 4</option>
 								<option>Budget 5</option>
 							</select> <button type="button" class="btn--unstyled btn--close"><i class="icon icon-close"></i></button> <button type="button" class="btn--unstyled btn--brand btn--apply">Continue</button> </div>
-                            </div>
-                            <div class="form-controls button--padding"> <button type="button" class="btn--unstyled btn--brand btn--next" data-next="3"><span>Continue</span></button> </div>
-                          </div>
-                        </div>
-                      </fieldset>
-                      <fieldset data-step="3" style="display: none;">
-                        <div class="form-columns clearfix">
-                          <div class="column column--left">
-                            <div class="form-info">
-                              <h3>Nice! Almost There!</h3>
-                            </div>
-                          </div>
-                          <div class="column column--right">
-                            <div class="form-group"> <label class="control-label label--mobile">What’s your <b>name</b>?</label>
-                              <div class="controls"> <input type="text" class="form-control control--fixed" name="name" required /> </div>
-                            </div>
-                            <div class="form-group"> <label class="control-label label--mobile">What’s your <b>email</b>?</label>
-                              <div class="controls"> <input type="email" class="form-control control--fixed" name="email" required /> </div>
-                            </div>
-                            <div class="form-group"> <label class="control-label label--mobile">What’s your <b>phone</b>? (optional)</label>
-                              <div class="controls"> <input type="tel" class="form-control control--fixed" name="phone" /> </div>
-                            </div>
-                            <div class="form-controls"> <button type="submit" class="btn--unstyled btn--brand btn--submit"><span>Get Proposal</span></button> </div>
-                          </div>
-                        </div>
-                      </fieldset>
-                      <fieldset data-step="4" style="display: none;">
-                        <div class="form-columns clearix">
-                          <div class="column column--left">
-                            <div class="form-info">
-                              <h3>Thank You!</h3>
-                              <p> We are so excited to work with you, we’ll get back<br /> within 24 hours! Meanwhile, you can read our blog. </p> <a href="blog.html" class="btn--unstyled btn--brand btn--more hidden-xs">Read Blog</a> </div>
-                          </div>
-                          <div class="column column--right">
-                            <!-- list-post -->
-                            <div class="list-post">
-                              <div class="row block-in">
-                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                  <!-- item -->
-                                  <div class="item-post item--block">
-                                    <a href="article.html" data-load class="link--block">
-                                      <div class="item-poster">
-                                        <div class="ratio" data-img-loader> <img src="samples/pic-poster-02.png" srcset="samples/pic-poster-02.png 1x, samples/pic-poster-02@2x.png 2x" /> </div>
-                                      </div>
-                                      <div class="item-body">
-                                        <div class="item-in" data-ellipsis>
-                                          <div class="item-title">3&nbsp;hack that any developer should know</div>
-                                          <div class="item-text">Before creating your own app, you have to&nbsp;go&nbsp;through these 3&nbsp;main steps.</div>
-                                        </div>
-                                        <div class="item-meta">
-                                          <ul class="list--inline">
-                                            <li>#development</li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </a>
                                   </div>
-                                  <!-- /item -->
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                  <!-- item -->
-                                  <div class="item-post item--block">
-                                    <a href="article.html" data-load class="link--block">
-                                      <div class="item-poster">
-                                        <div class="ratio" data-img-loader> <img src="samples/pic-poster-03.png" srcset="samples/pic-poster-03.png 1x, samples/pic-poster-03@2x.png 2x" /> </div>
-                                      </div>
-                                      <div class="item-body">
-                                        <div class="item-in" data-ellipsis>
-                                          <div class="item-title">Why you should focus on&nbsp;UX design?</div>
-                                          <div class="item-text">If&nbsp;you think that your users won&rsquo;t care about user experience of&nbsp;your app&nbsp;&mdash; you are wrong.</div>
-                                        </div>
-                                        <div class="item-meta">
-                                          <ul class="list--inline">
-                                            <li>#strategy</li>
-                                            <li>#development</li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </a>
-                                  </div>
-                                  <!-- /item -->
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                  <!-- item -->
-                                  <div class="item-post item--block">
-                                    <a href="article.html" data-load class="link--block">
-                                      <div class="item-poster">
-                                        <div class="ratio" data-img-loader> <img src="samples/pic-poster-04.png" srcset="samples/pic-poster-04.png 1x, samples/pic-poster-04@2x.png 2x" /> </div>
-                                      </div>
-                                      <div class="item-body">
-                                        <div class="item-in" data-ellipsis>
-                                          <div class="item-title">How to&nbsp;use design strategy</div>
-                                          <div class="item-text">One of&nbsp;the most important things that you would have to&nbsp;spend time on&nbsp;is&nbsp;strategy. Learn 3&nbsp;top skills to&nbsp;improve your app.</div>
-                                        </div>
-                                        <div class="item-meta">
-                                          <ul class="list--inline">
-                                            <li>#strategy</li>
-                                            <li>#development</li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </a>
-                                  </div>
-                                  <!-- /item -->
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                  <!-- item -->
-                                  <div class="item-post item--block">
-                                    <a href="article.html" data-load class="link--block">
-                                      <div class="item-poster">
-                                        <div class="ratio" data-img-loader> <img src="samples/pic-poster-05.png" srcset="samples/pic-poster-05.png 1x, samples/pic-poster-05@2x.png 2x" /> </div>
-                                      </div>
-                                      <div class="item-body">
-                                        <div class="item-in" data-ellipsis>
-                                          <div class="item-title">3&nbsp;hacks that will make you stand out</div>
-                                          <div class="item-text">Learn how to&nbsp;improve your personal brand and gain more audience.</div>
-                                        </div>
-                                        <div class="item-meta">
-                                          <ul class="list--inline">
-                                            <li>#strategy</li>
-                                            <li>#development</li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </a>
-                                  </div>
-                                  <!-- /item -->
+                                  <div class="form-controls button--padding"> <button type="button" class="btn--unstyled btn--brand btn--next" data-next="3"><span>Continue</span></button> </div>
                                 </div>
                               </div>
+                            </fieldset>
+                            <fieldset data-step="3" style="display: none;">
+                              <div class="form-columns clearfix">
+                                <div class="column column--left">
+                                  <div class="form-info">
+                                    <h3>Nice! Almost There!</h3>
+                                  </div>
+                                </div>
+                                <div class="column column--right">
+                                  <div class="form-group"> <label class="control-label label--mobile">What’s your <b>name</b>?</label>
+                                    <div class="controls"> <input type="text" class="form-control control--fixed" name="name" required /> </div>
+                                  </div>
+                                  <div class="form-group"> <label class="control-label label--mobile">What’s your <b>email</b>?</label>
+                                    <div class="controls"> <input type="email" class="form-control control--fixed" name="email" required /> </div>
+                                  </div>
+                                  <div class="form-group"> <label class="control-label label--mobile">What’s your <b>phone</b>? (optional)</label>
+                                    <div class="controls"> <input type="tel" class="form-control control--fixed" name="phone" /> </div>
+                                  </div>
+                                  <div class="form-controls"> <button type="submit" class="btn--unstyled btn--brand btn--submit"><span>Get Proposal</span></button> </div>
+                                </div>
+                              </div>
+                            </fieldset>
+                            <fieldset data-step="4" style="display: none;">
+                              <div class="form-columns clearix">
+                                <div class="column column--left">
+                                  <div class="form-info">
+                                    <h3>Thank You!</h3>
+                                    <p> We are so excited to work with you, we’ll get back<br /> within 24 hours! Meanwhile, you can read our blog. </p> <a href="blog.html" class="btn--unstyled btn--brand btn--more hidden-xs">Read Blog</a> </div>
+                                </div>
+                                <div class="column column--right">
+                                  <!-- list-post -->
+                                  <div class="list-post">
+                                    <div class="row block-in">
+                                      <div class="col-lg-4 col-md-4 col-sm-4">
+                                        <!-- item -->
+                                        <div class="item-post item--block">
+                                          <a href="article.html" data-load class="link--block">
+                                            <div class="item-poster">
+                                              <div class="ratio" data-img-loader> <img src="samples/pic-poster-02.png" srcset="samples/pic-poster-02.png 1x, samples/pic-poster-02@2x.png 2x" /> </div>
+                                            </div>
+                                            <div class="item-body">
+                                              <div class="item-in" data-ellipsis>
+                                                <div class="item-title">3&nbsp;hack that any developer should know</div>
+                                                <div class="item-text">Before creating your own app, you have to&nbsp;go&nbsp;through these 3&nbsp;main steps.</div>
+                                              </div>
+                                              <div class="item-meta">
+                                                <ul class="list--inline">
+                                                  <li>#development</li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </a>
+                                        </div>
+                                        <!-- /item -->
+                                      </div>
+                                      <div class="col-lg-4 col-md-4 col-sm-4">
+                                        <!-- item -->
+                                        <div class="item-post item--block">
+                                          <a href="article.html" data-load class="link--block">
+                                            <div class="item-poster">
+                                              <div class="ratio" data-img-loader> <img src="samples/pic-poster-03.png" srcset="samples/pic-poster-03.png 1x, samples/pic-poster-03@2x.png 2x" /> </div>
+                                            </div>
+                                            <div class="item-body">
+                                              <div class="item-in" data-ellipsis>
+                                                <div class="item-title">Why you should focus on&nbsp;UX design?</div>
+                                                <div class="item-text">If&nbsp;you think that your users won&rsquo;t care about user experience of&nbsp;your app&nbsp;&mdash; you are wrong.</div>
+                                              </div>
+                                              <div class="item-meta">
+                                                <ul class="list--inline">
+                                                  <li>#strategy</li>
+                                                  <li>#development</li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </a>
+                                        </div>
+                                        <!-- /item -->
+                                      </div>
+                                      <div class="col-lg-4 col-md-4 col-sm-4">
+                                        <!-- item -->
+                                        <div class="item-post item--block">
+                                          <a href="article.html" data-load class="link--block">
+                                            <div class="item-poster">
+                                              <div class="ratio" data-img-loader> <img src="samples/pic-poster-04.png" srcset="samples/pic-poster-04.png 1x, samples/pic-poster-04@2x.png 2x" /> </div>
+                                            </div>
+                                            <div class="item-body">
+                                              <div class="item-in" data-ellipsis>
+                                                <div class="item-title">How to&nbsp;use design strategy</div>
+                                                <div class="item-text">One of&nbsp;the most important things that you would have to&nbsp;spend time on&nbsp;is&nbsp;strategy. Learn 3&nbsp;top skills to&nbsp;improve your app.</div>
+                                              </div>
+                                              <div class="item-meta">
+                                                <ul class="list--inline">
+                                                  <li>#strategy</li>
+                                                  <li>#development</li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </a>
+                                        </div>
+                                        <!-- /item -->
+                                      </div>
+                                      <div class="col-lg-4 col-md-4 col-sm-4">
+                                        <!-- item -->
+                                        <div class="item-post item--block">
+                                          <a href="article.html" data-load class="link--block">
+                                            <div class="item-poster">
+                                              <div class="ratio" data-img-loader> <img src="samples/pic-poster-05.png" srcset="samples/pic-poster-05.png 1x, samples/pic-poster-05@2x.png 2x" /> </div>
+                                            </div>
+                                            <div class="item-body">
+                                              <div class="item-in" data-ellipsis>
+                                                <div class="item-title">3&nbsp;hacks that will make you stand out</div>
+                                                <div class="item-text">Learn how to&nbsp;improve your personal brand and gain more audience.</div>
+                                              </div>
+                                              <div class="item-meta">
+                                                <ul class="list--inline">
+                                                  <li>#strategy</li>
+                                                  <li>#development</li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </a>
+                                        </div>
+                                        <!-- /item -->
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- /list-post -->
+                                  <div class="visible-xs text--right"> <a href="blog.html" class="btn--unstyled btn--brand btn--more">Read Blog</a> </div>
+                                </div>
+                              </div>
+                            </fieldset>
+                          </form>
+                        </div>
+                        <!-- /form-proposal -->
+                      </div>
+                    </div>
+                    <div class="page-meta hidden-xs">
+                      <div class="container">
+                        <div class="column column--left text--left">1460 Broadway, New York</div>
+                        <div class="column column--center text--center"><a href="mailto:team@messapps.com">team@messapps.com</a></div>
+                        <div class="column column--right text--right"><a href="tel:+16467414814">+1 (646) 741-4814</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-marker="page-top"></div>
+                  <div data-marker="page-bottom"></div>
+                </div>
+                <!-- /page-contacts -->
+              </div> --> </div>
+          </div>
+          <!-- /page-main -->
+      </div>
+      <!-- /page-main -->
+      <!-- page-awards -->
+      <div class="page" data-page="awards" id="awards">
+        <div class="container">
+          <div class="page-body">
+            <div class="page-marquee text--uppercase"><span>awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards awards</span></div>
+            <div class="page-title title--fade hidden-xs">
+              <h3 class="title-3">Our portfolio helped us win some awards.</h3>
+            </div>
+            <div class="page-title text--center title--fade visible-xs">
+              <h3 class="title-3">Our portfolio helped us win <br /> some awards.</h3>
+            </div>
+            <div class="page-content">
+              <!-- items-list -->
+              <div class="items-list">
+                <div class="row block-in">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                    <!-- item -->
+                    <div class="item">
+                      <div class="item-title text--center"><b>Top App Development Company, USA</b></div>
+                      <div class="item-logo text--center">
+                        <div class="img--centered"> <img src="samples/logo-app-futura.png" srcset="samples/logo-app-futura.png 1x, samples/logo-app-futura@2x.png 2x" class="img--fluid img--inline" /> </div>
+                      </div>
+                    </div>
+                    <!-- /item -->
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                    <!-- item -->
+                    <div class="item">
+                      <div class="item-title text--center"><b>Top App Developers, World</b></div>
+                      <div class="item-logo text--center">
+                        <div class="img--centered"> <img src="samples/logo-mobile.png" srcset="samples/logo-mobile.png 1x, samples/logo-mobile@2x.png 2x" class="img--fluid img--inline" /> </div>
+                      </div>
+                    </div>
+                    <!-- /item -->
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                    <!-- item -->
+                    <div class="item">
+                      <div class="item-title text--center"><b>Top App Developers, New York</b></div>
+                      <div class="item-logo text--center">
+                        <div class="img--centered"> <img src="samples/logo-carnival.png" srcset="samples/logo-carnival.png 1x, samples/logo-carnival@2x.png 2x" class="img--fluid img--inline" /> </div>
+                      </div>
+                    </div>
+                    <!-- /item -->
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                    <!-- item -->
+                    <div class="item">
+                      <div class="item-title text--center"><b>Top App Developers, New York</b></div>
+                      <div class="item-logo text--center">
+                        <div class="img--centered"> <img src="samples/logo-app-developers.png" srcset="samples/logo-app-developers.png 1x, samples/logo-app-developers@2x.png 2x" class="img--fluid img--inline" /> </div>
+                      </div>
+                    </div>
+                    <!-- /item -->
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                    <!-- item -->
+                    <div class="item">
+                      <div class="item-title text--center"><b>Top App Developers, New York</b></div>
+                      <div class="item-logo text--center">
+                        <div class="img--centered"> <img src="samples/logo-new-clutch.png" srcset="samples/logo-new-clutch.png 1x, samples/logo-new-clutch@2x.png 2x" class="img--fluid img--inline" /> </div>
+                      </div>
+                    </div>
+                    <!-- /item -->
+                  </div>
+                </div>
+              </div>
+              <!-- /items-list -->
+            </div>
+          </div>
+        </div>
+        <div data-marker="page-top"></div>
+        <div data-marker="page-bottom"></div>
+      </div>
+      <!-- /page-awards -->
+      <!-- page-press -->
+      <div class="page" data-page="press" id="press">
+        <div class="container">
+          <div class="page-body">
+            <div class="page-marquee text--uppercase"><span>press press press press press press press press press press press press press press press press press press press press press press press press press</span></div>
+            <div class="page-title title--fade hidden-xs">
+              <h2 class="title-3">And apps we’ve built got featured by top publishers.</h2>
+            </div>
+            <div class="page-title text--center title--fade visible-xs">
+              <h3 class="title-3">And apps we’ve built got <br /> featured by top publishers.</h3>
+            </div>
+            <div class="page-content">
+              <!-- items-list -->
+              <div class="items-list">
+                <div class="row block-in">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                    <!-- item -->
+                    <div class="item">
+                      <a href="#" class="link--block" target="_blank">
+                        <div class="item-logo">
+                          <div class="img--centered"> <img src="samples/logo-huffpost.png" srcset="samples/logo-huffpost.png 1x, samples/logo-huffpost@2x.png 2x" class="img--fluid" /> </div>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- /item -->
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                    <!-- item -->
+                    <div class="item">
+                      <a href="#" class="link--block" target="_blank">
+                        <div class="item-logo">
+                          <div class="img--centered"> <img src="samples/logo-the-guardian.png" srcset="samples/logo-the-guardian.png 1x, samples/logo-the-guardian@2x.png 2x" class="img--fluid" /> </div>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- /item -->
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                    <!-- item -->
+                    <div class="item">
+                      <a href="#" class="link--block" target="_blank">
+                        <div class="item-logo">
+                          <div class="img--centered"> <img src="samples/logo-mashable.png" srcset="samples/logo-mashable.png 1x, samples/logo-mashable@2x.png 2x" class="img--fluid" /> </div>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- /item -->
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                    <!-- item -->
+                    <div class="item">
+                      <a href="#" class="link--block" target="_blank">
+                        <div class="item-logo">
+                          <div class="img--centered"> <img src="samples/logo-vanity-fair.png" srcset="samples/logo-vanity-fair.png 1x, samples/logo-vanity-fair@2x.png 2x" class="img--fluid" /> </div>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- /item -->
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                    <!-- item -->
+                    <div class="item">
+                      <a href="#" class="link--block" target="_blank">
+                        <div class="item-logo">
+                          <div class="img--centered"> <img src="samples/logo-tech-crunch.png" srcset="samples/logo-tech-crunch.png 1x, samples/logo-tech-crunch@2x.png 2x" class="img--fluid" /> </div>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- /item -->
+                  </div>
+                </div>
+              </div>
+              <!-- /items-list -->
+            </div>
+          </div>
+        </div>
+        <div data-marker="page-top"></div>
+        <div data-marker="page-bottom"></div>
+      </div>
+      <!-- /page-press -->
+      <!-- page-contacts -->
+      <div class="page" data-page="contacts" id="contacts">
+        <div class="container">
+          <div class="page-body">
+            <div class="page-content">
+              <!-- form-proposal -->
+              <div class="form--proposal">
+                <form action="/">
+                  <fieldset data-step="1">
+                    <div class="form-columns clearfix">
+                      <div class="column column--left">
+                        <div class="form-info">
+                          <h3>Make Dream a Reality</h3>
+                          <p> At Messapps, we don’t just develop apps.<br class="visible-xs" /> We build<br /> dreams. Let’s build yours! </p>
+                        </div>
+                      </div>
+                      <div class="column column--right">
+                        <div class="form-group"> <label class="control-label">Choose <b>category</b> of your project:</label>
+                          <div class="controls"> <select class="form-control" title="Select" name="category" required>
+								<option>Education</option>
+								<option>Entertainment</option>
+								<option>Finance</option>
+								<option>Food & Drink</option>
+								<option>Health & Fitness</option>
+								<option>Music</option>
+								<option>Travel</option>
+								<option>Other</option>
+							</select> <button type="button" class="btn--unstyled btn--close"><i class="icon icon-close"></i></button> <button type="button" class="btn--unstyled btn--brand btn--apply">Continue</button> </div>
+                        </div>
+                        <div class="form-group"> <label class="control-label">What is your <b>goal</b>?</label>
+                          <div class="controls"> <select class="form-control" title="Select" name="goal" required>
+								<option>Earn revenue</option>
+								<option>Solve a problem</option>
+								<option>Help others</option>
+								<option>Create something unique</option>
+<!--								<option>Point 5</option>-->
+							</select> <button type="button" class="btn--unstyled btn--close"><i class="icon icon-close"></i></button> <button type="button" class="btn--unstyled btn--brand btn--apply">Continue</button> </div>
+                        </div>
+                        <div class="form-controls"> <button type="button" class="btn--unstyled btn--brand btn--next" data-next="2"><span>Continue</span></button> </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset data-step="2" style="display: none;">
+                    <div class="form-columns clearfix">
+                      <div class="column column--left">
+                        <div class="form-info">
+                          <h3>Hey! Great Start</h3>
+                          <p> Same ideas can be implemented in different ways<br /> depending on whether it’s a low cost MVP or a<br /> complex polished version that will take the world by<br /> storm. </p>
+                        </div>
+                      </div>
+                      <div class="column column--right">
+                        <div class="form-group"> <label class="control-label">What is your <b>budget</b>?</label>
+                          <div class="controls controls--padding"> <select class="form-control" title="Select" name="budget" required>
+								<option>Budget 1</option>
+								<option>Budget 2</option>
+								<option>Budget 3</option>
+								<option>Budget 4</option>
+								<option>Budget 5</option>
+							</select> <button type="button" class="btn--unstyled btn--close"><i class="icon icon-close"></i></button> <button type="button" class="btn--unstyled btn--brand btn--apply">Continue</button> </div>
+                        </div>
+                        <div class="form-controls button--padding"> <button type="button" class="btn--unstyled btn--brand btn--next" data-next="3"><span>Continue</span></button> </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset data-step="3" style="display: none;">
+                    <div class="form-columns clearfix">
+                      <div class="column column--left">
+                        <div class="form-info">
+                          <h3>Nice! Almost There!</h3>
+                        </div>
+                      </div>
+                      <div class="column column--right">
+                        <div class="form-group"> <label class="control-label label--mobile">What’s your <b>name</b>?</label>
+                          <div class="controls"> <input type="text" class="form-control control--fixed" name="name" required /> </div>
+                        </div>
+                        <div class="form-group"> <label class="control-label label--mobile">What’s your <b>email</b>?</label>
+                          <div class="controls"> <input type="email" class="form-control control--fixed" name="email" required /> </div>
+                        </div>
+                        <div class="form-group"> <label class="control-label label--mobile">What’s your <b>phone</b>? (optional)</label>
+                          <div class="controls"> <input type="tel" class="form-control control--fixed" name="phone" /> </div>
+                        </div>
+                        <div class="form-controls"> <button type="submit" class="btn--unstyled btn--brand btn--submit"><span>Get Proposal</span></button> </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <fieldset data-step="4" style="display: none;">
+                    <div class="form-columns clearix">
+                      <div class="column column--left">
+                        <div class="form-info">
+                          <h3>Thank You!</h3>
+                          <p> We are so excited to work with you, we’ll get back<br /> within 24 hours! Meanwhile, you can read our blog. </p> <a href="blog.html" class="btn--unstyled btn--brand btn--more hidden-xs">Read Blog</a> </div>
+                      </div>
+                      <div class="column column--right">
+                        <!-- list-post -->
+                        <div class="list-post">
+                          <div class="row block-in">
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                              <!-- item -->
+                              <div class="item-post item--block">
+                                <a href="article.html" data-load class="link--block">
+                                  <div class="item-poster">
+                                    <div class="ratio" data-img-loader> <img src="samples/pic-poster-02.png" srcset="samples/pic-poster-02.png 1x, samples/pic-poster-02@2x.png 2x" /> </div>
+                                  </div>
+                                  <div class="item-body">
+                                    <div class="item-in" data-ellipsis>
+                                      <div class="item-title">3&nbsp;hack that any developer should know</div>
+                                      <div class="item-text">Before creating your own app, you have to&nbsp;go&nbsp;through these 3&nbsp;main steps.</div>
+                                    </div>
+                                    <div class="item-meta">
+                                      <ul class="list--inline">
+                                        <li>#development</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                              <!-- /item -->
                             </div>
-                            <!-- /list-post -->
-                            <div class="visible-xs text--right"> <a href="blog.html" class="btn--unstyled btn--brand btn--more">Read Blog</a> </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                              <!-- item -->
+                              <div class="item-post item--block">
+                                <a href="article.html" data-load class="link--block">
+                                  <div class="item-poster">
+                                    <div class="ratio" data-img-loader> <img src="samples/pic-poster-03.png" srcset="samples/pic-poster-03.png 1x, samples/pic-poster-03@2x.png 2x" /> </div>
+                                  </div>
+                                  <div class="item-body">
+                                    <div class="item-in" data-ellipsis>
+                                      <div class="item-title">Why you should focus on&nbsp;UX design?</div>
+                                      <div class="item-text">If&nbsp;you think that your users won&rsquo;t care about user experience of&nbsp;your app&nbsp;&mdash; you are wrong.</div>
+                                    </div>
+                                    <div class="item-meta">
+                                      <ul class="list--inline">
+                                        <li>#strategy</li>
+                                        <li>#development</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                              <!-- /item -->
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                              <!-- item -->
+                              <div class="item-post item--block">
+                                <a href="article.html" data-load class="link--block">
+                                  <div class="item-poster">
+                                    <div class="ratio" data-img-loader> <img src="samples/pic-poster-04.png" srcset="samples/pic-poster-04.png 1x, samples/pic-poster-04@2x.png 2x" /> </div>
+                                  </div>
+                                  <div class="item-body">
+                                    <div class="item-in" data-ellipsis>
+                                      <div class="item-title">How to&nbsp;use design strategy</div>
+                                      <div class="item-text">One of&nbsp;the most important things that you would have to&nbsp;spend time on&nbsp;is&nbsp;strategy. Learn 3&nbsp;top skills to&nbsp;improve your app.</div>
+                                    </div>
+                                    <div class="item-meta">
+                                      <ul class="list--inline">
+                                        <li>#strategy</li>
+                                        <li>#development</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                              <!-- /item -->
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                              <!-- item -->
+                              <div class="item-post item--block">
+                                <a href="article.html" data-load class="link--block">
+                                  <div class="item-poster">
+                                    <div class="ratio" data-img-loader> <img src="samples/pic-poster-05.png" srcset="samples/pic-poster-05.png 1x, samples/pic-poster-05@2x.png 2x" /> </div>
+                                  </div>
+                                  <div class="item-body">
+                                    <div class="item-in" data-ellipsis>
+                                      <div class="item-title">3&nbsp;hacks that will make you stand out</div>
+                                      <div class="item-text">Learn how to&nbsp;improve your personal brand and gain more audience.</div>
+                                    </div>
+                                    <div class="item-meta">
+                                      <ul class="list--inline">
+                                        <li>#strategy</li>
+                                        <li>#development</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                              <!-- /item -->
+                            </div>
                           </div>
                         </div>
-                      </fieldset>
-                    </form>
-                  </div>
-                  <!-- /form-proposal -->
-                </div>
+                        <!-- /list-post -->
+                        <div class="visible-xs text--right"> <a href="blog.html" class="btn--unstyled btn--brand btn--more">Read Blog</a> </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                </form>
               </div>
-              <div class="page-meta hidden-xs">
-                <div class="container">
-                  <div class="column column--left text--left">1460 Broadway, New York</div>
-                  <div class="column column--center text--center"><a href="mailto:team@messapps.com">team@messapps.com</a></div>
-                  <div class="column column--right text--right"><a href="tel:+16467414814">+1 (646) 741-4814</a></div>
-                </div>
-              </div>
+              <!-- /form-proposal -->
             </div>
-            <div data-marker="page-top"></div>
-            <div data-marker="page-bottom"></div>
           </div>
-          <!-- /page-contacts -->
-          <!-- page-article -->
-          <div class="page page--article">
-            <div data-target="article"></div> <button type="button" class="btn--unstyled btn--close"><i class="icon icon-close"></i></button> </div>
-          <!-- /page-article -->
-          <!-- subpage-work -->
-          <div class="page page--work">
-            <div data-target="work"></div> <button type="button" class="btn--unstyled btn--close"><i class="icon icon-close"></i></button> </div>
-          <!-- /subpage-work -->
-        </main>
-        <!-- /.content -->
+          <div class="page-meta hidden-xs">
+            <div class="container">
+              <div class="column column--left text--left">1460 Broadway, New York</div>
+              <div class="column column--center text--center"><a href="mailto:team@messapps.com">team@messapps.com</a></div>
+              <div class="column column--right text--right"><a href="tel:+16467414814">+1 (646) 741-4814</a></div>
+            </div>
+          </div>
+        </div>
+        <div data-marker="page-top"></div>
+        <div data-marker="page-bottom"></div>
       </div>
+      <!-- /page-contacts -->
+      <!-- page-article -->
+      <div class="page page--article">
+        <div data-target="article"></div> <button type="button" class="btn--unstyled btn--close"><i class="icon icon-close"></i></button> </div>
+      <!-- /page-article -->
+      <!-- subpage-work -->
+      <div class="page page--work">
+        <div data-target="work"></div> <button type="button" class="btn--unstyled btn--close"><i class="icon icon-close"></i></button> </div>
+      <!-- /subpage-work -->
+      </main>
+      <!-- /.content -->
+    </div>
     </div>
     <!-- /.wrapper -->
     <div class="hidden" data-source="article">

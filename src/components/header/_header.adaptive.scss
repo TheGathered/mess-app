@@ -82,11 +82,13 @@
 
 	.header-wrapper,
 	.header {
-		height: $height;
+		//height: $height;
+		height: 3rem;
 	}
 
 	.content {
-		padding-top: $height;
+		//padding-top: $height;
+		padding-top: 1rem;
 	}
 
 	.header-logo {
@@ -129,15 +131,18 @@
 	}
 
 	.mobile--large {
-		margin-bottom: -$height-large;
+		//margin-bottom: -$height-large;
+		margin-bottom: -1rem;
 		.header {
-			padding-top: 14px;
+			//padding-top: 14px;
+			padding-top: 0.5rem;
 		}
 	}
 
 	.mobile--large,
 	.mobile--large .header {
-		height: $height-large;
+		//height: $height-large;
+		height: 2rem;
 	}
 
 	.mobile--large + .content {

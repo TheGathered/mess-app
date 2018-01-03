@@ -61,6 +61,10 @@
 
 
 /* page MAIN */
+//
+@import "../components/page-main-mobile/page-main-mobile";
+@import "../components/page-main-mobile/page-main-mobile.adaptive";
+//
 @import "../components/page-main/page-main";
 @import "../components/page-main/page-main.adaptive";
 

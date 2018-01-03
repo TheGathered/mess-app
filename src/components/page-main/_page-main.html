@@ -1,8 +1,8 @@
 <!-- page-main -->
 <div class="page" data-page="main" id="main">
-	<div class="container">
+	<div class="container hidden-xs">
 		
-		<div class="page-body">
+        <div class="page-body">
 
 			<div class="page-marquee text--uppercase"><span>work work work work work work work work work work work work work work work work work work work work work work work work work</span></div>
 
@@ -48,12 +48,16 @@
       {% include "section-nyu/_section-nyu.html" %}
 
 		</div>
-
+		
+      
 	</div>
 
 	{% include "parallax/_parallax.html" %}
 
 	<div data-marker="page-top"></div>
 	<div data-marker="page-bottom"></div>
-
+    
+    
+    {% include "page-main-mobile/_page-main-mobile.html" %}
+    
 </div><!-- /page-main -->

@@ -1,0 +1,193 @@
+/*
+	styles for Large Desktops
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-large) {}
+
+
+
+/*
+	styles for Desktop
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-desktop) {}
+@include respond-to($respond-desktop) {
+	
+	[data-page="main"] {
+
+		p {
+			font-size: 18px;
+		}
+	}
+	.tip {
+		display: none;
+	}
+	
+}
+
+
+/*
+	styles for Tablet and Desktops
+ -------------------------------------------------------------------- */
+@include respond-to($respond-tablet-up) {
+
+	.page-viewport {
+		transform: none !important;
+	}
+	.tip {
+		display: none;
+	}
+}
+
+
+
+/*
+	styles for Tablet
+ -------------------------------------------------------------------- */
+@include respond-to($respond-tablet) {
+
+
+}
+
+
+
+/*
+	styles for Tablet and Phone
+ -------------------------------------------------------------------- */
+// @include respond-to($respond-tablet-down) {}
+@include respond-to($respond-tablet-down) {
+}
+/*
+	styles for Phone
+ -------------------------------------------------------------------- */
+@include respond-to($respond-phone) {
+
+    // mobile video frame
+    .mobile-viewport {
+//		position: fixed;
+//		width: 15rem; 
+//		max-height: 70vh;
+//		left: 25%;
+//		top: 5%;
+	
+        video {
+            width: 90%;
+			height: 35%;
+            //border-radius: 10px;
+        }
+    }
+	
+	.mobile-viewport {
+		position: fixed;
+		width: 15rem;
+		height: 35rem;
+		transform: scale(1.0) translate(3rem, -18.5rem); //15% -55%
+		//transition: all .2s;
+    }
+	
+	/////////
+	.block-cell-mobile {
+		margin-left: 2rem;
+		margin-top: 2rem;
+	}
+	.mobile-intro {
+		font-size: .875rem;
+		line-height: 1.25rem;
+    	letter-spacing: normal;
+	}
+	
+	#fullpage .mobile-header {
+		color: #171719;
+    	font-size: 3.5rem;
+		font-weight: 900;
+    	line-height: 3.625rem;
+    	letter-spacing: normal;
+    	margin-bottom: .4375rem;
+	}
+	
+	#fullpage .phone-mask-mobile {
+    	left: 6rem;
+    	top: 6.25rem;
+    	width: 8rem;
+    	height: 17.04527rem;
+    	position: absolute;
+		z-index: 1;
+	}
+	.text-mobile {
+		position: fixed;
+		width: 100%;
+		text-align: center;
+		top: 28%;
+		left: 50%;
+		padding: 0 1.5625rem;
+		-webkit-transform: translate(-50%);
+		-ms-transform: translate(-50%);
+		transform: translate(-50%);
+	}
+	#fullpage .mobile-side-text {
+		position: absolute; //fixed
+		pointer-events: none;
+		font-weight: 800;
+		font-size: 2.875rem;
+		overflow: hidden;
+		-webkit-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		transform: rotate(90deg);
+		line-height: 3.5rem;
+		width: 18.75rem;
+		text-align: center;
+	}
+	#fullpage .page-marquee {
+		top: 0.875rem;
+		bottom: auto;
+		left: 0;
+		right: 0;
+		font-size: 3rem;
+		letter-spacing: normal;
+		line-height: 3.625rem;
+		width: auto;
+		overflow: visible;
+		height: 3.5625rem;
+		transition-duration: .6s;
+		position: absolute;
+	}
+
+	//[data-show="main"] 
+	[data-section="dark"] {
+		.phone-mask-mobile {
+    		fill: #5e6377;
+		}
+
+		.mobile-side-text {
+			top: 36.5%;
+			left: 26.5%;
+			color: #656667;
+		}
+		.btn--play {
+			top: 42%;
+		}
+		.nav-mobi{
+			background-color: #242733 !important;
+			transition: all .7s ease-in-out;
+		}
+//		.mobile--large .header {
+//    		height: 5rem;
+//		}
+	}
+	[data-section="yellow"] {
+		.page-marquee {
+			color: #232e34;
+		}
+		.text-mobile {
+			top: 45%;
+			color: #232e34;
+		}
+
+		.mobile-side-text {
+			top: 36.5%; //30.5%;
+			left: 27.5%;
+			color: #232e34;
+		}
+		.btn--play {
+			top: 42%;
+		}
+	} 
+}

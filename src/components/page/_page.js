@@ -3,7 +3,7 @@
 	used Library:
 	- http://imakewebthings.com/waypoints
 	----------------------------------------------------------------------- */
-(function() {
+if (window.innerWidth > 650) {(function() {
 
 	var $sections = $('[data-colour]');
 
@@ -124,6 +124,7 @@
 	});
 
 })();
+							 }
 // ----------------------------------------------------------------------
 
 
@@ -229,11 +230,43 @@
 	----------------------------------------------------------------------- */
 
 $(document).ready(function() {
-	var viewportHeight = $( window ).height();
-	
-//	if (viewportHeight > 800) {
-//		$('.mobile-viewport').css('transform', 'translate(3rem, -30rem)');
-//	}
-	
+	$('#fullpage').fullpage({
+		//autoScrolling: false,
+		//verticalCentered: true,
+		scrollOverflow: true,
+        //fadingEffect:true,
+        //fadingEffect:'sections',
+		//fitToSection: false
+		afterLoad: function(anchor, index){
+	   		if($('body').hasClass('fp-viewing-1')) {
+				$( "div.wrapper" ).find( "header" ).css( "background-color", "#242733" );
+				$( "header" ).find( ".header-logo" ).css( "color", "#fff" );
+				$( "div.wrapper" ).find( ".nav-main" ).css( "background-color", "#242733" );
+				//$( "div.wrapper" ).find( ".nav-main" ).addClass( "nav-mobi" );
+	   		}
+			if($('body').hasClass('fp-viewing-2')) {
+				$( "div.wrapper" ).find( "header" ).css( "background-color", "#fdd900" );
+				
+				$( "div.wrapper" ).find( ".nav-main" ).css( "background-color", "#fdd900" );
+	   		}
+			if($('body').is('.fp-viewing-0')) {
+				$( "div.wrapper" ).find( "header" ).css( "background-color", "#fff" );
+				$( "div.wrapper" ).find( ".nav-main" ).css( "background-color", "#fff" );
+	   		}
+			if($('body').is('.fp-viewing-3')) {
+				$( "div.wrapper" ).find( "header" ).css( "background-color", "#fff" );
+				$( "div.wrapper" ).find( ".nav-main" ).css('background-color', '#fff');
+	   		}
+//			else {
+//				$( "div.wrapper" ).find( "header" ).css( "background-color", "#fff" );
+//			}
+		},
+//		onLeave: function(anchor, index){
+//	   		if($('.fp-section.active')) {
+//		  		$(this).children('.child').removeClass('extra_class');
+//	   		}
+//		}
+		
+	});
 });
 // ----------------------------------------------------------------------
