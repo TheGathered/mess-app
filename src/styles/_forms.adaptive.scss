@@ -167,16 +167,5 @@
 			box-shadow: none;
 		}
 	}
-  
-//  .form-control {
-//    &:focus,
-//    &:hover {
-//      color: $purple;
-//      border-bottom-color: $purple;
-//    }
-//  }
-  @media (hover: none) {
-    .form-control {}
-  }
 	
 }

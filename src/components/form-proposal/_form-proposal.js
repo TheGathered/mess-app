@@ -22,6 +22,9 @@
 	$form.find('.bootstrap-select').find('.filter-option').each(function() {
 		var $label = $(this);
 		$label.attr('data-text', $label.text());
+        //
+        //$form.find('.bootstrap-select').attr('onclick', '');
+        //
 	});
 	
 	//long-select 

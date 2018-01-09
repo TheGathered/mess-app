@@ -59,3 +59,6 @@ $(document).ready(function() {
     mainClass: 'mfp-fade'
   });
 });
+$(document).ready(function() {
+  $('body').bind('touchstart', function() {});
+});
