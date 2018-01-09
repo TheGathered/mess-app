@@ -163,8 +163,8 @@
 		}
 	}
 	.bootstrap-select {
-		> .dropdown-toggle {
-			pointer-events:none;
+		> .dropdown-toggle:not(:hover) {
+			box-shadow: none;
 		}
 	}
 	
