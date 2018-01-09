@@ -90,12 +90,13 @@
 
 .viewport {
 	position: absolute;
-	left: 36px;
+	left: 2.1rem; //36px
 	top: 19px;
 	right: 36px;
 	bottom: 36px;
 	z-index: 1;
 	overflow: hidden;
+	border-radius: 10px;
 	video {
     position: absolute;
     top: 0;

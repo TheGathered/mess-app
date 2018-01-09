@@ -230,10 +230,19 @@
 
 $(document).ready(function() {
 	var viewportHeight = $( window ).height();
+	var viewport_w = $(window).width();
 	
-//	if (viewportHeight > 800) {
-//		$('.mobile-viewport').css('transform', 'translate(3rem, -30rem)');
-//	}
+	
+	if (viewport_w < 700) {
+		//$('.mobile-viewport').css('transform', 'translate(3rem, -30rem)');
+
+		$('.dropdown-toggle').on('click touchend', function(e) {
+    		e.preventDefault();
+    		e.stopPropagation();
+
+    		return false;
+		});
+	}
 	
 });
 // ----------------------------------------------------------------------
