@@ -122,6 +122,11 @@
 	$(select_ul).addClass('list--long');
 	//end long-select
 	
+	//
+	var select_fix = $form.find('.bootstrap-select').find('.dropdown-toggle');
+	console.log(select_fix);
+	$(select_fix).attr('data-disabled', 'true');
+	//
 	$inps.filter('select')
 		.on('show.bs.select', function (e) {
 	  	$(this).parents('.form-group').addClass('open-select');
