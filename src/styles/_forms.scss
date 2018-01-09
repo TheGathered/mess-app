@@ -76,7 +76,7 @@ select[size] {
   transition: border-color ease-in-out .15s, color ease-in-out .15s;
   outline: none !important;
   
-  &:focus,
+  //&:focus,
   &:hover {
     color: $purple;
     border-bottom-color: $purple;

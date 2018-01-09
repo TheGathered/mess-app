@@ -39,8 +39,7 @@
 			if (progress>=70) opacity = (200-progress)/100;
             $text.css('opacity', opacity);
           
-            //if (progress>=70 && $(window).width() < 600) opacity = (400-progress)/100; //200
-            //if (progress>=70 && $(window).width() < 600) $text.css('opacity', opacity+2);
+          
 			var $page = $('[data-page=main]').find('.section--start');
 			var $cont = $page.find('.section-content');
 			
@@ -50,7 +49,6 @@
 				
 				//if (progress<=40) opacity = progress/100;
 				//if (progress>=70) opacity = (400-progress)/100; //600 for 800+ height
-				
             	//$text.css({'opacity': opacity, 'transition': 'all .7s' });
 				//$text.css('opacity', opacity);
 				//$text.css('transition', 'all .5s'); //1s for 800+ height
@@ -222,27 +220,4 @@
 	});
 
 })();
-// ----------------------------------------------------------------------
-
-
-/*
-	----------------------------------------------------------------------- */
-
-$(document).ready(function() {
-	var viewportHeight = $( window ).height();
-	var viewport_w = $(window).width();
-	
-	
-//	if (viewport_w < 700) {
-//		//$('.mobile-viewport').css('transform', 'translate(3rem, -30rem)');
-//
-//		$('.dropdown-toggle').on('click touchend', function(e) {
-//    		e.preventDefault();
-//    		e.stopPropagation();
-//
-//    		return false;
-//		});
-//	}
-	
-});
 // ----------------------------------------------------------------------
