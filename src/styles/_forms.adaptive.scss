@@ -162,4 +162,10 @@
 			display: none;
 		}
 	}
+	.bootstrap-select {
+		> .dropdown-toggle {
+			pointer-events:none;
+		}
+	}
+	
 }
