@@ -59,6 +59,8 @@ $(document).ready(function() {
     mainClass: 'mfp-fade'
   });
 });
+
+// get hovers on touch
 $(document).ready(function() {
   $('body').bind('touchstart', function() {});
 });
