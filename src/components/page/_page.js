@@ -233,16 +233,16 @@ $(document).ready(function() {
 	var viewport_w = $(window).width();
 	
 	
-	if (viewport_w < 700) {
-		//$('.mobile-viewport').css('transform', 'translate(3rem, -30rem)');
-
-		$('.dropdown-toggle').on('click touchend', function(e) {
-    		e.preventDefault();
-    		e.stopPropagation();
-
-    		return false;
-		});
-	}
+//	if (viewport_w < 700) {
+//		//$('.mobile-viewport').css('transform', 'translate(3rem, -30rem)');
+//
+//		$('.dropdown-toggle').on('click touchend', function(e) {
+//    		e.preventDefault();
+//    		e.stopPropagation();
+//
+//    		return false;
+//		});
+//	}
 	
 });
 // ----------------------------------------------------------------------
