@@ -36,7 +36,7 @@
 			var progress = (delta*100/block_h/2).toFixed(2);
 			var opacity = 1;
 			if (progress<=40) opacity = progress/100;
-			if (progress>=70) opacity = (200-progress)/100;
+			//if (progress>=70) opacity = (200-progress)/100;
             $text.css('opacity', opacity);
           
           
