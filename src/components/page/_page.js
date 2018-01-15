@@ -50,13 +50,6 @@
               if (progress<=40) opacity = progress/100;
               if (progress>=70) opacity = (200-progress)/100;
               $text.css('opacity', opacity);
-              
-				//if (progress<=40) opacity = progress/100;
-				//if (progress>=70) opacity = (400-progress)/100; //600 for 800+ height
-            	//$text.css({'opacity': opacity, 'transition': 'all .7s' });
-				//$text.css('opacity', opacity);
-				//$text.css('transition', 'all .5s'); //1s for 800+ height
-				//$text.fadeIn("slow");
 			}
 		};
 
@@ -207,10 +200,22 @@
 			$page.removeClass('viewport--moved');
 		}
 		//if (y>=150) 420
-		if (y>=150) {
+		if (y>=450) {
 			pos = y;
 			$page.addClass('viewport--fixed');
-		}
+ 
+          //
+            $('.mobile-video').css('opacity', 0);
+            $('.btn--start').css('opacity', 0);
+            $('.play--start').addClass('play--custom');
+          
+		} else {
+          $('.mobile-video').css('opacity', 1);
+          $('.btn--start').css('opacity', 1);
+          $('.play--start').removeClass('play--custom');
+        }
+        //
+
 		if (pos&&y<pos) {
 			pos = false;
 			$page.removeClass('viewport--fixed');

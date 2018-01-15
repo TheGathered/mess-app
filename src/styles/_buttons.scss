@@ -116,7 +116,7 @@ input[type="button"] {
   color: $text-color;
   transform-origin: 100% 100%;
   transform: rotate(90deg) translateX(100%);
-  transition: all .4s;
+  //transition: all .4s;
   opacity: 0;
   z-index: 2;
   width: 200px;
@@ -134,7 +134,7 @@ input[type="button"] {
     margin-left: 9px;
     position: relative;
     top: -1px;
-    transition: transform .2s;
+    //transition: transform .2s;
   }
   &:hover,
   &:active,
@@ -184,12 +184,12 @@ input[type="button"] {
   background-image: inline('#{$path-inline}/icon-play.svg');
 }
 
-.play--custom {
-	left: 45%; 
-	//top: 48%;
-	top: 16%;
-	//transform: translate(-75%, -70%);
-}
+//.play--custom {
+//	left: 45%; 
+//	top: 48%;
+//	top: 16%;
+//	transform: translate(-75%, -70%);
+//}
 
 .btn--close {
   position: absolute;
