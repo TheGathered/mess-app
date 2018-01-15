@@ -192,6 +192,12 @@
 
 	var scroll = function() {
 		var y = $(window).scrollTop();
+      
+        var scrollTop = $(window).scrollTop();
+        var docHeight = $(document).height();
+        var winHeight = $(window).height();
+        var scrollPercent = (scrollTop) / (docHeight - winHeight);
+        var scrollPercentRounded = Math.round(scrollPercent*100);
 		
 		if (y>=75) {
 			$page.addClass('viewport--moved');
@@ -199,23 +205,21 @@
 		} else {
 			$page.removeClass('viewport--moved');
 		}
-		//if (y>=150) 420
-		if (y>=450) {
-			pos = y;
-			$page.addClass('viewport--fixed');
- 
-          //
+      
+        if (scrollPercentRounded > 6) {
             $('.mobile-video').css('opacity', 0);
             $('.btn--start').css('opacity', 0);
             $('.play--start').addClass('play--custom');
-          
-		} else {
-          $('.mobile-video').css('opacity', 1);
-          $('.btn--start').css('opacity', 1);
-          $('.play--start').removeClass('play--custom');
+        } else {
+            $('.mobile-video').css('opacity', 1);
+            $('.btn--start').css('opacity', 1);
+            $('.play--start').removeClass('play--custom');
         }
-        //
-
+		//if (y>=150) 420
+		if (y>=420) {
+			pos = y;
+			$page.addClass('viewport--fixed');
+		}
 		if (pos&&y<pos) {
 			pos = false;
 			$page.removeClass('viewport--fixed');
