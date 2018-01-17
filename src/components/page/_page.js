@@ -216,9 +216,13 @@
             $('.play--start').removeClass('play--custom');
         }
 		//if (y>=150) 420
-		if (y>=420) {
-			pos = y;
+		if (scrollPercentRounded > 8) {
+			//pos = y;
 			$page.addClass('viewport--fixed');
+		}
+        if (y>=350) {
+			pos = y;
+			//$page.addClass('viewport--fixed');
 		}
 		if (pos&&y<pos) {
 			pos = false;
