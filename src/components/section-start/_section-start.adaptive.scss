@@ -71,14 +71,10 @@
 	
 	[data-show="main"][data-colour="white"] {
 	[data-page="main"] {
-		.mobile-viewport {
-			//display: block;
-		}
 		.phone-mask, .icon {
 			display: none;
 		}
 		.page-viewport {
-			//visibility: hidden;
 			width: 17rem;
     		height: 11rem;
 			top: 40vh;

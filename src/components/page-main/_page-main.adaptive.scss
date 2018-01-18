@@ -87,7 +87,7 @@
 			max-width: 260px;
 			line-height: 23px;
 			margin: 0 auto;
-            transition: opacity .3s; //.7s
+            transition: opacity .3s;
 			br {
 				display: none;
 			}
@@ -98,7 +98,7 @@
 	}
 
 	.page-viewport {
-		$width: 160px;//290.264px;
+		$width: 160px;
 		$height: $width*523.916px/290.264px;
       
         width: 15rem;
@@ -110,9 +110,7 @@
 		width: $width;
 		height: $height;
 		transform: scale(1.1) translate(-125px, 15px);
-		//transition: all .2s;
-            
-        // MOBILE FIX
+      
         .btn--start {
           position: fixed;
           left: -10.625rem;
@@ -120,7 +118,6 @@
           width: 12.5rem;
           text-align: right;
         }
-        // END MOBILE FIX
       
 		.viewport {
 			left: 20px;
@@ -139,9 +136,6 @@
 			width: 30px;
 			height: 3px;
 		}
-		.btn--play {
-			//top: calc(50% - 40px);
-		}
 		.tip {
 			display: none;
 			position: absolute;
@@ -155,7 +149,6 @@
 		}
 		.viewport--fixed & {
 			transform: scale(1) translate(-50%, -50%);
-			//transition-duration: .4s;
 			.tip {
 				display: none !important;
 			}
@@ -171,7 +164,7 @@
 	}
 
 	.phone-mask {
-		$width: 128px;//209.362px;
+		$width: 128px;
 		$height: $width*446.079px/209.362px;
 		left: 16px;
 		top: 4px;
@@ -188,16 +181,9 @@
     
     // mobile video frame
     .mobile-viewport {
-//		position: fixed;
-//		width: 15rem; 
-//		max-height: 70vh;
-//		left: 25%;
-//		top: 5%;
-	
         video {
-            width: 90%;
-			height: 35%;
-            //border-radius: 10px;
+          width: 90%;
+		  height: 35%;
         }
     }
 	
@@ -205,8 +191,7 @@
 		position: fixed;
 		width: 15rem;
 		height: 35rem;
-		transform: scale(1.0) translate(3rem, -18.5rem); //15% -55%
-		//transition: all .2s;
+		transform: scale(1.0) translate(3rem, -18.5rem);
     }
 	
 	

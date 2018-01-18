@@ -44,13 +44,7 @@ $(document).ready(function() {
       },
   //      {
   //        src: 'samples/video.mp4',
-  //      },
-  //      {
-  //        src: 'samples/video.mp4',
-  //      },
-  //      {
-  //        src: 'samples/video.mp4',
-  //      },
+  //      }
     ],
     // content type
     type: 'iframe',
