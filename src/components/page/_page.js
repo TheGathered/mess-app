@@ -237,44 +237,24 @@
 })();
 // ----------------------------------------------------------------------
 $( document ).ready(function() {
-//  var down = new Waypoint.Inview({
-//    element: $section.find('[data-marker="section-top"]')[0],
-//    enter: function(direction) {
-//      if (direction=='down') active();
-//    },
-//    // entered: function(direction) {},
-//    // exit: function(direction) {},
-//    // exited: function(direction) {}
-//  });
-//
-//  var up = new Waypoint.Inview({
-//    element: $section.find('[data-marker="section-bottom"]')[0],
-//    enter: function(direction) {
-//      if (direction=='up') active();
-//      //$text.css('transition','opacity 1s linear');
-//    },
-//    // entered: function(direction) {},
-//    // exit: function(direction) {},
-//    // exited: function(direction) {}
-//  });
   
-  $('#waypoint1').waypoint(function(direction) {
-
-    if (direction ==='down') {
-      //$(".test").css('opacity', '0');
-      //$(".test-1").css('opacity', '1');
-      $(".test").fadeOut("fast");
-      $(".test-1").fadeIn("slow");
-    }
-    else {
-      //$(".test").css('opacity', '1');
-      //$(".test-1").css('opacity', '0');
-      $(".test").fadeIn("slow");
-      $(".test-1").fadeOut("fast");
-    }
-  },{
-    context: document.getElementById('overflow-scroll')
-  });
+//  $('#waypoint1').waypoint(function(direction) {
+//
+//    if (direction ==='down') {
+//      //$(".test").css('opacity', '0');
+//      //$(".test-1").css('opacity', '1');
+//      $(".test").fadeOut("fast");
+//      $(".test-1").fadeIn("slow");
+//    }
+//    else {
+//      //$(".test").css('opacity', '1');
+//      //$(".test-1").css('opacity', '0');
+//      $(".test").fadeIn("slow");
+//      $(".test-1").fadeOut("fast");
+//    }
+//  },{
+//    context: document.getElementById('overflow-scroll')
+//  });
   
   $('#waypoint2').waypoint(function(direction) {
 
@@ -293,5 +273,32 @@ $( document ).ready(function() {
   },{
     context: document.getElementById('overflow-scroll')
   });
+  
+  $('#waypoint3').waypoint(function(direction) {
 
+    if (direction ==='down') {
+      //$(".test").css('opacity', '0');
+      //$(".test-1").css('opacity', '1');
+      $(".test-2").fadeOut("fast");
+      $("#overflow-scroll").fadeOut("fast");
+      $(".test-3").fadeIn("slow");
+    }
+    else {
+      //$(".test").css('opacity', '1');
+      //$(".test-1").css('opacity', '0');
+      $(".test-2").fadeIn("slow");
+      $(".test-3").fadeOut("fast");
+    }
+  },{
+    context: document.getElementById('overflow-scroll')
+  });
+
+});
+
+$( document ).ready(function() {
+  //$( "#accordions" ).accordion();
+  
+  $( "#accordions" ).accordion({
+    heightStyle: "content"
+  });
 });

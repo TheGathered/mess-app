@@ -102,3 +102,41 @@
 		transform: translateX(-500%);
 	}
 }
+
+
+
+/////////////////////////////
+#accordions .accordion-header {
+  color: #171719;
+  font-family: "Proxima Nova";
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24px;
+}
+#accordions .accordion-text {
+  color: #171719;
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  line-height: 22px;
+}
+#accordions .accordion-header, #accordions .accordion-content {
+  background-color: #fefefe;
+  box-shadow: 0 1px 2px 0 rgba(61, 57, 122, 0.24);
+  transition: box-shadow .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, box-shadow .3s ease-in-out;
+  transition: transform .3s ease-in-out, box-shadow .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  will-change: transform, box-shadow;
+}
+#accordions .accordion-header {
+}
+
+#accordions .ui-state-active {
+  border: none;
+  border-radius: 6px;	
+  background-color: #FEFEFE;
+  
+}
+
+
+
+/////////////////////////////
