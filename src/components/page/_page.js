@@ -238,23 +238,23 @@
 // ----------------------------------------------------------------------
 $( document ).ready(function() {
   
-//  $('#waypoint1').waypoint(function(direction) {
-//
-//    if (direction ==='down') {
-//      //$(".test").css('opacity', '0');
-//      //$(".test-1").css('opacity', '1');
-//      $(".test").fadeOut("fast");
-//      $(".test-1").fadeIn("slow");
-//    }
-//    else {
-//      //$(".test").css('opacity', '1');
-//      //$(".test-1").css('opacity', '0');
-//      $(".test").fadeIn("slow");
-//      $(".test-1").fadeOut("fast");
-//    }
-//  },{
-//    context: document.getElementById('overflow-scroll')
-//  });
+  $('#waypoint1').waypoint(function(direction) {
+
+    if (direction ==='down') {
+      //$(".test").css('opacity', '0');
+      //$(".test-1").css('opacity', '1');
+      $(".test").fadeOut("fast");
+      $(".test-1").fadeIn("slow");
+    }
+    else {
+      //$(".test").css('opacity', '1');
+      //$(".test-1").css('opacity', '0');
+      $(".test").fadeIn("slow");
+      $(".test-1").fadeOut("fast");
+    }
+  },{
+    context: document.getElementById('overflow-scroll')
+  });
   
   $('#waypoint2').waypoint(function(direction) {
 
@@ -296,9 +296,14 @@ $( document ).ready(function() {
 });
 
 $( document ).ready(function() {
-  //$( "#accordions" ).accordion();
   
-  $( "#accordions" ).accordion({
-    heightStyle: "content"
-  });
+//  $( "#accordions" ).accordion({
+//    heightStyle: "content"
+//  });
+  
+});
+
+var accordion = new Accordion('.accordion-container', {
+  duration: 400,
+  showFirst: true
 });

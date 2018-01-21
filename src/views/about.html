@@ -2,6 +2,7 @@
 {% set page = "about" %} <!-- page ID -->
 {% extends "layouts/default.html" %} <!-- used layout -->
 
+
 {% block content %}
 <!-- page -->
 <div class="page">
@@ -16,15 +17,20 @@
 						<div class="col-lg-7 col-md-7 col-sm-7">
 
 							<div class="page-title">
-						      <h1 class="title-1 test">{{title}}</h1>
+                              <div class="test">
+                                <h1 class="title-1">{{title}}</h1>
+                              </div>
+						     
                               <div class="test-1">
                                 <h1 class="title-1">Values</h1>
                                 <p>We believe in our values and follow them</p>
                               </div>
+                              
                               <div class="test-2">
                                 <h1 class="title-1">Team</h1>
                                 <p>The core of our company is our team, see who you can work with</p>
                               </div>
+                              
                               <div class="test-3">
                                 <h1 class="title-1">We Contribute</h1>
                                 <div class="row">
@@ -69,7 +75,6 @@
                           
                             <div id="waypoint2"></div>
                             <div>
-<!--                              <div id="waypoint2"></div>-->
                               <h2>Vasiliy Malishev</h2>
 							  <p>Founder and CEO</p>
 							  <p>Every rule has an exception. Especially this one.</p>
@@ -87,7 +92,6 @@
 							  <p>Chief Strategist</p>
                               <p>If I have seen father than other, it is because I have stood on the shoulders of giants </p>
 							</div>
-                            <div id="waypoint3"></div>
 						</div>
 					</div>
 					<div class="row visible-xs">
@@ -102,100 +106,133 @@
                           </p>
                         </div>
                       </div>
-                  </div>
+                    </div>
+                    <div class="row visible-xs">
+                      <div class="col-xs-12">
+                        <div class="title-about--sub">
+                          <h1 class="">Values</h1>
+                          <p>We believe in our values and follow them</p>
+                        </div>
+                        <!--accordion-->
+                        <div class="accordion-container">
+                          <div class="ac">
+                            <a href="#" class="ac-q">1. Collaborate</a>
+                            <div class="ac-a" style="height: 0px;">
+                              <p>
+                                The best work is done when everyone works together. Whether it’s an opinion of a designer, developer or our client - the more we know & consider the better the product will be.
+                              </p>
+                            </div>
+                          </div>
+
+                          <div class="ac">
+                            <a href="#" class="ac-q">2. Trust and respect</a>
+                            <div class="ac-a" style="height: 0px;">
+                              <p>
+                                The best work is done when everyone works together. Whether it’s an opinion of a designer, developer or our client - the more we know & consider the better the product will be.
+                              </p>
+                            </div>
+                          </div> 
+
+                          <div class="ac">
+                            <a href="#" class="ac-q">3. Have fun</a>
+                            <div class="ac-a" style="height: 0px;">
+                              <p>
+                                Hey, we live once. Doesn’t make sense to suffer at work. You got to love what you do and have fun doing it.
+                              </p>
+                            </div>
+                          </div>
+
+                          <div class="ac">
+                            <a href="#" class="ac-q">4. Know your shit</a>
+                            <div class="ac-a" style="height: 0px">
+                              <p>
+                                Hey, we live once. Doesn’t make sense to suffer at work. You got to love what you do and have fun doing it.
+                              </p>
+                            </div>
+                          </div>
+
+                          <div class="ac">
+                            <a href="#" class="ac-q">5. Be the best</a>
+                            <div class="ac-a" style="height: 0px;">
+                              <p>
+                                Hey, we live once. Doesn’t make sense to suffer at work. You got to love what you do and have fun doing it.
+                              </p>
+                            </div>
+                          </div> 
+
 <!--
-                          <h2>Collaborate</h2>
-                          <p>The best work is done when everyone works together. Whether it’s an opinion of a designer, developer or our client - the more we know & consider the better the product will be. </p>
-                          <h2>Trust and respect</h2>
-                          <p>The best work is done when everyone works together. Whether it’s an opinion of a designer, developer or our client - the more we know & consider the better the product will be. </p>
-                          <h2>Have fun</h2>
-                          <p>Hey, we live once. Doesn’t make sense to suffer at work. You got to love what you do and have fun doing it.</p>
-                          <h2>Know your shit</h2>
-                          <p>Hey, we live once. Doesn’t make sense to suffer at work. You got to love what you do and have fun doing it.</p>
+                          <div class="ac">
+                            <a href="#" class="ac-q">Do you like classical music?</a>
+                            <div class="ac-a" style="height: 0px; transition-duration: 600ms;">
+                              <p>Not really.</p>
+                            </div>
+                          </div>               
 -->
-                        
-
-<!--
-                        <div>
-                          <h1 class="title-1">Team</h1>
-                          <p>The core of our company is our team, see who you can work with</p>
-                          
-                          <h2>Vasiliy Malishev</h2>
-                          <p>Founder and CEO</p>
-                          <p>Every rule has an exception. Especially this one.</p>
-
-                          <h2>Stas Batururimi</h2> 
-                          <p>Chief Technology Officer</p>
-                          <p>If you are aware of what is required for self-improvement, but fail to act this nothing but a sin.</p>
-
-                          <h2>Nolan Kier</h2> 
-                          <p>Project Manager</p>
-                          <p>Think and Wonder. Wonder and Think.</p>
-
-                          <h2>Adam Rosen</h2>
-                          <p>Chief Strategist</p>
-                          <p>If I have seen father than other, it is because I have stood on the shoulders of giants </p>
-                        </div>
--->
-					  
-                      
-<!--
-                      <div class="row">
-                        <div class="col-md-12">
-                          <h1 class="title-1">We Contribute</h1>
-                        </div>
-                        <div class="col-md-6"> 
-                          <p>
-                            The best work is done when everyone works together. Whether it’s an opinion of a designer, developer or our client - the more we know & consider the better the product will be.
-                          </p>
-                        </div>
-                        <div class="col-md-6">
-                          <p>
-                            The best work is done when everyone works together. Whether it’s an opinion of a designer, developer or our client - the more we know & consider the better the product will be.
-                          </p>
                         </div>
                       </div>
--->
-                  <div>
-                    <div class="title-about--sub visible-xs">
-                      <h1 class="">Values</h1>
-                      <p>We believe in our values and follow them</p>
                     </div>
-                    
-                  </div>
-                  <div id="accordions" class="visible-xs">
-                    <h3 class="accordion-header">1. Collaborate</h3>
-                    <div class="accordion-content">
-                      <p class="accordion-text">
-                        The best work is done when everyone works together. Whether it’s an opinion of a designer, developer or our client - the more we know & consider the better the product will be.
-                      </p>
+                    <div class="row visible-xs">
+                      <div class="col-xs-12">
+                        <div class="title-about--sub">
+                          <h1 class="">Team</h1>
+                          <p>The core of our company is our team, see who you can work with</p>
+                        </div>
+                        <!--accordion-->
+                        <div class="accordion-container">
+                          <div class="ac">
+                            <a href="#" class="ac-q">Vasiliy Malishev</a>
+                            <div class="ac-a" style="height: 0px;">
+                              <p>Every rule has an exception. Especially this one.</p>
+                            </div>
+                          </div>
+
+                          <div class="ac">
+                            <a href="#" class="ac-q">Stas Batururimi</a>
+                            <div class="ac-a" style="height: 0px;">
+                              <p>
+                                If you are aware of what is required for self-improvement, but fail to act this nothing but a sin.
+                              </p>
+                            </div>
+                          </div> 
+
+                          <div class="ac">
+                            <a href="#" class="ac-q">Nolan Kier</a>
+                            <div class="ac-a" style="height: 0px;">
+                              <p>Think and Wonder. Wonder and Think.</p>
+                            </div>
+                          </div>
+
+                          <div class="ac">
+                            <a href="#" class="ac-q">Adam Rosen</a>
+                            <div class="ac-a" style="height: 0px">
+                              <p>If I have seen father than other, it is because I have stood on the shoulders of giants.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <h3 class="accordion-header">2. Trust and respect</h3>
-                    <div class="accordion-content">
-                      <p class="accordion-text">
-                        The best work is done when everyone works together. Whether it’s an opinion of a designer, developer or our client - the more we know & consider the better the product will be.
-                      </p>
+                    <div class="row visible-xs">
+                      <div class="col-xs-12">
+                        <div class="title-about--sub">
+                          <h1 class="">We Contribute</h1>
+                        </div>
+                      </div>
+                      <div class="col-xs-12">
+                        <img src="samples/nyu-black.png" alt="nyu black image">
+                        <h3>NYU contest</h3>
+                        <p>
+                          The best work is done when everyone works together. Whether it’s an opinion of a designer, developer or our client - the more we know & consider the better the product will be. 
+                        </p>
+                      </div>
+                      <div class="col-xs-12">
+                        <img src="samples/streets-black.png" alt="streets black image">
+                        <h3>Project clean streets</h3>
+                        <p>
+                          The best work is done when everyone works together. Whether it’s an opinion of a designer, developer or our client - the more we know & consider the better the product will be. 
+                        </p>
+                      </div>
                     </div>
-                    <h3 class="accordion-header">3. Have fun</h3>
-                    <div class="accordion-content">
-                      <p class="accordion-text">
-                        Hey, we live once. Doesn’t make sense to suffer at work. You got to love what you do and have fun doing it.
-                      </p>
-                    </div>
-                    <h3 class="accordion-header">4. Know your shit</h3>
-                    <div class="accordion-content">
-                      <p class="accordion-text">
-                        Hey, we live once. Doesn’t make sense to suffer at work. You got to love what you do and have fun doing it.
-                      </p>
-                    </div>
-                    <h3 class="accordion-header">5. Be the best</h3>
-                    <div class="accordion-content">
-                      <p class="accordion-text">
-                        Hey, we live once. Doesn’t make sense to suffer at work. You got to love what you do and have fun doing it.
-                      </p>
-                    </div>
-                  </div>
-					
+
 				</div>
 
 			</div>
