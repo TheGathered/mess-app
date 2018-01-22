@@ -28,7 +28,7 @@
     <meta name="theme-color" content="#951d97">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:800" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css" />
+    <link rel="stylesheet" href="node_modules/accordion-js/dist/accordion.min.css" />
     <link rel="stylesheet" href="css/style.min.css">
   </head>
 
@@ -68,16 +68,162 @@
               <div class="page-body">
                 <div class="page-content">
                   <div class="page-flex">
-                    <div class="row">
+                    <div class="row hidden-xs">
                       <div class="col-lg-7 col-md-7 col-sm-7">
                         <div class="page-title">
-                          <h1 class="title-1">Learn about us</h1>
+                          <div class="test">
+                            <h1 class="title-1">Learn about us</h1>
+                          </div>
+                          <div class="test-1">
+                            <h1 class="title-1">Values</h1>
+                            <p>We believe in our values and follow them</p>
+                          </div>
+                          <div class="test-2">
+                            <h1 class="title-1">Team</h1>
+                            <p>The core of our company is our team, see who you can work with</p>
+                          </div>
+                          <div class="test-3">
+                            <h1 class="title-1">We Contribute</h1>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <p> The best work is done when everyone works together. Whether it’s an opinion of a designer, developer or our client - the more we know & consider the better the product will be. </p>
+                              </div>
+                              <div class="col-md-6">
+                                <p> The best work is done when everyone works together. Whether it’s an opinion of a designer, developer or our client - the more we know & consider the better the product will be. </p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <div class="col-lg-5 col-md-5 col-sm-5">
-                        <p> "This core philosophy stands at the center of everything we make. The brands we build and the experience we create live at the intersection of clarity and surprise, and are positioned to metter in culture through shared values
-                          and ideals. Simplicity done right is what connects a brand with its audience, creates a winning stratefy, and drives our making, day in, day out." </p>
-                        <p> - Vasiliy Malishev, CEO </p>
+                      <div id="overflow-scroll" class="col-lg-5 col-md-5 col-sm-5">
+                        <div>
+                          <p> "This core philosophy stands at the center of everything we make. The brands we build and the experience we create live at the intersection of clarity and surprise, and are positioned to metter in culture through shared values
+                            and ideals. Simplicity done right is what connects a brand with its audience, creates a winning stratefy, and drives our making, day in, day out." </p>
+                          <p> - Vasiliy Malishev, CEO </p>
+                        </div>
+                        <div id="waypoint1"></div>
+                        <div>
+                          <h2>Collaborate</h2>
+                          <p>The best work is done when everyone works together. Whether it’s an opinion of a designer, developer or our client - the more we know & consider the better the product will be. </p>
+                          <h2>Trust and respect</h2>
+                          <p>The best work is done when everyone works together. Whether it’s an opinion of a designer, developer or our client - the more we know & consider the better the product will be. </p>
+                          <h2>Have fun</h2>
+                          <p>Hey, we live once. Doesn’t make sense to suffer at work. You got to love what you do and have fun doing it.</p>
+                          <h2>Know your shit</h2>
+                          <p>Hey, we live once. Doesn’t make sense to suffer at work. You got to love what you do and have fun doing it.</p>
+                        </div>
+                        <div id="waypoint2"></div>
+                        <div>
+                          <h2>Vasiliy Malishev</h2>
+                          <p>Founder and CEO</p>
+                          <p>Every rule has an exception. Especially this one.</p>
+                          <h2>Stas Batururimi</h2>
+                          <p>Chief Technology Officer</p>
+                          <div id="waypoint3"></div>
+                          <p>If you are aware of what is required for self-improvement, but fail to act this nothing but a sin.</p>
+                          <h2>Nolan Kier</h2>
+                          <p>Project Manager</p>
+                          <p>Think and Wonder. Wonder and Think.</p>
+                          <h2>Adam Rosen</h2>
+                          <p>Chief Strategist</p>
+                          <p>If I have seen father than other, it is because I have stood on the shoulders of giants </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row visible-xs">
+                      <div class="col-xs-12">
+                        <div>
+                          <h1 class="title-about">Learn <br />About Us</h1>
+                          <p class="text-about"> "This core philosophy stands at the center of everything we make. The brands we build and the experience we create live at the intersection of clarity and surprise, and are positioned to metter in culture through shared values
+                            and ideals. Simplicity done right is what connects a brand with its audience, creates a winning stratefy, and drives our making, day in, day out." </p>
+                          <p class="quote-about"> - Vasiliy Malishev, CEO </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row visible-xs">
+                      <div class="col-xs-12">
+                        <div class="title-about--sub">
+                          <h1 class="">Values</h1>
+                          <p>We believe in our values and follow them</p>
+                        </div>
+                        <!--accordion-->
+                        <div class="accordion-container">
+                          <div class="ac"> <a href="#" class="ac-q">1. Collaborate</a>
+                            <div class="ac-a" style="height: 0px;">
+                              <p> The best work is done when everyone works together. Whether it’s an opinion of a designer, developer or our client - the more we know & consider the better the product will be. </p>
+                            </div>
+                          </div>
+                          <div class="ac"> <a href="#" class="ac-q">2. Trust and respect</a>
+                            <div class="ac-a" style="height: 0px;">
+                              <p> The best work is done when everyone works together. Whether it’s an opinion of a designer, developer or our client - the more we know & consider the better the product will be. </p>
+                            </div>
+                          </div>
+                          <div class="ac"> <a href="#" class="ac-q">3. Have fun</a>
+                            <div class="ac-a" style="height: 0px;">
+                              <p> Hey, we live once. Doesn’t make sense to suffer at work. You got to love what you do and have fun doing it. </p>
+                            </div>
+                          </div>
+                          <div class="ac"> <a href="#" class="ac-q">4. Know your shit</a>
+                            <div class="ac-a" style="height: 0px">
+                              <p> Hey, we live once. Doesn’t make sense to suffer at work. You got to love what you do and have fun doing it. </p>
+                            </div>
+                          </div>
+                          <div class="ac"> <a href="#" class="ac-q">5. Be the best</a>
+                            <div class="ac-a" style="height: 0px;">
+                              <p> Hey, we live once. Doesn’t make sense to suffer at work. You got to love what you do and have fun doing it. </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row visible-xs">
+                      <div class="col-xs-12">
+                        <div class="title-about--sub">
+                          <h1 class="">Team</h1>
+                          <p>The core of our company is our team, see who you can work with</p>
+                        </div>
+                        <!--accordion-->
+                        <div class="accordion-container-team">
+                          <div class="ac"> <a href="#" class="ac-q">Vasiliy Malishev</a> <span>Founder and CEO</span>
+                            <div class="ac-a" style="height: 0px;">
+                              <p>Every rule has an exception. Especially this one.</p>
+                            </div>
+                          </div>
+                          <div class="ac"> <a href="#" class="ac-q">Stas Batururimi</a> <span>Chief Technology Officer</span>
+                            <div class="ac-a" style="height: 0px;">
+                              <p> If you are aware of what is required for self-improvement, but fail to act this nothing but a sin. </p>
+                            </div>
+                          </div>
+                          <div class="ac"> <a href="#" class="ac-q">Nolan Kier</a> <span>Project Manager</span>
+                            <div class="ac-a" style="height: 0px;">
+                              <p>Think and Wonder. Wonder and Think.</p>
+                            </div>
+                          </div>
+                          <div class="ac"> <a href="#" class="ac-q">Adam Rosen</a> <span>Chief Strategist</span>
+                            <div class="ac-a" style="height: 0px">
+                              <p>If I have seen father than other, it is because I have stood on the shoulders of giants.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row visible-xs">
+                      <div class="col-xs-12">
+                        <div class="title-about--sub">
+                          <h1 class="">We Contribute</h1>
+                        </div>
+                      </div>
+                      <div class="col-xs-12">
+                        <div class="contribute-item"> <img src="samples/nyu-black.png" class="img-about" alt="nyu black image">
+                          <h3>NYU contest</h3>
+                          <p> The best work is done when everyone works together. Whether it’s an opinion of a designer, developer or our client - the more we know & consider the better the product will be. </p>
+                        </div>
+                      </div>
+                      <div class="col-xs-12">
+                        <div class="contribute-item"> <img src="samples/streets-black.png" class="img-about" alt="streets black image">
+                          <h3>Project clean streets</h3>
+                          <p> The best work is done when everyone works together. Whether it’s an opinion of a designer, developer or our client - the more we know & consider the better the product will be. </p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -275,7 +421,7 @@
           <div class="container"> <span>
 		  	<!-- logo -->
 		  	<a href="index.html" class="link--unstyled header-logo">Messapps</a><!-- /logo -->
-			  <div class="after-logo">ground central</div>
+		    <div class="after-logo">ground central</div>
 		  </span> </div>
         </div>
         <div class="container">

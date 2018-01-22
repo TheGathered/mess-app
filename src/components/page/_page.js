@@ -307,3 +307,7 @@ var accordion = new Accordion('.accordion-container', {
   duration: 400,
   showFirst: true
 });
+var accordion = new Accordion('.accordion-container-team', {
+  duration: 400,
+  showFirst: true
+});
