@@ -254,12 +254,7 @@
 			$('body').removeClass('page--loaded page--hide');
 			$target.empty();
 		});
-	});
-	
-//	if($('body').hasClass('page--loaded')) {
-//				console.log("load");
-//			}
-	
+	});	
 })();
 // ----------------------------------------------------------------------
 
