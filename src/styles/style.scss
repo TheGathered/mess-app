@@ -7,6 +7,7 @@
 
 @import "mixins/text";
 @import "mixins/utils";
+@import "node_modules/accordion-js/dist/accordion.min";
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/clearfix";
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/text-overflow";
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/reset-text";
@@ -16,6 +17,7 @@
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/responsive-visibility";
 
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 // @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-embed";
 
