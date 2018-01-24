@@ -2,8 +2,8 @@
 <nav class="nav-main{% if page != 'index' %} hidden-xs{% endif %}">
 	<ul class="list--inline">
 
-		<li>
-			<a href="#" class="tab--work">Work</a>
+		<li {% if page == 'work' %} class="active"{% endif %}>
+			<a href="work.html">Work</a>
 			<!--<a href="#work-anchor">Work</a>-->
 		</li>
 
