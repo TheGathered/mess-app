@@ -116,9 +116,20 @@
 
 //---- WORK PAGE ----//
 
-//work nav//
+//general work image
+.img-wrapper {
+  max-width: 260px;
+  height: 500px;
+  background-image: url('../../samples/iphone-ardarts-2x.png');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+//general work nav
 .menu-ul {
   list-style: none;
+  max-width: 250px; //not sure about this one
 }
 .menu-ul li a.active::before {
   content: '';
@@ -139,166 +150,197 @@
   font-weight: bold;
   line-height: 22px;
   text-transform: uppercase;
+  //cursor: pointer;
+  //pointer-events: none;
 }
-////
-.work-page ul .menu-li-1 a.active {
-  opacity: 1;
-  color: #fff;
-}
-.work-page ul .menu-li-1 a.active::before {
-  display: inline-block;
-}
-////
-.work-page-yellow ul .menu-li-2 a.active {
-  opacity: 1;
-  color: #263238;
-}
-.work-page-yellow ul .menu-li-2 a.active::before {
-  display: inline-block;
-  background: #263238;
-}
-///
-.work-page-red ul .menu-li-3 a.active {
-  opacity: 1;
-  color: #263238;
-}
-.work-page-red ul .menu-li-3 a.active::before {
-  display: inline-block;
-  background: #263238;
-}
-////
-.work-page-blue ul .menu-li-4 a.active {
-  opacity: 1;
-  color: #263238;
-}
-.work-page-blue ul .menu-li-4 a.active::before {
-  display: inline-block;
-  background: #263238;
-}
-////
-.work-page-green ul .menu-li-5 a.active {
-  opacity: 1;
-  color: #fff;
-}
-.work-page-green ul .menu-li-5 a.active::before {
-  display: inline-block;
-  background: #fff;
-}
-////
 
-//end work nav//
 
-.work-page {
-//  background: -webkit-linear-gradient(#212137 0%, #282544 100%);
-//  background: -o-linear-gradient(#212137 0%, #282544 100%);
-//  background: linear-gradient(#212137 0%, #282544 100%);
-  background-color: #242733; 
+//ARDARTS PAGE
+.ardarts-page {
+  background-color: #1E1E33; 
 }
-.work-page nav a {
+.ardarts-page nav a {
   color: #fff;
 }
-.work-page .nav-main a:hover, .work-page .nav-main li.active a{
+.ardarts-page .nav-main a:hover, .ardarts-page .nav-main li.active a{
   color: #fff;
 }
-.work-page nav a:after {
+.ardarts-page nav a:after {
   border-color: #fff;
 }
-.work-page .header-logo {
+.ardarts-page .header-logo,
+.grc-page .header-logo,
+.halsa-page .header-logo {
   color: #fff;
 }
-.work-page .header-logo::before {
+.ardarts-page .header-logo::before,
+.grc-page .header-logo::before,
+.halsa-page .header-logo::before {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjhGMzZBRjlCQzJBRTExRTc4NkREQUJFMjFGRUFEODhDIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjhGMzZBRjlDQzJBRTExRTc4NkREQUJFMjFGRUFEODhDIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OEYzNkFGOTlDMkFFMTFFNzg2RERBQkUyMUZFQUQ4OEMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OEYzNkFGOUFDMkFFMTFFNzg2RERBQkUyMUZFQUQ4OEMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7GFaYsAAABNklEQVR42mL8//8/AzUBIxYDw4H4BxBvJKDXH4jZgXgViijIQCQcDsQ/gfgNENugySFjkNxbqNpwZDl0hTv/I8A6PAauRVK3E1mOCcmxtkCshcS/iMe7yHIgPTboXi79jwluALEZFtdZQeXQQTGyl8/+xw1ikQxLxaPuDLKBhUgSF7AoLgHiaiziF5HYheiR4gPEtlB21X/CoBYpxn1xxTIyNgLip1gMeg7Eprj0MZGZIXBnLyTTfZESMzFerkbysg+6l4uQFJ7HorkciBuxiF/AFSn4kk0Cki/S8ag7i2xgMRYFN4HYAkvAW0Pl8CZsWFg8QlLQiCcF1CGpewS1BGuy2U5k4bAGV+GArjAYiL8A8Wsiiq/XULUhyHLYCthAIP4NxFsIpEVfIGYB4vWESmyKAECAAQACOOSMm8ea4wAAAABJRU5ErkJggg==');
 }
-.work-page .btn--proposal {
+.ardarts-page .btn--proposal {
   color: #fff;
 }
-.work-page .btn--proposal::before {
+.ardarts-page .btn--proposal::before {
   background: #fff;
 }
 
-//yellow section
+.ardarts-page ul .menu-li-1 a.active {
+  opacity: 1;
+  color: #fff;
+}
+.ardarts-page ul .menu-li-1 a.active::before {
+  display: inline-block;
+}
+//END ARDARTS PAGE
 
-.work-page-yellow {
+
+//RUNON PAGE
+.runon-page {
   background-color: #FDD900;
 }
-.work-page-yellow .btn--proposal {
+.runon-page .title-work {
   color: #263238;
 }
-.work-page-yellow .btn--proposal::before {
+.runon-page .btn--proposal {
+  color: #263238;
+}
+.runon-page .btn--proposal::before {
   background: #263238;
 }
-.work-page-yellow .nav-main a:hover, 
-.work-page-yellow .nav-main li.active a {
+.runon-page .nav-main a:hover, 
+.runon-page .nav-main li.active a {
   color: #263238;
 }
 
-.work-page-yellow nav a:after {
+.runon-page nav a:after {
   border-color: #263238;
 }
-//end yellow section
-
-
-
-//red section
-.work-page-red {
-  background-color: firebrick;
+.runon-page .img-wrapper {
+  background-image: url('../../samples/iphone-runon-2x.png');
 }
-.work-page-red .btn--proposal {
+.runon-page ul .menu-li-2 a.active {
+  opacity: 1;
   color: #263238;
 }
-.work-page-red .btn--proposal::before {
+.runon-page ul .menu-li-2 a.active::before {
+  display: inline-block;
   background: #263238;
 }
-.work-page-red .nav-main a:hover, 
-.work-page-red .nav-main li.active a {
-  color: #263238;
-}
-
-.work-page-red nav a:after {
-  border-color: #263238;
-}
-//end red section
+//END RUNON PAGE
 
 
-//blue section
-.work-page-blue {
-  background-color: skyblue;
+//GRC PAGE
+.grc-page {
+  background-color: #18191F;
 }
-.work-page-blue .btn--proposal {
-  color: #263238;
-}
-.work-page-blue .btn--proposal::before {
-  background: #263238;
-}
-.work-page-blue .nav-main a:hover, 
-.work-page-blue .nav-main li.active a {
-  color: #263238;
-}
-
-.work-page-blue nav a:after {
-  border-color: #263238;
-}
-//end blue section 
-
-
-
-//green section
-.work-page-green {
-  background-color: #2fbc2f;
-}
-.work-page-green .btn--proposal {
+.grc-page .btn--proposal {
   color: #fff;
 }
-.work-page-green .btn--proposal::before {
+.grc-page .btn--proposal::before {
   background: #fff;
 }
-.work-page-green .nav-main a:hover, 
-.work-page-green .nav-main li.active a {
+
+.grc-page nav a {
+  color: #fff;
+}
+.grc-page .nav-main a:hover, 
+.grc-page .nav-main li.active a {
   color: #fff;
 }
 
-.work-page-green nav a:after {
+.grc-page nav a:after {
   border-color: #fff;
 }
-//end green section
+.grc-page .img-wrapper {
+  background-image: url('../../samples/iphone-gcentral-2x.png');
+}
+.grc-page ul .menu-li-3 a.active {
+  opacity: 1;
+  color: #fff;
+}
+.grc-page ul .menu-li-3 a.active::before {
+  display: inline-block;
+  background: #fff;
+}
+//END GRC PAGE
+
+
+//CAKEMIX PAGE
+.cakemix-page {
+  background-color: #fff;
+}
+.cakemix-page .title-work {
+  color: #263238;
+}
+.cakemix-page .btn--proposal {
+  color: #263238;
+}
+.cakemix-page .btn--proposal::before {
+  background: #263238;
+}
+.cakemix-page .nav-main a:hover, 
+.cakemix-page .nav-main li.active a {
+  color: #263238;
+}
+
+.cakemix-page nav a:after {
+  border-color: #263238;
+}
+.cakemix-page .img-wrapper {
+  background-image: url('../../samples/iphone-cakemix-2x.png');
+}
+.cakemix-page ul .menu-li-4 a.active {
+  opacity: 1;
+  color: #263238;
+}
+.cakemix-page ul .menu-li-4 a.active::before {
+  display: inline-block;
+  background: #263238;
+}
+
+//
+.cakemix-page .menu-ul li a {
+  opacity: 0.5;	
+  color: #a09d9d;
+}
+//
+//END CAKEMIX PAGE 
+
+
+
+//HALSA PAGE
+.halsa-page {
+  background-color: firebrick;
+}
+.halsa-page .btn--proposal {
+  color: #fff;
+}
+.halsa-page .btn--proposal::before {
+  background: #fff;
+}
+.halsa-page .nav-main a {
+  color: #fff;
+}
+.halsa-page .nav-main a:hover, 
+.halsa-page .nav-main li.active a {
+  color: #fff;
+}
+
+.halsa-page nav a:after {
+  border-color: #fff;
+}
+.halsa-page .img-wrapper {
+  background-image: url('../../samples/phone-halsa-2x.png');
+}
+.halsa-page ul .menu-li-5 a.active {
+  opacity: 1;
+  color: #fff;
+}
+.halsa-page ul .menu-li-5 a.active::before {
+  display: inline-block;
+  background: #fff;
+}
+//END HALSA PAGE
+
 //---- END WORK PAGE ----//

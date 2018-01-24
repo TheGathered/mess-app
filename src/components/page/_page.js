@@ -305,33 +305,35 @@ var accordion = new Accordion('.accordion-container-team', {
   showFirst: true
 });
 
+
+
 //work-desktop
 $( document ).ready(function() {
 
   if ($("#work").length) {
     //$('body').css('background', '#242733');
-    $('body').addClass('work-page');
+    $('body').addClass('ardarts-page');
     //$('nav a').css('color','#fff');
   }
   $(".menu-li-1").hover(function() {
-    $('body').removeClass('work-page-yellow').removeClass('work-page-red').removeClass('work-page-blue').removeClass('work-page-green');
-    $('body').addClass('work-page');
+    $('body').removeClass('runon-page').removeClass('grc-page').removeClass('cakemix-page').removeClass('halsa-page');
+    $('body').addClass('ardarts-page');
   });
   $(".menu-li-2").hover(function() {
-    $('body').removeClass('work-page').removeClass('work-page-red').removeClass('work-page-blue').removeClass('work-page-green');
-    $('body').addClass('work-page-yellow');
+    $('body').removeClass('ardarts-page').removeClass('grc-page').removeClass('cakemix-page').removeClass('halsa-page');
+    $('body').addClass('runon-page');
   });
   $(".menu-li-3").hover(function() {
-    $('body').removeClass('work-page-yellow').removeClass('work-page').removeClass('work-page-blue').removeClass('work-page-green');
-    $('body').addClass('work-page-red');
+    $('body').removeClass('ardarts-page').removeClass('runon-page').removeClass('cakemix-page').removeClass('halsa-page');
+    $('body').addClass('grc-page');
   });
   $(".menu-li-4").hover(function() {
-    $('body').removeClass('work-page-yellow').removeClass('work-page').removeClass('work-page-red').removeClass('work-page-green');
-    $('body').addClass('work-page-blue');
+    $('body').removeClass('ardarts-page').removeClass('runon-page').removeClass('grc-page').removeClass('halsa-page');
+    $('body').addClass('cakemix-page');
   });
   $(".menu-li-5").hover(function() {
-    $('body').removeClass('work-page-yellow').removeClass('work-page').removeClass('work-page-red').removeClass('work-page-blue');
-    $('body').addClass('work-page-green');
+    $('body').removeClass('ardarts-page').removeClass('runon-page').removeClass('grc-page').removeClass('cakemix-page');
+    $('body').addClass('halsa-page');
   });
   
   
@@ -349,13 +351,17 @@ $( document ).ready(function() {
 //    //$(this).addClass('li-active');
 //  });
   
+  $('.menu-ul li a').click(function() { 
+    return false; 
+  });
+  
   $('.menu-ul').hover(
   function(){
     $(".menu-li-1 a").addClass('active');
   },
   function(){ 
     $(".menu-li-2 a").addClass('active'); 
-  },
+  }
 //  function(){ 
 //    $(".menu-li-3 a").addClass('active'); 
 //  },
@@ -373,7 +379,7 @@ $( document ).ready(function() {
   },
   function(){ 
     $(".menu-li-4 a").addClass('active'); 
-  },
+  }
   );
   
   $('.menu-ul').hover(
