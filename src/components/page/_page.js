@@ -316,76 +316,59 @@ $( document ).ready(function() {
     //$('nav a').css('color','#fff');
   }
   $(".menu-li-1").hover(function() {
-    $('body').removeClass('runon-page').removeClass('grc-page').removeClass('cakemix-page').removeClass('halsa-page');
+    $('body').removeClass('runon-page grc-page cakemix-page halsa-page');
     $('body').addClass('ardarts-page');
+    $(this).children().addClass('active');
   });
   $(".menu-li-2").hover(function() {
-    $('body').removeClass('ardarts-page').removeClass('grc-page').removeClass('cakemix-page').removeClass('halsa-page');
+    $('body').removeClass('ardarts-page grc-page grc-page halsa-page')
     $('body').addClass('runon-page');
+    $(this).children().addClass('active');
   });
   $(".menu-li-3").hover(function() {
-    $('body').removeClass('ardarts-page').removeClass('runon-page').removeClass('cakemix-page').removeClass('halsa-page');
+    $('body').removeClass('ardarts-page runon-page cakemix-page halsa-page');
     $('body').addClass('grc-page');
+    $(this).children().addClass('active');
   });
   $(".menu-li-4").hover(function() {
-    $('body').removeClass('ardarts-page').removeClass('runon-page').removeClass('grc-page').removeClass('halsa-page');
+    $('body').removeClass('ardarts-page runon-page grc-page halsa-page');
     $('body').addClass('cakemix-page');
+    $(this).children().addClass('active');
   });
   $(".menu-li-5").hover(function() {
-    $('body').removeClass('ardarts-page').removeClass('runon-page').removeClass('grc-page').removeClass('cakemix-page');
+    $('body').removeClass('ardarts-page runon-page grc-page cakemix-page');
     $('body').addClass('halsa-page');
+    $(this).children().addClass('active');
   });
-  
-  
-//  $(".menu-li-2").on('click mouseover', function () {
-//    $('body').removeClass('work-page');
-//    $('body').addClass('work-page-yellow');
-//  });
-  
-  
-//  
-//  
-//  $('.menu-ul').on('hover', function() {
-//    //console.log('hover');
-//    //$('.menu-ul .li-active').removeClass('li-active');
-//    //$(this).addClass('li-active');
-//  });
-  
-  $('.menu-ul li a').click(function() { 
-    return false; 
-  });
-  
-  $('.menu-ul').hover(
-  function(){
-    $(".menu-li-1 a").addClass('active');
-  },
-  function(){ 
-    $(".menu-li-2 a").addClass('active'); 
-  }
-//  function(){ 
-//    $(".menu-li-3 a").addClass('active'); 
-//  },
-//  function(){ 
-//    $(".menu-li-4 a").addClass('active'); 
-//  },
-//  function(){ 
-//    $(".menu-li-5 a").addClass('active'); 
-//  }
-  );
-  
-  $('.menu-ul').hover(
-  function(){ 
-    $(".menu-li-3 a").addClass('active'); 
-  },
-  function(){ 
-    $(".menu-li-4 a").addClass('active'); 
-  }
-  );
-  
-  $('.menu-ul').hover(
-  function(){ 
-    $(".menu-li-5 a").addClass('active'); 
-  }
-  );
+});
+
+$(document).ready(function () {
+  //var mySwiper = new Swiper ('.swiper-container', {
+    //direction: 'vertical',
+    //loop: true
+  //})
+  window.mySwipe = $('#slider-work').Swipe().data('Swipe');
+});
+
+$( document ).ready(function() {
+  if ($("#slider-work").length) {
+    $('body').addClass('work--swipe').removeClass('ardarts-page');
+  };
   
 });
+//var eleMent = document.getElementById('#slider-work');
+//window.mySwipe = new Swipe(eleMent, {
+//  startSlide: 0,
+//  //auto: 3000,
+//  draggable: false,
+//  //autoRestart: false,
+//  //continuous: true,
+//  disableScroll: true
+//  //stopPropagation: true,
+//  //callback: function(index, element) {},
+//  //transitionEnd: function(index, element) {}
+//});
+
+
+
+//https://lyfeyaj.github.io/swipe/

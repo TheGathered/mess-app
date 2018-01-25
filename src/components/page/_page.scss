@@ -342,5 +342,38 @@
   background: #fff;
 }
 //END HALSA PAGE
-
+//.swiper-container {
+//  width: 600px;
+//  height: 300px;
+//}
+//https://github.com/alvarotrigo/fullPage.js/issues/1192
+.swiper-slide .img-wrapper-1 {
+  //background-image: url('../../samples/phone-halsa-2x.png');
+}
+.swiper-wrapper .img-wrapper-2 {
+  background-image: url('../../samples/iphone-runon-2x.png');
+}
+.swiper-wrapper .img-wrapper-3 {
+  background-image: url('../../samples/iphone-gcentral-2x.png');
+}
+.swiper-wrapper .img-wrapper-4 {
+  background-image: url('../../samples/iphone-cakemix-2x.png');
+}
+.swiper-wrapper .img-wrapper-5 {
+  background-image: url('../../samples/phone-halsa-2x.png');
+}
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
 //---- END WORK PAGE ----//
