@@ -101,15 +101,23 @@
 
 
 //////
+.page-title {
+  position: fixed;
+  top: 50%;
+}
 #overflow-scroll {
-  height: 350px;
-  overflow-y: scroll;
+//  height: 350px;
+//  overflow-y: scroll;
 }
 
 .test-1, .test-2, .test-3 {
   //opacity: 0;
   //visibility: hidden;
   display: none;
+}
+.text-1, .text-2, .text-3 {
+  //display: none;
+  margin-bottom: 300px;
 }
 ///////
 

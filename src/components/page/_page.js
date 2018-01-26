@@ -252,7 +252,8 @@ $( document ).ready(function() {
       $(".test-1").fadeOut("fast");
     }
   },{
-    context: document.getElementById('overflow-scroll')
+    //context: document.getElementById('overflow-scroll'),
+//    offset: 120
   });
   
   $('#waypoint2').waypoint(function(direction) {
@@ -270,17 +271,20 @@ $( document ).ready(function() {
       $(".test-2").fadeOut("fast");
     }
   },{
-    context: document.getElementById('overflow-scroll')
+    //context: document.getElementById('overflow-scroll')
   });
   
   $('#waypoint3').waypoint(function(direction) {
 
     if (direction ==='down') {
-      //$(".test").css('opacity', '0');
-      //$(".test-1").css('opacity', '1');
+      //$(".test-2").fadeOut("fast");
+      //$("#overflow-scroll").fadeOut("fast");
+      //$(".test-2").css('display', 'none');
       $(".test-2").fadeOut("fast");
-      $("#overflow-scroll").fadeOut("fast");
       $(".test-3").fadeIn("slow");
+      
+      var scrollTop = $(window).scrollTop();
+      console.log(scrollTop);
     }
     else {
       //$(".test").css('opacity', '1');
@@ -288,8 +292,20 @@ $( document ).ready(function() {
       $(".test-2").fadeIn("slow");
       $(".test-3").fadeOut("fast");
     }
+//    if (direction ==='up') {
+//      //$(".test-2").fadeOut("fast");
+//      //$("#overflow-scroll").fadeOut("fast");
+//      //$(".test-2").css('display', 'none');
+//      $("#overflow-scroll").css('display', 'block');
+//      $("#overflow-title").css('display', 'block');
+//      $(".test-3").fadeOut("fast");
+//      
+//      var scrollTop = $(window).scrollTop();
+//      console.log(scrollTop);
+//    }
   },{
-    context: document.getElementById('overflow-scroll')
+//    context: document.getElementById('overflow-scroll'),
+//    offsetTop:0
   });
 
 });
@@ -383,45 +399,3 @@ $(document).ready(function () {
       }
     })
 });
-
-//      onSlideChangeEnd:function(swipe){
-//        console.log(swipe.realIndex)
-//      }
-//      onSlideChangeEnd: function (swiper) { 
-//      var activeIndex = swiper.activeIndex;
-//        console.log(activeIndex);
-//      var realIndex = swiper.slides.eq(activeIndex).attr('data-swiper-slide-index'); 
-//        console.log(realIndex);
-//      $('.swiper-slide').removeClass('my-active'); 
-//      ('.swiper-slide[data-swiper-slide-index="'+realIndex+'"]').addClass('my-active'); 
-//    }
-//      onSlideChangeStart: function (mySwiper) { 
-//        var activeIndex = mySwiper.activeIndex; 
-//        var realIndex = mySwiper.slides.eq(activeIndex).attr('data-swiper-slide-index'); 
-//        $('.swiper-slide').addClass('my-active'); 
-//        $('.swiper-slide[data-swiper-slide-index="'+realIndex+'"]').addClass('my-active'); 
-//      }
-
-
-//$( document ).ready(function() {
-////  if ($("#slider-work").length) {
-////    $('body').addClass('work--swipe').removeClass('ardarts-page');
-////  };
-//  
-//});
-//var eleMent = document.getElementById('#slider-work');
-//window.mySwipe = new Swipe(eleMent, {
-//  startSlide: 0,
-//  //auto: 3000,
-//  draggable: false,
-//  //autoRestart: false,
-//  //continuous: true,
-//  disableScroll: true
-//  //stopPropagation: true,
-//  //callback: function(index, element) {},
-//  //transitionEnd: function(index, element) {}
-//});
-
-
-
-//https://lyfeyaj.github.io/swipe/
