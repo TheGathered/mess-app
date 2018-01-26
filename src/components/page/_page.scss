@@ -125,7 +125,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.nav-main {
+  background-color: inherit;
+}
 //general work nav
 .menu-ul {
   list-style: none;
@@ -362,18 +364,7 @@
 .swiper-wrapper .img-wrapper-5 {
   background-image: url('../../samples/phone-halsa-2x.png');
 }
-.swipe {
-  overflow: hidden;
-  visibility: hidden;
-  position: relative;
-}
-.swipe-wrap {
-  overflow: hidden;
-  position: relative;
-}
-.swipe-wrap > div {
-  float:left;
-  width:100%;
-  position: relative;
+.work-mobile {
+  display: none;
 }
 //---- END WORK PAGE ----//

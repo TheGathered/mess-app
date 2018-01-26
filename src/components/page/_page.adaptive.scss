@@ -175,6 +175,23 @@
       display: none;
     }
 /////////////////////////////
+  
+  //WORK PAGE//
+  .title-work {
+    font-size: 27px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .img-wrapper {
+    max-width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: contain;
+  }
+  .work-mobile {
+    display: block;
+  }
+  //END WORK PAGE//
 }
 
 @keyframes marquee-x {

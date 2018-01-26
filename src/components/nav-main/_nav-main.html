@@ -1,5 +1,5 @@
 <!-- nav-main -->
-<nav class="nav-main{% if page != 'index' %} hidden-xs{% endif %}">
+<nav class="nav-main{% if (page != 'index') and (page != 'work') %} hidden-xs{% endif %}">
 	<ul class="list--inline">
 
 		<li {% if page == 'work' %} class="active"{% endif %}>

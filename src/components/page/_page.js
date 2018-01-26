@@ -321,7 +321,7 @@ $( document ).ready(function() {
     $(this).children().addClass('active');
   });
   $(".menu-li-2").hover(function() {
-    $('body').removeClass('ardarts-page grc-page grc-page halsa-page')
+    $('body').removeClass('ardarts-page grc-page grc-page halsa-page');
     $('body').addClass('runon-page');
     $(this).children().addClass('active');
   });
@@ -343,19 +343,76 @@ $( document ).ready(function() {
 });
 
 $(document).ready(function () {
-  //var mySwiper = new Swiper ('.swiper-container', {
-    //direction: 'vertical',
-    //loop: true
-  //})
-  window.mySwipe = $('#slider-work').Swipe().data('Swipe');
+//  var mySwiper = new Swiper ('.swiper-container', {
+//    direction: 'vertical',
+//    loop: true
+//  })
+  //window.mySwipe = $('#slider-work').Swipe().data('Swipe');
+    var mySwiper = new Swiper ('.swiper-container', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+      height: 300
+
+     
+    });
+    //console.log(swiper.activeIndex);
+    
+    mySwiper.on('slideChange', function () {
+      //console.log('slide changed');
+      var activeIndex = mySwiper.activeIndex;
+      
+        //console.log(activeIndex);
+      var realIndex = mySwiper.slides.eq(activeIndex).attr('data-swiper-slide-index'); 
+        //console.log(realIndex);
+      if ( realIndex == 0 ) {
+        $('body').removeClass('runon-page grc-page cakemix-page halsa-page');
+        $('body').addClass('ardarts-page');
+      }
+      if ( realIndex == 1 ) {
+        $('body').removeClass('ardarts-page grc-page grc-page halsa-page');
+        $('body').addClass('runon-page');
+      }
+      if ( realIndex == 2 ) {
+        $('body').removeClass('ardarts-page runon-page cakemix-page halsa-page');
+        $('body').addClass('grc-page');
+      }
+      if ( realIndex == 3 ) {
+        $('body').removeClass('ardarts-page runon-page grc-page halsa-page');
+        $('body').addClass('cakemix-page');
+      }
+      if ( realIndex == 4 ) {
+        $('body').removeClass('ardarts-page runon-page grc-page cakemix-page');
+        $('body').addClass('halsa-page');
+      }
+    })
 });
 
-$( document ).ready(function() {
-  if ($("#slider-work").length) {
-    $('body').addClass('work--swipe').removeClass('ardarts-page');
-  };
-  
-});
+//      onSlideChangeEnd:function(swipe){
+//        console.log(swipe.realIndex)
+//      }
+//      onSlideChangeEnd: function (swiper) { 
+//      var activeIndex = swiper.activeIndex;
+//        console.log(activeIndex);
+//      var realIndex = swiper.slides.eq(activeIndex).attr('data-swiper-slide-index'); 
+//        console.log(realIndex);
+//      $('.swiper-slide').removeClass('my-active'); 
+//      ('.swiper-slide[data-swiper-slide-index="'+realIndex+'"]').addClass('my-active'); 
+//    }
+//      onSlideChangeStart: function (mySwiper) { 
+//        var activeIndex = mySwiper.activeIndex; 
+//        var realIndex = mySwiper.slides.eq(activeIndex).attr('data-swiper-slide-index'); 
+//        $('.swiper-slide').addClass('my-active'); 
+//        $('.swiper-slide[data-swiper-slide-index="'+realIndex+'"]').addClass('my-active'); 
+//      }
+
+
+//$( document ).ready(function() {
+////  if ($("#slider-work").length) {
+////    $('body').addClass('work--swipe').removeClass('ardarts-page');
+////  };
+//  
+//});
 //var eleMent = document.getElementById('#slider-work');
 //window.mySwipe = new Swipe(eleMent, {
 //  startSlide: 0,
