@@ -263,7 +263,7 @@
 (function() {
 
   //load work page
-  $(document).delegate('[data-load-work]', 'click', function() {
+  $(document).delegate('[load-work]', 'click', function() {
     var href = $(this).attr('href');
     var $target = $('[data-target="work"]');
 
