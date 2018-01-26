@@ -120,7 +120,7 @@
 .img-wrapper {
   max-width: 260px;
   height: 500px;
-  background-image: url('../../samples/iphone-ardarts-2x.png');
+  background-image: url('./../samples/iphone-ardarts-2x.png');
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -219,7 +219,7 @@
   border-color: #263238;
 }
 .runon-page .img-wrapper {
-  background-image: url('../../samples/iphone-runon-2x.png');
+  background-image: url('./../samples/iphone-runon-2x.png');
 }
 .runon-page ul .menu-li-2 a.active {
   opacity: 1;
@@ -255,7 +255,7 @@
   border-color: #fff;
 }
 .grc-page .img-wrapper {
-  background-image: url('../../samples/iphone-gcentral-2x.png');
+  background-image: url('./../samples/iphone-gcentral-2x.png');
 }
 .grc-page ul .menu-li-3 a.active {
   opacity: 1;
@@ -290,7 +290,7 @@
   border-color: #263238;
 }
 .cakemix-page .img-wrapper {
-  background-image: url('../../samples/iphone-cakemix-2x.png');
+  background-image: url('./../samples/iphone-cakemix-2x.png');
 }
 .cakemix-page ul .menu-li-4 a.active {
   opacity: 1;
@@ -333,7 +333,7 @@
   border-color: #fff;
 }
 .halsa-page .img-wrapper {
-  background-image: url('../../samples/phone-halsa-2x.png');
+  background-image: url('./../samples/phone-halsa-2x.png');
 }
 .halsa-page ul .menu-li-5 a.active {
   opacity: 1;
@@ -364,7 +364,7 @@
 .swiper-wrapper .img-wrapper-5 {
   background-image: url('../../samples/phone-halsa-2x.png');
 }
-.work-mobile {
-  display: none;
-}
+//.work-mobile {
+//  display: none;
+//}
 //---- END WORK PAGE ----//

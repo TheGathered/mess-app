@@ -343,10 +343,6 @@ $( document ).ready(function() {
 });
 
 $(document).ready(function () {
-//  var mySwiper = new Swiper ('.swiper-container', {
-//    direction: 'vertical',
-//    loop: true
-//  })
   //window.mySwipe = $('#slider-work').Swipe().data('Swipe');
     var mySwiper = new Swiper ('.swiper-container', {
       // Optional parameters
