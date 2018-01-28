@@ -101,23 +101,35 @@
 
 
 //////
-.page-title {
+.page-title--about {
   position: fixed;
-  top: 50%;
+  top: 40%;
 }
 #overflow-scroll {
 //  height: 350px;
 //  overflow-y: scroll;
 }
 
-.test-1, .test-2, .test-3 {
+.test-1, .test-2 {
   //opacity: 0;
   //visibility: hidden;
   display: none;
 }
+
+.text {
+  visibility: visible;
+}
+
+.text-2, .text-3, .test-3 {
+  visibility: hidden;
+  transition: visibility .2s ease-in;
+}
+.test-3 {
+  margin-top: 200px;
+}
 .text-1, .text-2, .text-3 {
   //display: none;
-  margin-bottom: 300px;
+  //margin-bottom: 200px;
 }
 ///////
 
@@ -126,20 +138,53 @@
 
 //general work image
 .img-wrapper {
+  position: relative;
   max-width: 260px;
   height: 500px;
   background-image: url('./../samples/iphone-ardarts-2x.png');
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 15%;
 }
+.work-side-text {
+  position: absolute;
+  top: 38%;
+  left: 8%;
+  pointer-events: none;
+  z-index: -1;
+  font-weight: 800;
+  font-size: 80px;
+  overflow: hidden;
+  color: #1D262A;
+  transform: rotate(90deg);
+  line-height: 80px;
+  text-align: center;
+  width: 450px;
+}
+//--//
+.work-view .content {
+    padding-top: 0;
+}
+.work-view .page-flex {
+  margin-bottom: 0;
+}
+.work-view .row {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+//--//
+
 .nav-main {
   background-color: inherit;
 }
 //general work nav
 .menu-ul {
   list-style: none;
-  max-width: 250px; //not sure about this one
+  max-width: 300px; //not sure about this one
 }
 .menu-ul li a.active::before {
   content: '';
@@ -201,6 +246,10 @@
 }
 .ardarts-page ul .menu-li-1 a.active::before {
   display: inline-block;
+}
+.ardarts-page .work-side-text {
+  opacity: 0.3;
+  color: #a09d9d;
 }
 //END ARDARTS PAGE
 
@@ -272,6 +321,10 @@
 .grc-page ul .menu-li-3 a.active::before {
   display: inline-block;
   background: #fff;
+}
+.grc-page .work-side-text {
+  opacity: 0.3;
+  color: #a09d9d;
 }
 //END GRC PAGE
 
@@ -349,6 +402,9 @@
 .halsa-page ul .menu-li-5 a.active::before {
   display: inline-block;
   background: #fff;
+}
+.halsa-page .work-side-text {
+  color: #fff;
 }
 //END HALSA PAGE
 

@@ -234,84 +234,78 @@
 	});
 
 })();
+
 // ----------------------------------------------------------------------
+// about-desktop
 $( document ).ready(function() {
   
   $('#waypoint1').waypoint(function(direction) {
 
     if (direction ==='down') {
-      //$(".test").css('opacity', '0');
-      //$(".test-1").css('opacity', '1');
+      $(".text-1").css('visibility', 'hidden');
+      $(".text-2").css('visibility', 'visible');
+      
       $(".test").fadeOut("fast");
       $(".test-1").fadeIn("slow");
     }
     else {
-      //$(".test").css('opacity', '1');
-      //$(".test-1").css('opacity', '0');
+      $(".text-1").css('visibility', 'visible');
+      $(".text-2").css('visibility', 'hidden');
+      
       $(".test").fadeIn("slow");
       $(".test-1").fadeOut("fast");
     }
   },{
     //context: document.getElementById('overflow-scroll'),
-//    offset: 120
+    offset: 100
   });
   
   $('#waypoint2').waypoint(function(direction) {
 
     if (direction ==='down') {
-      //$(".test").css('opacity', '0');
-      //$(".test-1").css('opacity', '1');
+      $(".text-2").css('visibility', 'hidden');
+      $(".text-3").css('visibility', 'visible');
+      
       $(".test-1").fadeOut("fast");
       $(".test-2").fadeIn("slow");
     }
     else {
-      //$(".test").css('opacity', '1');
-      //$(".test-1").css('opacity', '0');
+      $(".text-2").css('visibility', 'visible');
+      $(".text-3").css('visibility', 'hidden');
+      
       $(".test-1").fadeIn("slow");
       $(".test-2").fadeOut("fast");
     }
   },{
     //context: document.getElementById('overflow-scroll')
+    offset: 200
   });
   
   $('#waypoint3').waypoint(function(direction) {
 
     if (direction ==='down') {
-      //$(".test-2").fadeOut("fast");
-      //$("#overflow-scroll").fadeOut("fast");
-      //$(".test-2").css('display', 'none');
-      $(".test-2").fadeOut("fast");
-      $(".test-3").fadeIn("slow");
+      //$(".test-2").css('visibility', 'hidden');
+      $(".test-3").css('visibility', 'visible');
       
-      var scrollTop = $(window).scrollTop();
-      console.log(scrollTop);
+      //$(".test-2").css('visibility', 'hidden');
+      //$(".test-2").fadeOut("fast");
     }
     else {
-      //$(".test").css('opacity', '1');
-      //$(".test-1").css('opacity', '0');
+      // $(".test-2").css('visibility', 'visible');
+      $(".test-3").css('visibility', 'hidden');
+      
       $(".test-2").fadeIn("slow");
-      $(".test-3").fadeOut("fast");
+      //$(".test-3").fadeOut("fast");
     }
-//    if (direction ==='up') {
-//      //$(".test-2").fadeOut("fast");
-//      //$("#overflow-scroll").fadeOut("fast");
-//      //$(".test-2").css('display', 'none');
-//      $("#overflow-scroll").css('display', 'block');
-//      $("#overflow-title").css('display', 'block');
-//      $(".test-3").fadeOut("fast");
-//      
-//      var scrollTop = $(window).scrollTop();
-//      console.log(scrollTop);
-//    }
   },{
 //    context: document.getElementById('overflow-scroll'),
-//    offsetTop:0
+    //offset: 200
   });
 
 });
 
 
-//about-mobile
+// about-mobile
 var accordion = new Accordion('.accordion-container', {
   duration: 400,
   showFirst: true
@@ -322,61 +316,59 @@ var accordion = new Accordion('.accordion-container-team', {
 });
 
 
-
-//work-desktop
+// work-desktop
 $( document ).ready(function() {
 
   if ($("#work").length) {
-    //$('body').css('background', '#242733');
-    $('body').addClass('ardarts-page');
-    //$('nav a').css('color','#fff');
+    $('body').addClass('ardarts-page work-view');
   }
+  
   $(".menu-li-1").hover(function() {
     $('body').removeClass('runon-page grc-page cakemix-page halsa-page');
     $('body').addClass('ardarts-page');
+    $( ".work-side-text p" ).html('Ar Darts');
     $(this).children().addClass('active');
   });
   $(".menu-li-2").hover(function() {
     $('body').removeClass('ardarts-page grc-page grc-page halsa-page');
     $('body').addClass('runon-page');
+    $( ".work-side-text p" ).html('Runon');
     $(this).children().addClass('active');
   });
   $(".menu-li-3").hover(function() {
     $('body').removeClass('ardarts-page runon-page cakemix-page halsa-page');
     $('body').addClass('grc-page');
+    $( ".work-side-text p" ).html('GroundC');
     $(this).children().addClass('active');
   });
   $(".menu-li-4").hover(function() {
     $('body').removeClass('ardarts-page runon-page grc-page halsa-page');
     $('body').addClass('cakemix-page');
+    $( ".work-side-text p" ).html('Cakemix');
     $(this).children().addClass('active');
   });
   $(".menu-li-5").hover(function() {
     $('body').removeClass('ardarts-page runon-page grc-page cakemix-page');
     $('body').addClass('halsa-page');
+    $( ".work-side-text p" ).html('Halsa.Life');
     $(this).children().addClass('active');
   });
 });
 
+// work-mobile
 $(document).ready(function () {
-  //window.mySwipe = $('#slider-work').Swipe().data('Swipe');
     var mySwiper = new Swiper ('.swiper-container', {
-      // Optional parameters
       direction: 'horizontal',
       loop: true,
-      height: 300
-
-     
+      height: 300  
     });
-    //console.log(swiper.activeIndex);
     
     mySwiper.on('slideChange', function () {
-      //console.log('slide changed');
+      // get 'with duplicates' current slide
       var activeIndex = mySwiper.activeIndex;
-      
-        //console.log(activeIndex);
+      // get 'realy' current slide
       var realIndex = mySwiper.slides.eq(activeIndex).attr('data-swiper-slide-index'); 
-        //console.log(realIndex);
+
       if ( realIndex == 0 ) {
         $('body').removeClass('runon-page grc-page cakemix-page halsa-page');
         $('body').addClass('ardarts-page');
