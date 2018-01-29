@@ -242,9 +242,9 @@ $( document ).ready(function() {
   $('#waypoint1').waypoint(function(direction) {
 
     if (direction ==='down') {
-      $(".text-1").css('visibility', 'hidden');
+      //$(".text-1").css('visibility', 'hidden');
       //$(".text-2").css('visibility', 'visible');
-      
+      $(".text-1").css('opacity', '0');
       $(".text-2").css('opacity', '1');
       
       //$(".fixed-header-1").fadeOut();
@@ -253,9 +253,9 @@ $( document ).ready(function() {
       $(".fixed-header-2").css('display', 'block');
     }
     else {
-      $(".text-1").css('visibility', 'visible');
+      //$(".text-1").css('visibility', 'visible');
       //$(".text-2").css('visibility', 'hidden');
-      
+      $(".text-1").css('opacity', '1');
       $(".text-2").css('opacity', '0');
       
       //$(".fixed-header-1").fadeIn("slow");
@@ -271,8 +271,10 @@ $( document ).ready(function() {
   $('#waypoint2').waypoint(function(direction) {
 
     if (direction ==='down') {
-      $(".text-2").css('visibility', 'hidden');
-      $(".text-3").css('visibility', 'visible');
+      //$(".text-2").css('visibility', 'hidden');
+      //$(".text-3").css('visibility', 'visible');
+      $(".text-2").css('opacity', '0');
+      $(".text-3").css('opacity', '1');
       
       //$(".fixed-header-2").fadeOut("fast");
       //$(".fixed-header-3").fadeIn("slow");
@@ -280,8 +282,10 @@ $( document ).ready(function() {
       $(".fixed-header-3").css('display', 'block');
     }
     else {
-      $(".text-2").css('visibility', 'visible');
-      $(".text-3").css('visibility', 'hidden');
+      //$(".text-2").css('visibility', 'visible');
+      //$(".text-3").css('visibility', 'hidden');
+      $(".text-2").css('opacity', '1');
+      $(".text-3").css('opacity', '0');
       
       //$(".fixed-header-2").fadeIn("slow");
       //$(".fixed-header-3").fadeOut("fast");
@@ -296,21 +300,21 @@ $( document ).ready(function() {
   $('#waypoint3').waypoint(function(direction) {
 
     if (direction ==='down') {
-      //$(".test-2").css('visibility', 'hidden');
       $(".fixed-header-3").css('display', 'none');
-      $(".text-3").css('visibility', 'hidden');
       
-      $(".fixed-contribute").css('visibility', 'visible');
-      //$(".test-2").css('visibility', 'hidden');
-      //$(".test-2").fadeOut("fast");
+      //$(".text-3").css('visibility', 'hidden');
+      //$(".fixed-contribute").css('visibility', 'visible');
+      
+      $(".fixed-contribute").css('opacity', '1');
+      $(".text-3").css('opacity', '0');
     }
-    else {
-      // $(".test-2").css('visibility', 'visible');
-      $(".fixed-contribute").css('visibility', 'hidden');
-      
+    else {      
       $(".fixed-header-3").css('display', 'block');
-      $(".text-3").css('visibility', 'visible');
-      //$(".test-3").fadeOut("fast");
+      //$(".text-3").css('visibility', 'visible');
+      //$(".fixed-contribute").css('visibility', 'hidden');
+      
+      $(".fixed-contribute").css('opacity', '0');
+      $(".text-3").css('opacity', '1');
     }
   },{
 //    context: document.getElementById('overflow-scroll'),
