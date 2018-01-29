@@ -243,7 +243,9 @@ $( document ).ready(function() {
 
     if (direction ==='down') {
       $(".text-1").css('visibility', 'hidden');
-      $(".text-2").css('visibility', 'visible');
+      //$(".text-2").css('visibility', 'visible');
+      
+      $(".text-2").css('opacity', '1');
       
       //$(".fixed-header-1").fadeOut();
       //$(".fixed-header-2").fadeIn();
@@ -252,7 +254,9 @@ $( document ).ready(function() {
     }
     else {
       $(".text-1").css('visibility', 'visible');
-      $(".text-2").css('visibility', 'hidden');
+      //$(".text-2").css('visibility', 'hidden');
+      
+      $(".text-2").css('opacity', '0');
       
       //$(".fixed-header-1").fadeIn("slow");
       //$(".fixed-header-2").fadeOut("fast");
@@ -310,7 +314,7 @@ $( document ).ready(function() {
     }
   },{
 //    context: document.getElementById('overflow-scroll'),
-    //offset: 200
+    offset: 100
   });
 
 });
