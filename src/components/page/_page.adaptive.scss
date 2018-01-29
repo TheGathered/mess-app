@@ -188,19 +188,40 @@
   }
   .img-wrapper {
     max-width: 100%;
-    height: 400px;
+    height: 300px;
     background-position: center;
     background-size: contain;
-    margin-top: 0;
+    margin-top: 10%;
   }
   .work-side-text {
-    top: 38%;
-    left: 8%;
-    font-size: 60px;
-    line-height: 60px;
-    width: 400px;
+    top: 35%;
+    left: 9%;
+    font-size: 52px;
+    line-height: 52px;
+    width: 350px;
+  }
+  .swipe-link {
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .swipe-link a {
+    color: #263238;
+  }
+  .ardarts-page .swipe-link a, .grc-page .swipe-link a, .halsa-page .swipe-link a {
+    color: #fff;
   }
   //END WORK PAGE//
+  
+    //////////////////////////////
+  .title--blog, .title-tools, .title-about {
+    font-size: 48px;
+    line-height: 48px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #171719;
+  }
+  ///////////////////////////////
 }
 
 @keyframes marquee-x {

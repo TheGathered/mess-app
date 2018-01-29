@@ -143,4 +143,22 @@ time {
   font-weight: 900;
   line-height: 50px;
   text-transform: uppercase;
+  transition: color .5s;
+}
+.title--blog, .title-tools {
+  color: #171719;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+
+.title--blog::after, .title-tools::after, .title-about--sub:after {
+  content: "";
+  height: 11px;
+  width: 43px;
+  display: block;
+  margin-bottom: 3.75rem;
+  background: $purple;
 }

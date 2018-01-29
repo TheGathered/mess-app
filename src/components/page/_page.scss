@@ -100,71 +100,113 @@
 }
 
 
-//////
-.page-title--about {
+//---- ABOUT PAGE ----//
+.title-about-wrapper {
   position: fixed;
   top: 40%;
 }
-#overflow-scroll {
-//  height: 350px;
-//  overflow-y: scroll;
+
+.title-about {
+  color: #171719;
+  font-size: 67px;
+  font-weight: 900;
+  line-height: 67px;
+  text-transform: uppercase;
+}
+.title-about::after, .title-about-wr::after {
+  content: "";
+  height: 11px;
+  width: 43px;
+  display: block;
+  margin-bottom: 3.75rem;
+  background: $purple;
+}
+.title-about-wr p {
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+.title-about-wr .title-about::after {
+  display: none;
 }
 
-.test-1, .test-2 {
+.fixed-header-2, .fixed-header-3 {
   //opacity: 0;
   //visibility: hidden;
   display: none;
 }
 
-.text {
-  visibility: visible;
-}
-
-.text-2, .text-3, .test-3 {
-  visibility: hidden;
-  transition: visibility .2s ease-in;
-}
-.test-3 {
+.fixed-contribute {
   margin-top: 200px;
 }
-.text-1, .text-2, .text-3 {
-  //display: none;
-  //margin-bottom: 200px;
+
+
+.text-1 {
+  visibility: visible;
+  margin-top: 40%;
 }
-///////
+
+.text-2, .text-3, .fixed-contribute {
+  visibility: hidden;
+  //transition: visibility .2s ease-in;
+}
+
+//---- END ABOUT PAGE ----//
 
 
 //---- WORK PAGE ----//
 
 //general work image
+.phone-mask-work{
+  margin-top: 15%;
+}
 .img-wrapper {
   position: relative;
-  max-width: 260px;
-  height: 500px;
+  max-width: 250px;
+  height: 495px;
   background-image: url('./../samples/iphone-ardarts-2x.png');
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 15%;
 }
+//.lalala {
+//  position: relative;
+//  max-width: 170px;
+//  height: 100px;
+//  background-image: url('./../samples/gcentral-icon.png');
+//  background-position: center top;
+//  background-repeat: no-repeat;
+//  background-size: cover;
+//}
 .work-side-text {
   position: absolute;
   top: 38%;
-  left: 8%;
+  left: 6%;
   pointer-events: none;
   z-index: -1;
   font-weight: 800;
-  font-size: 80px;
+  font-size: 72px;
   overflow: hidden;
-  color: #1D262A;
+  color: #302E48;
   transform: rotate(90deg);
-  line-height: 80px;
+  line-height: 72px;
   text-align: center;
   width: 450px;
+  letter-spacing: -.4px;
+  transition: color .75s;
 }
+.work-link-wrapper {
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+}
+.work-link-wrapper a {
+  color: #fff;
+}
+
 //--//
 .work-view .content {
-    padding-top: 0;
+  padding-top: 0;
 }
 .work-view .page-flex {
   margin-bottom: 0;
@@ -186,6 +228,10 @@
   list-style: none;
   max-width: 300px; //not sure about this one
 }
+.menu-ul li {
+  line-height: 0;
+  margin-bottom: 15px;
+}
 .menu-ul li a.active::before {
   content: '';
   width: 2.5rem;
@@ -203,7 +249,7 @@
   color: #fff;
   font-size: 18px;
   font-weight: bold;
-  line-height: 22px;
+  line-height: 18px;
   text-transform: uppercase;
   //cursor: pointer;
   //pointer-events: none;
@@ -248,8 +294,8 @@
   display: inline-block;
 }
 .ardarts-page .work-side-text {
-  opacity: 0.3;
-  color: #a09d9d;
+//  opacity: 0.3;
+//  color: #a09d9d;
 }
 //END ARDARTS PAGE
 
@@ -285,6 +331,17 @@
 .runon-page ul .menu-li-2 a.active::before {
   display: inline-block;
   background: #263238;
+}
+.runon-page .menu-ul li a {
+  opacity: 0.4;
+  color: #897404;
+}
+.runon-page .work-side-text {
+  opacity: 0.2;
+  color: #897404;
+}
+.runon-page .work-link-wrapper a {
+  color: #263238;
 }
 //END RUNON PAGE
 
@@ -323,7 +380,7 @@
   background: #fff;
 }
 .grc-page .work-side-text {
-  opacity: 0.3;
+  opacity: 0.2;
   color: #a09d9d;
 }
 //END GRC PAGE
@@ -364,8 +421,14 @@
 
 //
 .cakemix-page .menu-ul li a {
-  opacity: 0.5;	
-  color: #a09d9d;
+  opacity: 0.2;	
+  color: #263238;
+}
+.cakemix-page .work-side-text {
+  opacity: 0.2;
+}
+.cakemix-page .work-link-wrapper a {
+  color: #263238;
 }
 //
 //END CAKEMIX PAGE 
@@ -405,9 +468,12 @@
 }
 .halsa-page .work-side-text {
   color: #fff;
+  opacity: 0.2;
 }
 //END HALSA PAGE
 
+
+// mobile layout
 .swiper-slide .img-wrapper-1 {
   //background-image: url('../../samples/phone-halsa-2x.png');
 }
@@ -423,7 +489,5 @@
 .swiper-wrapper .img-wrapper-5 {
   background-image: url('./../samples/phone-halsa-2x.png');
 }
-//.work-mobile {
-//  display: none;
-//}
+// end mobile layout
 //---- END WORK PAGE ----//
