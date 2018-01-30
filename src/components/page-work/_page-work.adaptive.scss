@@ -1,7 +1,11 @@
 /*
 	styles for Large Desktops
  -------------------------------------------------------------------- */
-// @include respond-to($respond-large) {}
+@include respond-to($respond-large) {
+//    .s_darts_first_title>p{
+//    padding-right: 0;
+//  }
+}
 
 
 
@@ -9,23 +13,188 @@
 	styles for Desktop
  -------------------------------------------------------------------- */
 @include respond-to($respond-desktop) {
-
+//  .s_darts_thanks_img{
+//    width: 70%;
+//  }
+//  .s_darts_wireframes_cont{
+//    width: 18%;
+//  }
+//  img.s_darts_design_img_conteiner_img{
+//    width: 160px;
+//    height: 300px;
+//  }
+//  .s_darts_design_img_conteiner>img{
+//    height: 300px;
+//    width: auto;
+//  }
+//  .s_darts_design_bg{
+//    width: 56%;
+//  }
+//  .s_darts_design_img{
+//    top: 0;
+//  }
+//  img.s_darts_design_2_left_bg{
+//    left: 30px;
+//  }
+//  img.s_darts_card_bg{
+//    width: 100%;
+//  }
+//  .s_darts_design_3{
+//    padding-top: 50px;
+//  }
+//  .s_darts_design_4_contents{
+//    padding-bottom: 120px;
+//  }
+//  .s_darts_design_4,
+//  .s_darts_branding,
+//  .s_darts_teems{
+//    padding-bottom: 20px;
+//  }
+//  .s_darts_branding_icon{
+//    margin: 30px auto;
+//  }
 }
-
-
-
-/*
-	styles for Tablet and Desktops
- -------------------------------------------------------------------- */
-// @include respond-to($respond-tablet-up) {}
-
 
 
 /*
 	styles for Tablet
  -------------------------------------------------------------------- */
 @include respond-to($respond-tablet) {
-
+//   .s_darts .h1{
+//    font-size: 50px;
+//    line-height: 60px;
+//    margin: 0;
+//  }
+//  .s_darts_teems .h1{
+//    margin-bottom: 40px;
+//  }
+//  .s_darts .h2, .s_darts_branding .h3{
+//    font-size: 40px;
+//    line-height: 49px;
+//  }
+//  .s_dart.s_darts_thanks_img{
+//    width: 70%;
+//  }
+//  .s_darts_wireframes_cont{
+//    width: 18%;
+//  }
+//  img.s_darts_design_img_conteiner_img{
+//    width: 160px;
+//    height: 300px;
+//  }
+//  .s_darts_design_img_conteiner>img{
+//    height: 300px;
+//    width: auto;
+//  }
+//  .s_darts_design_bg{
+//    width: 56%;
+//  }
+//  .s_darts_design_img{
+//    top: 0;
+//  }
+//  img.s_darts_design_2_left_bg{
+//    left: 30px;
+//  }
+//  img.s_darts_card_bg{
+//    width: 100%;
+//  }
+//  .s_darts_design_3{
+//    padding-top: 50px;
+//  }
+//  .s_darts_design_4_contents{
+//    padding-bottom: 120px;
+//  }
+//  .s_darts_design_4,
+//  .s_darts_branding,
+//  .s_darts_teems{
+//    padding-bottom: 20px;
+//  }
+//  .s_darts_branding_icon{
+//    margin: 30px auto;
+//  }s_wireframes_cont{
+//    width: 26%;
+//  }
+//  .s_darts_design_2{
+//    padding-bottom: 40px;
+//    padding-top: 40px;
+//  }
+//  .s_darts_design_3, .s_darts_branding{
+//    padding-top: 0;
+//  }
+//  .s_darts_design_4_contents{
+//    padding-bottom: 90px;
+//  }
+//  .s_darts_branding_app_img{
+//    width: 70%;
+//    margin-top: 40px;
+//  }
+//  .s_darts_design_4_contents>img{
+//    width: 30%;
+//  }
+//  .s_darts_design_4_contents{
+//    background-position: bottom;
+//    margin-top: 60px;
+//  }
+//  .s_darts_team_text p{
+//    max-width: 370px;
+//  }
+//  .s_darts_thanks_img{
+//    width: 90%;
+//    padding-bottom: 70px;
+//  }
+//  .s_darts_footer_adress, .s_darts_design_4{
+//    margin-top: 40px;
+//  }
+//  .s_darts_design{
+//    padding-top: 0;
+//    padding-bottom: 0;
+//  }
+//  .s_darts_design_3_content_top{
+//    top: -10%;
+//  }
+//  .s_darts_design p.s_darts_subtitle{
+//    max-width: 100%;
+//  }
+//  .s_darts_design_img_conteiner:nth-child(2){
+//    margin-top: 0;
+//  }
+//  .s_darts_design_img_conteiner>img:last-child{
+//    display: none;
+//  }
+//  .s_darts_design_bg{
+//    position: relative;
+//    width: 85%;
+//    height: 400px;
+//    opacity: 0.6;
+//    float: right;
+//  }
+//  .s_darts_design_img{
+//    top: auto;
+//    bottom: 0;
+//  }
+//  img.s_darts_design_3_content_img_down{
+//    height: auto;
+//  }
+//  .s_darts_design_3_content_centre{
+//    margin: 0 16%;
+//  }
+//  .s_darts_design_3_content img{
+//    width: 70%;
+//    display: block;
+//    margin: 0 auto;
+//  }
+//  img.s_darts_design_3_content_img_down{
+//    width: 60px;
+//    left: 40%;
+//    display: inline-block;
+//  }
+//  img.s_darts_design_3_content_img_top{
+//    width: auto;
+//    display: inline-block;
+//  }
+//  .s_darts_design_3_content_centre{
+//    margin-bottom: 120px;
+//  }
 }
 
 
@@ -41,5 +210,63 @@
 	styles for Phone
  -------------------------------------------------------------------- */
 @include respond-to($respond-phone) {
-
+//    .s_darts_first_screen{
+//    margin-top: 10%;
+//    margin-bottom: 0;
+//    height: 100vh;
+//  }
+//  .s_darts .h1{
+//    font-size: 48px;
+//    line-height: 70px;
+//  }
+//  .s_darts .h2{
+//    font-size: 40px;
+//    line-height: 49px;
+//  }
+//  img.s_darts_design_2_left_bg{
+//    width: 176px;
+//  }
+//  /*img.s_darts_card_bg{
+//    width: 274px;
+//  }*/
+//  .s_darts_design_2_card_bg_text{
+//    top: 40px;
+//  }
+//
+//
+//  .s_darts_wireframes{
+//    margin-top: 60px;
+//  }
+//  .s_darts_wireframes_cont{
+//    width: 47%;
+//    margin-left: 1%;
+//    margin-right: 1%;
+//  }
+//  .s_darts_design_img_conteiner>img{
+//    height: 266px;
+//  }
+//  img.s_darts_design_2_left_bg{
+//    width: 80%;
+//    left: 50%;
+//    margin-left: -42%;
+//  }
+//  .s_darts_design_2_card_bg{
+//    margin-top: 40px;
+//  }
+//  .s_darts_design_2_card_bg:last-child{
+//    margin-top: 0;
+//  }
+//  .s_darts_design_3_content{
+//    width: 100%;
+//    margin: 0 auto;
+//  }
+//  .s_darts_design_3{
+//    padding-bottom: 60px;
+//  }
+//  .s_darts_design_4{
+//    margin-top: 0;
+//  }
+//  .s_darts_design_4_contents>img{
+//    width: 40%;
+//  }
 }

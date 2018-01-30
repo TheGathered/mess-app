@@ -22,7 +22,13 @@
 	}
 }
 
+
+
+
 .page--work {
+  .page-body {
+    max-width: none;
+  }
   //display: none;
 	padding-top: 0;
 	position: static;
@@ -44,7 +50,7 @@
 		right: 0;
 		top: 0;
 		height: 100vh;
-        background-color: #242733;
+        background-color: #1E1E33;
         //color: white;
 		z-index: 9;
 		transform: translateY(100%);
@@ -92,6 +98,7 @@ body.page--loaded {
 	}
 }
 //
+
 body.page--showed {
 	overflow: hidden;
 	.nav-share--float {
@@ -119,72 +126,394 @@ body.page--hide {
 		}
 	}
 }
-//
 
+//CUSTOM AR DARTS STYLES
+.s_darts{
+  background-color: #1E1E33;
+  color: #fff;
+  .container {
+    max-width: 100%;
+  }
+}
+.s_darts .h1{
+  color: #323244;
+  font-size: 120px;
+  font-weight: 800;
+  line-height: 116px;
+  text-transform: uppercase;
+}
+.s_darts .h2{
+  text-transform: uppercase;
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 87px;
+  color: #F9F9FF;
+}
+p.s_darts_subtitle{
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 20px;
+}
 
+.s_darts_design_4, .s_darts_branding, .s_darts_teems{
+  padding-bottom: 80px;
+}
+.s_darts_branding, .s_darts_teems{
+  padding-top: 80px;
+}
 
-//.item-article {
-//	max-width: 660px;
-//	margin: 0 auto;
-//	padding: 115px 0 50px;
-//
-//	img {
-//		@include img-responsive;
-//		margin-bottom: 47px;
-//		border-radius: 4px;
-//		box-shadow: 0 1px 2px 0 rgba(61, 57, 122, 0.24);
-//		width: 100%;
-//		&:last-child {
-//			margin-bottom: 0;
-//		}
-//	}
-//
-//	.item-title {
-//		margin-bottom: 16px;
-//	}
-//
-//	.item-meta {
-//		margin-top: -6px;
-//		margin-bottom: 34px;
-//		> * {
-//			display: inline-block;
-//			vertical-align: middle;
-//		}
-//	}
-//
-//	p, h3, h4, .item-title, .item-meta, .item-share {
-//		max-width: 420px;
-//		margin-left: auto;
-//		margin-right: auto;
-//	}
-//
-//	p + h3,
-//	p + h4 {
-//		margin-top: 32px;
-//	}
-//
-//	h3, h4 {
-//		font-size: 28px;
-//		line-height: 34px;
-//		margin-bottom: 16px;
-//		font-weight: 900;
-//	}
-//
-//	big {
-//		font-size: 18px;
-//		line-height: 24px;
-//		display: inline-block;
-//	}
-//
-//	.nav-tags {
-//		margin-bottom: 0;
-//		overflow: hidden;
-//		padding: 4px;
-//		position: relative;
-//		top: -1px;
-//		.block-in {
-//			margin-bottom: -16px;
-//		}
-//	}
-//
+/*first section*/
+.s_darts_first_screen{
+  margin: 9% auto 14%;
+}
+.s_darts_first_screen img{
+  width: 175px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+.s_darts_first_title .h3{
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+.s_darts_first_title>p{
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 20px;
+//  padding-right: 34%;
+}
+/*WIREFRAMES*/
+.s_darts_wireframes{
+  margin-top: 120px;
+}
+.s_darts_wireframes p.s_darts_subtitle{
+  max-width: 430px;
+  margin-bottom: 40px;
+}
+
+.s_darts_wireframes_content{
+  margin-bottom: 70px;
+}
+.s_darts_wireframes_cont {
+  margin-bottom: 50px;
+  width: 14%;
+  display: inline-block;
+  margin-right: 3.5%;
+  margin-left: 3.5%;
+}
+.s_darts_wireframes_cont:nth-child(1), .s_darts_wireframes_cont:nth-child(6) {
+  margin-left: 0;
+}
+.s_darts_wireframes_cont:nth-child(5), .s_darts_wireframes_cont:nth-child(10) {
+  margin-right: 0;
+}
+
+.s_darts_wireframes_cont img{
+  width: 100%;
+  height: auto;
+  max-height: 312px;
+  background-position: center;
+  display: block;
+  margin: 0 auto;
+}
+.s_darts_wireframes_cont>p{
+  text-align: center;
+  font-size: 15px;
+  line-height: 18px;
+//  font-family: "SF UI Text";
+  color: #FFFFFF;
+  margin-top: 24px;
+}
+p.s_darts_wireframes_content_opacity{
+  opacity: 0.16;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 17px;
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+/*DESIGN*/
+.s_darts_design{
+  position: relative;
+  padding-top: 26%;
+  padding-bottom: 22%;
+}
+.s_darts_design_bg{
+  position: absolute;
+  right: 0;
+  top: 10%;
+  opacity: 0.8; //0.3
+  width: 50%;
+  height: auto;
+  background-repeat: no-repeat;
+}
+.s_darts_design p.s_darts_subtitle{
+  max-width: 50%;
+}
+.s_darts_design_img{
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+.s_darts_design_img_conteiner{
+  display: inline-block;
+  float: left;
+}
+.s_darts_design_img_conteiner:nth-child(2){
+  margin-top: 80px;
+}
+.s_darts_design_img_conteiner>img{
+  display: block;
+  height: 300px;
+  margin-bottom: 30px;
+}
+img.s_darts_design_img_conteiner_img{
+  width: 160px;
+}
+
+/*DESIGN 2*/
+.s_darts_design_2{
+  padding-top: 140px;
+  padding-bottom: 80px;
+}
+.s_darts_design_2 .h2{
+  font-size: 52px;
+  line-height: 56px;
+  padding-top: 22%;
+}
+.s_darts_design_2_left{
+  position: relative;
+  padding-top: 40px;
+}
+img.s_darts_design_2_left_bg{
+  position: absolute;
+  top: 0;
+  left: 34px; //50
+  background-position: center;
+  z-index: 0;
+  height: 380px; //500
+  object-fit: contain;
+}
+img.s_darts_card_bg{
+  width: 280px; //360
+}
+.s_darts_design_2_card_bg{
+  position: relative;
+  display: inline-block;
+}
+.s_darts_design_2_card_bg:last-child .s_darts_design_2_card_bg_text{
+  left: auto;
+  right: 50px;
+}
+
+.s_darts_design_2_card_bg_text{
+  position: absolute;
+  left: 50px;
+  top: 40px; //60
+}
+.s_darts_design_2_card_bg_text p{
+  color: #EEEEF1;
+//  font-family: Muli;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  margin-bottom: 0;
+}
+.s_darts_design_2_card_bg_text span{
+  color: #EEEEF1;
+//  font-family: Muli;
+  font-size: 12px;
+  line-height: 15px;
+  opacity: 0.32;
+}
+
+/*DESIGN 3*/
+.s_darts_design_3{
+  padding-top: 40px; //120
+  padding-bottom: 160px;
+}
+.s_darts_design_3 .h1{
+  text-align: center;
+  padding-bottom: 48px;
+  margin: 0;
+}
+.s_darts_design_3_content img{
+  width: 65%; //100
+  margin: 0 auto;
+  display: block;
+}
+.s_darts_design_3_content_centre{
+  position: relative;
+  margin: 0 5%;
+}
+.s_darts_design_3_content_top{
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  margin-left: -20px;
+  text-align: center;
+}
+img.s_darts_design_3_content_img_top{
+  height: 100px;
+  width: auto;
+  transform: rotate(180deg);
+  display: inline-block;
+}
+img.s_darts_design_3_content_img_down{
+  position: absolute;
+  bottom: -100px;
+  width: 48px;
+  height: 230px;
+  left: 50%;
+  margin-left: -24px;
+
+}
+
+/*DESIGN 4*/
+
+.s_darts_design_4 .h1{
+  text-align: center;
+}
+.s_darts_design_4_contents{
+  background: url(./../samples/oval.png) no-repeat;
+  background-position: center;
+  object-fit: fill;
+  padding-bottom: 160px;
+  text-align: center;
+  margin-top: -40px;
+}
+//.s_darts_design_img_conteiner_img-2 {
+//  max-width: 230px;
+//  width: 100%;
 //}
+
+/*branding*/
+
+.s_darts_branding .h3{
+  color: #F9F9FF;
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 56px;
+  margin-top: 24px;
+  text-transform: capitalize;
+}
+.s_darts_branding_app_img{
+  width: 90%; //100
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.s_darts_branding_icon{
+  width: 220px; //240
+  height: 220px; //240
+  display: block;
+  margin: 80px auto;
+}
+/*team*/
+.s_darts_teems .h1{
+  margin-bottom: 80px;
+}
+.s_darts_teem_photo{
+  width: 56px;
+  height: 56px;
+  display: inline-block;
+  float: left;
+  margin-right: 24px;
+}
+.s_darts_team_text{
+  float: left;
+  margin-bottom: 40px;
+}
+.s_darts_team_text .h5{
+  color: #FFFFFF;
+  font-size: 24px;
+//  font-weight: 800;
+  line-height: 29px;
+  margin: 0;
+}
+.s_darts_team_text span{
+  opacity: 0.4;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 17px;
+}
+.s_darts_team_text p{
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 18px;
+  max-width: 240px;
+  margin-bottom: 0;
+}
+
+/*thanks*/
+.s_darts_thanks{
+  padding-top: 44px;
+  padding-bottom: 70px;
+}
+.s_darts_thanks_img{
+  width: 40%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.s_darts_thanks_download{
+  text-align: center;
+}
+.s_darts_thanks_download .h5{
+  color: #F9F9FF;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 24px;
+}
+a.s_darts_thanks_download_links{
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+img.s_darts_thanks_download_links_bg{
+  //width: 118px;
+  height: 32px;
+}
+
+/*s_darts_footer*/
+.s_darts_footer{
+  background-color: #fff;
+  padding: 40px 0;
+}
+.s_darts_footer_adress p{
+  color: #242424;
+  font-family: "Montserrat", "Proxima Nova";
+  font-size: 13px;
+  line-height: 14px;
+  margin-top: 16px;
+}
+a.s_darts_footer_logo{
+  color: #242424;
+  font-size: 19px;
+  display: block;
+}
+a.s_darts_footer_logo img{
+  width: 21px;
+  height: 19px;
+  margin-right: 12px;
+  float: left;
+}
+a.s_darts_footer_logo span{
+  line-height: 19px;
+  font-weight: 900;
+  float: left;
+}
+.s_darts_footer_links .h4{
+  color: #242424;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 30px;
+}
+//END CUSTOM AR DARTS STYLES

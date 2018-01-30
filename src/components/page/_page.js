@@ -249,8 +249,8 @@ $( document ).ready(function() {
       
       //$(".fixed-header-1").fadeOut();
       //$(".fixed-header-2").fadeIn();
-      $(".fixed-header-1").css('display', 'none');
-      $(".fixed-header-2").css('display', 'block');
+      $(".fixed-header-1").hide();
+      $(".fixed-header-2").show();
     }
     else {
       //$(".text-1").css('visibility', 'visible');
