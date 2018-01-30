@@ -178,7 +178,7 @@
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 15%;
+  //margin-top: 15%;
 }
 //.lalala {
 //  position: relative;
@@ -216,6 +216,25 @@
 }
 
 //--//
+//.work-view .page-body {
+//  max-width: 100%;
+//}
+
+
+//--CONTENT ALIGN--//
+#work {
+  display: table;
+  width: 100%;
+}
+#work .container {
+  display: table-cell;
+  vertical-align: middle;
+}
+#work .page-body {
+  max-width: 900px;
+}
+//-----//
+
 .work-view .content {
   padding-top: 0;
 }
@@ -236,8 +255,9 @@
 }
 //general work nav
 .menu-ul {
-  list-style: none;
   max-width: 300px; //not sure about this one
+  padding-left: 0;
+  list-style: none;
 }
 .menu-ul li {
   line-height: 0;
