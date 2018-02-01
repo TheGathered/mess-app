@@ -244,24 +244,28 @@ $( document ).ready(function() {
     if (direction ==='down') {
       //$(".text-1").css('visibility', 'hidden');
       //$(".text-2").css('visibility', 'visible');
-      $(".text-1").css('opacity', '0');
-      $(".text-2").css('opacity', '1');
+      $(".about-main-text").css('opacity', '0');
+      $(".about-values-text").css('opacity', '1');
       
+      $(".fixed-header-1").css('opacity', '0');
+      $(".fixed-header-2").css('opacity', '1');
       //$(".fixed-header-1").fadeOut();
       //$(".fixed-header-2").fadeIn();
-      $(".fixed-header-1").hide();
-      $(".fixed-header-2").show();
+      //$(".fixed-header-1").hide();
+      //$(".fixed-header-2").show();
     }
     else {
       //$(".text-1").css('visibility', 'visible');
       //$(".text-2").css('visibility', 'hidden');
-      $(".text-1").css('opacity', '1');
-      $(".text-2").css('opacity', '0');
+      $(".about-main-text").css('opacity', '1');
+      $(".about-values-text").css('opacity', '0');
       
+      $(".fixed-header-1").css('opacity', '1');
+      $(".fixed-header-2").css('opacity', '0');
       //$(".fixed-header-1").fadeIn("slow");
       //$(".fixed-header-2").fadeOut("fast");
-      $(".fixed-header-1").css('display', 'block');
-      $(".fixed-header-2").css('display', 'none');
+      //$(".fixed-header-1").css('display', 'block');
+      //$(".fixed-header-2").css('display', 'none');
     }
   },{
     //context: document.getElementById('overflow-scroll'),
@@ -273,24 +277,29 @@ $( document ).ready(function() {
     if (direction ==='down') {
       //$(".text-2").css('visibility', 'hidden');
       //$(".text-3").css('visibility', 'visible');
-      $(".text-2").css('opacity', '0');
-      $(".text-3").css('opacity', '1');
+      $(".about-values-text").css('opacity', '0');
+      $(".about-team-text").css('opacity', '1');
       
+      $(".fixed-header-2").css('opacity', '0');
+      $(".fixed-header-3").css('opacity', '1');
       //$(".fixed-header-2").fadeOut("fast");
       //$(".fixed-header-3").fadeIn("slow");
-      $(".fixed-header-2").css('display', 'none');
-      $(".fixed-header-3").css('display', 'block');
+      //$(".fixed-header-2").css('display', 'none');
+      //$(".fixed-header-3").css('display', 'block');
     }
     else {
       //$(".text-2").css('visibility', 'visible');
       //$(".text-3").css('visibility', 'hidden');
-      $(".text-2").css('opacity', '1');
-      $(".text-3").css('opacity', '0');
+      $(".about-values-text").css('opacity', '1');
+      $(".about-team-text").css('opacity', '0');
+      
+      $(".fixed-header-2").css('opacity', '1');
+      $(".fixed-header-3").css('opacity', '0');
       
       //$(".fixed-header-2").fadeIn("slow");
       //$(".fixed-header-3").fadeOut("fast");
-      $(".fixed-header-2").css('display', 'block');
-      $(".fixed-header-3").css('display', 'none');
+      //$(".fixed-header-2").css('display', 'block');
+      //$(".fixed-header-3").css('display', 'none');
     }
   },{
     //context: document.getElementById('overflow-scroll')
@@ -300,21 +309,23 @@ $( document ).ready(function() {
   $('#waypoint3').waypoint(function(direction) {
 
     if (direction ==='down') {
-      $(".fixed-header-3").css('display', 'none');
+      //$(".fixed-header-3").css('display', 'none');
       
+      $(".fixed-header-3").css('opacity', '0');
       //$(".text-3").css('visibility', 'hidden');
       //$(".fixed-contribute").css('visibility', 'visible');
       
       $(".fixed-contribute").css('opacity', '1');
-      $(".text-3").css('opacity', '0');
+      $(".about-team-text").css('opacity', '0');
     }
-    else {      
-      $(".fixed-header-3").css('display', 'block');
+    else {  
+      //$(".fixed-header-3").css('display', 'block');
+      $(".fixed-header-3").css('opacity', '1');
       //$(".text-3").css('visibility', 'visible');
       //$(".fixed-contribute").css('visibility', 'hidden');
       
       $(".fixed-contribute").css('opacity', '0');
-      $(".text-3").css('opacity', '1');
+      $(".about-team-text").css('opacity', '1');
     }
   },{
 //    context: document.getElementById('overflow-scroll'),
@@ -380,8 +391,10 @@ $(document).ready(function () {
       direction: 'horizontal',
       loop: true,
       slidePerView: 'auto',
+      //slidesOffsetBefore: 20,
       //effect: 'slide',
-      //spaceBetween: 30,
+      //loopedSlides: 15,
+      //spaceBetween: 130,
       centeredSlides: true
     });
     

@@ -129,37 +129,54 @@
   display: none;
 }
 
-.fixed-header-1 {
-  -webkit-animation: slide-down .3s ease-out;
-  -moz-animation: slide-down .3s ease-out;
-}
-.fixed-header-2, .fixed-header-3 {
-  //opacity: 0;
-  //visibility: hidden;
-  display: none;
-  //transition: all 2s linear;
-}
 
 .fixed-contribute {
   margin-top: 200px;
+  height: 60vh;
+}
+.fixed-header-1 {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .25s linear;
+}
+.fixed-header-2, .fixed-header-3 {
+  opacity: 0;
+  transition: opacity .25s linear;
+}
+.about-values-text, .about-team-text, .fixed-contribute {
+  opacity: 0;
+  transition: opacity .25s linear;
 }
 
+.about-main-text, .about-values-text, .about-team-text {
+  font-size: 16px;
+  line-height: 22px;
+}
 
-.text-1 {
+.about-main-text {
+  font-style: italic;
   visibility: visible;
   margin-top: 40%;
   opacity: 1;
   transition: opacity .25s linear;
 }
+.about-author {
+  font-style: normal;
+}
 
-.text-2, .text-3, .fixed-contribute {
-  //visibility: hidden;
-  
-  //opacity: 0;
-  //transition: visibility 0s, opacity 0.5s ease-in;
-  //transition: visibility .2s ease-in;
-  opacity: 0;
-  transition: opacity .25s linear;
+.about-values-text h2, .about-team-text h2  {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 29px;
+  margin-bottom: 5px;
+}
+
+.quote-author {
+  opacity: 0.4;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 17px;
+  margin-bottom: 15px;
 }
 //---- END ABOUT PAGE ----//
 
@@ -180,15 +197,6 @@
   background-size: cover;
   //margin-top: 15%;
 }
-//.lalala {
-//  position: relative;
-//  max-width: 170px;
-//  height: 100px;
-//  background-image: url('./../samples/gcentral-icon.png');
-//  background-position: center top;
-//  background-repeat: no-repeat;
-//  background-size: cover;
-//}
 .work-side-text {
   position: absolute;
   top: 38%;
@@ -225,6 +233,7 @@
 #work {
   display: table;
   width: 100%;
+  height: 100vh;
 }
 #work .container {
   display: table-cell;
