@@ -2,7 +2,12 @@
 	styles for Large Desktops
  -------------------------------------------------------------------- */
 // @include respond-to($respond-large) {}
-
+/* Extra Large Devices, 4k*/
+@media only screen and (min-width: 2560px) {
+  .about-main-text {
+    margin-top: 23vh;
+  }
+}
 
 
 /*

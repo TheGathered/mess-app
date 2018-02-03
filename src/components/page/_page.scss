@@ -137,15 +137,16 @@
 .fixed-header-1 {
   visibility: visible;
   opacity: 1;
-  transition: opacity .25s linear;
+  transition: opacity .15s linear;
 }
 .fixed-header-2, .fixed-header-3 {
   opacity: 0;
-  transition: opacity .25s linear;
+  transition: opacity .15s linear;
 }
+
 .about-values-text, .about-team-text, .fixed-contribute {
   opacity: 0;
-  transition: opacity .25s linear;
+  transition: opacity .15s linear;
 }
 
 .about-main-text, .about-values-text, .about-team-text {
@@ -156,9 +157,9 @@
 .about-main-text {
   font-style: italic;
   visibility: visible;
-  margin-top: 40%;
+  margin-top: 14vh;
   opacity: 1;
-  transition: opacity .25s linear;
+  transition: opacity .15s linear;
 }
 .about-author {
   font-style: normal;
@@ -222,11 +223,6 @@
 .work-link-wrapper a {
   color: #fff;
 }
-
-//--//
-//.work-view .page-body {
-//  max-width: 100%;
-//}
 
 
 //--CONTENT ALIGN--//
