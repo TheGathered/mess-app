@@ -101,12 +101,15 @@
 
 
 //---- ABOUT PAGE ----//
+.start--about {
+  bottom: 250px;
+}
 .title-about-wrapper {
   position: fixed;
   top: 40%;
 }
 
-.title-about {
+.title-about,  .title-tools {
   color: #171719;
   font-size: 67px;
   font-weight: 900;
@@ -165,7 +168,7 @@
   font-style: normal;
 }
 
-.about-values-text h2, .about-team-text h2  {
+.about-values-text h2, .about-team-text h2, .fixed-contribute h2 {
   font-size: 24px;
   font-weight: 800;
   line-height: 29px;
@@ -527,3 +530,28 @@
 }
 // end mobile layout
 //---- END WORK PAGE ----//
+
+//---- TOOLS PAGE ----//
+.page--tools{
+  display: table;
+  width: 100%;
+  min-height: 85vh;
+//  height: 100vh;
+}
+.page--tools .container {
+  display: table-cell;
+  vertical-align: middle;
+}
+.page--tools .page-flex {
+  margin-bottom: 0;
+}
+.tools-item .btn--brand {
+//  text-align: right;
+}
+.tools-item h2 {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 29px;
+  margin-bottom: 5px;
+}
+//---- END TOOLS PAGE ----//

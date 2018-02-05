@@ -304,6 +304,7 @@ $( document ).ready(function() {
       //$(".fixed-contribute").css('visibility', 'visible');
       
       $(".fixed-contribute").css('opacity', '1');
+      $(".start--about").css('opacity', '0');
       $(".about-team-text").css('opacity', '0');
     }
     else {  
@@ -313,6 +314,7 @@ $( document ).ready(function() {
       //$(".fixed-contribute").css('visibility', 'hidden');
       
       $(".fixed-contribute").css('opacity', '0');
+      $(".start--about").css('opacity', '1');
       $(".about-team-text").css('opacity', '1');
     }
   },{
