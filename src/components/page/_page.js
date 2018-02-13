@@ -236,14 +236,18 @@
 })();
 
 // ----------------------------------------------------------------------
+$( document ).ready(function() {
+  if ($(".blog").length) {
+    $('body').addClass('blog--active');
+  }
+});
+// ----------------------------------------------------------------------
 // about-desktop
 $( document ).ready(function() {
   
   $('#waypoint1').waypoint(function(direction) {
 
     if (direction ==='down') {
-      //$(".text-1").css('visibility', 'hidden');
-      //$(".text-2").css('visibility', 'visible');
       $(".about-main-text").css('opacity', '0');
       $(".about-values-text").css('opacity', '1');
       
@@ -251,15 +255,11 @@ $( document ).ready(function() {
       $(".fixed-header-2").css('opacity', '1');
     }
     else {
-      //$(".text-1").css('visibility', 'visible');
-      //$(".text-2").css('visibility', 'hidden');
       $(".about-main-text").css('opacity', '1');
       $(".about-values-text").css('opacity', '0');
       
       $(".fixed-header-1").css('opacity', '1');
       $(".fixed-header-2").css('opacity', '0');
-      //$(".fixed-header-1").css('display', 'block');
-      //$(".fixed-header-2").css('display', 'none');
     }
   },{
     offset: 200
@@ -268,27 +268,18 @@ $( document ).ready(function() {
   $('#waypoint2').waypoint(function(direction) {
 
     if (direction ==='down') {
-      //$(".text-2").css('visibility', 'hidden');
-      //$(".text-3").css('visibility', 'visible');
       $(".about-values-text").css('opacity', '0');
       $(".about-team-text").css('opacity', '1');
       
       $(".fixed-header-2").css('opacity', '0');
       $(".fixed-header-3").css('opacity', '1');
-      //$(".fixed-header-2").css('display', 'none');
-      //$(".fixed-header-3").css('display', 'block');
     }
     else {
-      //$(".text-2").css('visibility', 'visible');
-      //$(".text-3").css('visibility', 'hidden');
       $(".about-values-text").css('opacity', '1');
       $(".about-team-text").css('opacity', '0');
       
       $(".fixed-header-2").css('opacity', '1');
       $(".fixed-header-3").css('opacity', '0');
-      
-      //$(".fixed-header-2").css('display', 'block');
-      //$(".fixed-header-3").css('display', 'none');
     }
   },{
     offset: 100
@@ -297,21 +288,14 @@ $( document ).ready(function() {
   $('#waypoint3').waypoint(function(direction) {
 
     if (direction ==='down') {
-      //$(".fixed-header-3").css('display', 'none');
-      
       $(".fixed-header-3").css('opacity', '0');
-      //$(".text-3").css('visibility', 'hidden');
-      //$(".fixed-contribute").css('visibility', 'visible');
       
       $(".fixed-contribute").css('opacity', '1');
       $(".start--about").css('opacity', '0');
       $(".about-team-text").css('opacity', '0');
     }
     else {  
-      //$(".fixed-header-3").css('display', 'block');
       $(".fixed-header-3").css('opacity', '1');
-      //$(".text-3").css('visibility', 'visible');
-      //$(".fixed-contribute").css('visibility', 'hidden');
       
       $(".fixed-contribute").css('opacity', '0');
       $(".start--about").css('opacity', '1');

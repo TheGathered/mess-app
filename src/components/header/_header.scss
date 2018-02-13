@@ -76,7 +76,9 @@ $height: 77px;
 .header--fixed {
 	position: fixed;
 }
-
+.blog--active .header--fixed {
+    background-color: #fff;
+}
 .page[data-page="contacts"] {
 	margin-top: -$height;
 }
