@@ -30,14 +30,14 @@
   <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#951d97">  
   
-  <!-- build:css css/style.min.css -->
-  <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="css/style.css"></noscript>
-<!--  <link rel="stylesheet" href="css/style.css" />-->
-  <!-- endbuild -->
-<!--
+    <!--[if IE]> -->
+      <!-- build:css css/style.min.css -->
+      <link rel="stylesheet" href="css/style.css" />
+      <!-- endbuild -->
+    <!-- <![endif]-->
   
   {% if page == "index" %} 
+<!--
     <style type="text/css">
 
       .header-wrapper, .header {
@@ -174,7 +174,6 @@
       }
       .page-viewport {
         position: fixed;
-        left: calc(50% + 5.375rem);
         top: calc(50% - 14.8125rem);
         width: 17.0625rem;
         height: 30.79719rem;
@@ -229,14 +228,19 @@
         z-index: 1;
       }
     </style>
-  {% endif %}
 -->
+  {% endif %}
 
   
 </head>
 
 <body>
-
+  <!--[if !IE]> -->
+    <!-- build:css css/style.min.css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- endbuild -->
+  <!-- <![endif]-->
+  
   <!-- .wrapper -->
   <div class="wrapper">
   

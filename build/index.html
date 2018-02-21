@@ -26,10 +26,10 @@
     <meta name="msapplication-TileColor" content="#951d97">
     <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#951d97">
+    <!--[if IE]> -->
     <link rel="stylesheet" href="css/style.min.css">
+    <!-- <![endif]-->
     <!--
-  
-   
     <style type="text/css">
 
       .header-wrapper, .header {
@@ -166,7 +166,6 @@
       }
       .page-viewport {
         position: fixed;
-        left: calc(50% + 5.375rem);
         top: calc(50% - 14.8125rem);
         width: 17.0625rem;
         height: 30.79719rem;
@@ -221,11 +220,13 @@
         z-index: 1;
       }
     </style>
-  
 -->
   </head>
 
   <body>
+    <!--[if !IE]> -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- <![endif]-->
     <!-- .wrapper -->
     <div class="wrapper">
       <div class="wrapper-in">
