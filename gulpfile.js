@@ -283,14 +283,6 @@ gulp.task('minify:js', () => {
     .pipe(
       gulp.dest(APP.dst.scripts));
 });
-gulp.task('minify:js', () => {
-  return gulp.src(APP.dst.scripts +'/forms.min.js')
-    .pipe(
-      $.cache(
-        $.uglify()))
-    .pipe(
-      gulp.dest(APP.dst.scripts));
-});
 
 gulp.task('build:process', ['html', 'images', 'samples', 'extras', 'fonts', 'copy:jquery', 'copy:favicon'], () => {
   gulp.start('minify:css');

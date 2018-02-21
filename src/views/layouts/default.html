@@ -31,8 +31,11 @@
   <meta name="theme-color" content="#951d97">  
   
   <!-- build:css css/style.min.css -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+<!--  <link rel="stylesheet" href="css/style.css" />-->
   <!-- endbuild -->
+<!--
   
   {% if page == "index" %} 
     <style type="text/css">
@@ -227,6 +230,7 @@
       }
     </style>
   {% endif %}
+-->
 
   
 </head>
@@ -310,13 +314,13 @@
   <script src="components/page/_page.js"></script>
   <script src="components/parallax/_parallax.js"></script>
   <script src="components/item-post/_item-post.js"></script>
-  <script src="js/interface.js" async></script>
+  <script async src="js/interface.js"></script>
   <!-- endbuild -->
   
   <!-- build:js js/forms.min.js -->
   <script src="components/form-subscribe/_form-subscribe.js"></script>
   <script src="components/form-proposal/_form-proposal.js"></script>
-  <script src="js/forms.js" async></script>
+  <script async src="js/forms.js"></script>
   <!-- endbuild -->
   
 </body>
