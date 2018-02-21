@@ -26,11 +26,10 @@
     <meta name="msapplication-TileColor" content="#951d97">
     <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#951d97">
-    <link rel="preload" href="css/style.min.css" as="style" onload="this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="css/style.min.css"></noscript>
+    <!--[if IE]> -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- <![endif]-->
     <!--
-  
-   
     <style type="text/css">
 
       .header-wrapper, .header {
@@ -167,7 +166,6 @@
       }
       .page-viewport {
         position: fixed;
-        left: calc(50% + 5.375rem);
         top: calc(50% - 14.8125rem);
         width: 17.0625rem;
         height: 30.79719rem;
@@ -222,11 +220,13 @@
         z-index: 1;
       }
     </style>
-  
 -->
   </head>
 
   <body>
+    <!--[if !IE]> -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- <![endif]-->
     <!-- .wrapper -->
     <div class="wrapper">
       <div class="wrapper-in">
@@ -1230,8 +1230,8 @@
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:800" as="style" onload="this.onload=null;this.rel='stylesheet'"> <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:800"></noscript>
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"></noscript>
     <script src="js/jquery.min.js"></script>
-    <script async src="js/interface.min.js"></script>
-    <script async src="js/forms.min.js"></script>
+    <script src="js/interface.min.js"></script>
+    <script src="js/forms.min.js"></script>
   </body>
 
 </html>
