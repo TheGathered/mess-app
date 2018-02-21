@@ -1245,11 +1245,15 @@
     </div>
     <div class="page-loader"></div>
     <div class="visible-xs" data-flag="phone"></div>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:800" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+    <!--
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:800" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+-->
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:800" as="style" onload="this.onload=null;this.rel='stylesheet'"> <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:800"></noscript>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"></noscript>
     <script src="js/jquery.min.js"></script>
     <script src="js/interface.min.js"></script>
-    <script src="js/forms.js"></script>
+    <script src="js/forms.min.js"></script>
   </body>
 
 </html>
