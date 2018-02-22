@@ -59,11 +59,6 @@
 			visibility: hidden;
 		}
 	}
-//	.nav-share--float {
-//		z-index: 9;
-//		opacity: 0;
-//		transform: translateX(-100%);
-//	}
   	.header-logo, .after-logo {
    		color: #fff;
   	}
@@ -86,6 +81,7 @@
 	.btn--start {
 		color: #fff;
 		bottom: 290px;
+        opacity: 1;
 	}
 	.btn--start:hover, .btn--start:active, .btn--start:focus, .btn--start:active:focus {
 		color: #fff;
@@ -106,12 +102,19 @@
         position: absolute;
         color: #951d97;
         right: unset;
+        //left: 9.875rem;
+        left: 22.5%;
         top: 6rem;
         font-size: 0.875rem;
         transform: unset;
     }
     #footer-proposal::before {
         background: #951d97;
+    }
+    .container-fullWidth {
+        width: 100vw;
+        margin: 0 auto;
+        padding: 0;
     }
 }
 
@@ -174,35 +177,37 @@ body.page--hide {
 .s_darts{
   background-color: #1E1E33;
   color: #fff;
+	font-size: 16px;
   .container {
     max-width: 100%;
   }
 }
 .s_darts .h1{
   color: #323244;
-  font-size: 120px;
+  font-size: 100px;
   font-weight: 800;
-  line-height: 116px;
+  line-height: 100px;
   text-transform: uppercase;
 }
 .s_darts .h2{
   text-transform: uppercase;
-  font-size: 72px;
+  font-size: 60px;
   font-weight: 800;
   line-height: 87px;
   color: #F9F9FF;
 }
 p.s_darts_subtitle{
   color: #FFFFFF;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
+	font-weight: 300;
 }
 
 .s_darts_design_4, .s_darts_branding, .s_darts_teems{
-  padding-bottom: 80px;
+  padding-bottom: 70px;
 }
 .s_darts_branding, .s_darts_teems{
-  padding-top: 80px;
+  padding-top: 70px;
 }
 
 /*first section*/
@@ -210,21 +215,24 @@ p.s_darts_subtitle{
   margin: 9% auto 14%;
 }
 .s_darts_first_screen img{
-  width: 175px;
+  width: 210px;
   height: auto;
   margin: 0 auto;
   display: block;
 }
 .s_darts_first_title .h3{
-  font-size: 24px;
-  font-weight: 800;
+  font-size: 22px;
+  font-weight: 600;
   line-height: 29px;
   color: #FFFFFF;
+	margin-bottom: 10px;
 }
 .s_darts_first_title>p{
   color: #FFFFFF;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
+	max-width: 210px;
+	font-weight: 300;
 //  padding-right: 34%;
 }
 /*WIREFRAMES*/
@@ -232,31 +240,23 @@ p.s_darts_subtitle{
   margin-top: 120px;
 }
 .s_darts_wireframes p.s_darts_subtitle{
-  max-width: 430px;
+  max-width: 400px;
   margin-bottom: 40px;
 }
 
 .s_darts_wireframes_content{
   margin-bottom: 70px;
+	text-align: justify;
 }
 .s_darts_wireframes_cont {
   margin-bottom: 50px;
-  width: 14%;
+  width: 19.5%;
   display: inline-block;
-  margin-right: 3.5%;
-  margin-left: 3.5%;
-}
-.s_darts_wireframes_cont:nth-child(1), .s_darts_wireframes_cont:nth-child(6) {
-  margin-left: 0;
-}
-.s_darts_wireframes_cont:nth-child(5), .s_darts_wireframes_cont:nth-child(10) {
-  margin-right: 0;
+	padding: 0 6px;
 }
 
 .s_darts_wireframes_cont img{
-  width: 100%;
-  height: auto;
-  max-height: 312px;
+  width: 98%;
   background-position: center;
   display: block;
   margin: 0 auto;
@@ -289,18 +289,20 @@ p.s_darts_wireframes_content_opacity{
 .s_darts_design_bg{
   position: absolute;
   right: 0;
+  //right: 7.625rem;
   top: 10%;
   opacity: 0.8; //0.3
-  width: 50%;
+  //width: 50%;
   height: auto;
   background-repeat: no-repeat;
 }
 .s_darts_design p.s_darts_subtitle{
-  max-width: 50%;
+  max-width: 29%;
 }
 .s_darts_design_img{
   position: absolute;
   right: 0;
+  //right: 7.625rem;
   top: 50px;
 }
 .s_darts_design_img_conteiner{
@@ -308,7 +310,8 @@ p.s_darts_wireframes_content_opacity{
   float: left;
 }
 .s_darts_design_img_conteiner:nth-child(2){
-  margin-top: 80px;
+  //margin-top: 80px;
+  margin-top: 48px;
 }
 .s_darts_design_img_conteiner>img{
   display: block;
@@ -320,14 +323,23 @@ img.s_darts_design_img_conteiner_img{
 }
 
 /*DESIGN 2*/
+.s_darts_design--text {
+  margin-left: 16.5rem;
+  //margin-left: 350px;
+}
 .s_darts_design_2{
-  padding-top: 140px;
+  //padding-top: 140px;
   padding-bottom: 80px;
 }
 .s_darts_design_2 .h2{
-  font-size: 52px;
-  line-height: 56px;
+  font-size: 46px;
+  line-height: 50px;
   padding-top: 22%;
+  text-transform: initial;
+  margin-bottom: 5px;
+}
+.s_darts_design_2 .s_darts_subtitle{
+	max-width: 64%;
 }
 .s_darts_design_2_left{
   position: relative;
@@ -343,7 +355,7 @@ img.s_darts_design_2_left_bg{
   object-fit: contain;
 }
 img.s_darts_card_bg{
-  width: 280px; //360
+  width: 300px; //360
 }
 .s_darts_design_2_card_bg{
   position: relative;
@@ -404,17 +416,16 @@ img.s_darts_card_bg{
   margin: 0;
 }
 .s_darts_design_3_content img{
-  width: 65%; //100
+  width: 80%; //100
   margin: 0 auto;
   display: block;
 }
 .s_darts_design_3_content_centre{
   position: relative;
-  margin: 0 5%;
 }
 .s_darts_design_3_content_top{
   position: absolute;
-  top: -30%;
+  top: -23%;
   left: 50%;
   margin-left: -20px;
   text-align: center;
@@ -461,19 +472,21 @@ img.s_darts_design_3_content_img_down{
   font-weight: 800;
   line-height: 56px;
   margin-top: 24px;
+	margin-bottom: 10px;
   text-transform: capitalize;
 }
 .s_darts_branding_app_img{
-  width: 90%; //100
+  width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
+  margin-top: 40px;
 }
 .s_darts_branding_icon{
   width: 220px; //240
   height: 220px; //240
   display: block;
-  margin: 80px auto;
+  margin: 60px auto;
 }
 /*team*/
 .s_darts_teems .h1{
@@ -494,21 +507,23 @@ img.s_darts_design_3_content_img_down{
   color: #FFFFFF;
   font-size: 24px;
 //  font-weight: 800;
-  line-height: 29px;
+  line-height: 24px;
   margin: 0;
 }
 .s_darts_team_text span{
   opacity: 0.4;
   color: #FFFFFF;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 14px;
+	font-weight: 400;
 }
 .s_darts_team_text p{
   color: #FFFFFF;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 18px;
   max-width: 240px;
   margin-bottom: 0;
+	font-weight: 300;
 }
 
 /*thanks*/
@@ -517,7 +532,7 @@ img.s_darts_design_3_content_img_down{
   padding-bottom: 70px;
 }
 .s_darts_thanks_img{
-  width: 40%;
+  width: 44%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -530,17 +545,16 @@ img.s_darts_design_3_content_img_down{
   color: #F9F9FF;
   font-size: 24px;
   line-height: 29px;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 a.s_darts_thanks_download_links{
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
-
 }
 img.s_darts_thanks_download_links_bg{
-  //width: 118px;
-  height: 32px;
+  width: 108px;
+  height: 34px;
 }
 
 /*s_darts_footer*/
@@ -548,33 +562,46 @@ img.s_darts_thanks_download_links_bg{
   background-color: #fff;
   padding: 40px 0;
 }
+.s_darts_footer_adress{
+  //margin-left: 200px;
+  margin-left: 30%;
+}
+.s_darts_footer_links {
+  //margin-left: 145px;
+  margin-left: 22%;
+}
 .s_darts_footer_adress p{
   color: #242424;
   font-family: "Montserrat", "Proxima Nova";
-  font-size: 13px;
+  font-size: 11px;
   line-height: 14px;
-  margin-top: 16px;
+  margin-top: 12px;
+  font-weight: 400;
+  margin-bottom: 0;
 }
 a.s_darts_footer_logo{
   color: #242424;
   font-size: 19px;
   display: block;
+  margin-bottom: 8px;
 }
 a.s_darts_footer_logo img{
   width: 21px;
   height: 19px;
-  margin-right: 12px;
+  margin-right: 10px;
   float: left;
 }
 a.s_darts_footer_logo span{
   line-height: 19px;
-  font-weight: 900;
+  font-weight: 600;
   float: left;
 }
+
 .s_darts_footer_links .h4{
   color: #242424;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 800;
   line-height: 30px;
+  margin-top: 10px;
 }
 //END CUSTOM AR DARTS STYLES

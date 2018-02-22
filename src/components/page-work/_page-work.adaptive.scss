@@ -10,7 +10,25 @@ styles for Large Desktops
 styles for Desktop
 -------------------------------------------------------------------- */
 @include respond-to($respond-desktop) {
-
+  .page--work .btn--start {
+    bottom: 30rem;
+  }
+  .s_darts_design--text {
+    margin-left: 62px;
+  }
+  .s_darts_design_bg {
+    right: -50px;
+    top: 0%;
+  }
+  .s_darts_footer_adress {
+    margin-left: 12%;
+  }
+  .s_darts_footer_links {
+    margin-left: 30%;
+  }
+  .page--work #footer-proposal {
+    left: 10.5rem;
+  }
 }
 
 
@@ -22,22 +40,37 @@ styles for Tablet
     left: calc(50% + 21rem);
   }
   .page--work .btn--start {
-    bottom: 400px;
-    left: -190px;
-  }
-  .s_darts_wireframes_cont, .s_darts_wireframes_cont:nth-child(5){
-    width: 20%;
-    margin-right: 6%;
-    margin-left: 0;
-  }
-  .s_darts_wireframes_cont:nth-child(4), .s_darts_wireframes_cont:nth-child(8){
-    margin-right: 0;
+    //bottom: 513px;
+    //left: -190px;
+    display: none;
   }
   .s_darts_design_img{
     top: 0;
   }
+  .frame_text_visible {
+    display: none;
+  }
+  .s_darts_design--text {
+    margin-left: 5%;
+  }
+  .s_darts_design_bg {
+    width: 400px;
+  }
+  .s_darts_design_2{
+  padding-top: 140px;
+  //padding-bottom: 80px;
+  }
   .s_darts_design_3_content_img_bg{
     width: 100%;
+  }
+  .s_darts_footer_adress {
+    margin-left: 20%;
+  }
+  .s_darts_footer_links {
+    margin-left: 0;
+  }
+  .page--work #footer-proposal {
+    left: unset;
   }
 }
 
@@ -62,6 +95,9 @@ styles for Tablet and Phone
     font-size: 40px;
     line-height: 49px;
     font-weight: 600;
+  }
+  .s_darts_first_title > p{
+    max-width: none;
   }
   .s_darts_wireframes{
     margin-top: 60px;
@@ -146,8 +182,15 @@ styles for Tablet and Phone
     background-position: bottom;
     margin-top: 60px;
   }
+  .s_darts_team_text{
+    margin-top: 20px;
+  }
   .s_darts_team_text p{
-    max-width: 370px;
+    max-width: 90%;
+  }
+  .s_darts_thanks{
+    padding-top: 0;
+    padding-bottom: 30px;
   }
   .s_darts_thanks_img{
     width: 90%;
@@ -161,7 +204,7 @@ styles for Tablet and Phone
     padding-bottom: 0;
   }
   .s_darts_design_3_content_top{
-    top: -10%;
+    top: -25%;
   }
   img.s_darts_design_3_content_img_down{
     height: auto;
@@ -176,7 +219,7 @@ styles for Tablet and Phone
   }
   img.s_darts_design_3_content_img_down{
     width: 60px;
-    left: 40%;
+    left: 36%;
     display: inline-block;
   }
   img.s_darts_design_3_content_img_top{
@@ -186,14 +229,9 @@ styles for Tablet and Phone
   .s_darts_design_3_content_centre{
     margin-bottom: 120px;
   }
-  .s_darts_wireframes_cont, .s_darts_wireframes_cont:nth-child(5){
+  .s_darts_wireframes_cont{
     width: 29%;
-    margin-right: 4%;
-    margin-left: 0;
     margin-bottom: 60px;
-  }
-  .s_darts_wireframes_cont:nth-child(3), .s_darts_wireframes_cont:nth-child(6), .s_darts_wireframes_cont:nth-child(9){
-    margin-right: 0;
   }
   .s_darts_wireframes_cont > p{
     font-size: 14px;
@@ -254,15 +292,9 @@ styles for Phone
   .s_darts_wireframes{
     margin-top: 60px;
   }
-  .s_darts_wireframes_cont, .s_darts_wireframes_cont:nth-child(5){
+  .s_darts_wireframes_cont{
     width: 46%;
-    margin-right: 4%;
-    margin-left: 0;
     margin-bottom: 30px;
-  }
-  .s_darts_wireframes_cont:nth-child(2n){
-    margin-right: 0;
-    margin-left: 0;
   }
   .s_darts_wireframes_cont > p{
     font-size: 12px;
@@ -386,7 +418,7 @@ styles for Phone
     height: 48px;
   }
   .s_darts_footer_links{
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
   .s_darts_footer_links .h4{
     font-weight: 600;
