@@ -81,6 +81,7 @@
 	.btn--start {
 		color: #fff;
 		bottom: 290px;
+        left: -80px;
         opacity: 1;
 	}
 	.btn--start:hover, .btn--start:active, .btn--start:focus, .btn--start:active:focus {
@@ -324,7 +325,7 @@ img.s_darts_design_img_conteiner_img{
 
 /*DESIGN 2*/
 .s_darts_design--text {
-  margin-left: 16.5rem;
+  margin-left: 16rem;
   //margin-left: 350px;
 }
 .s_darts_design_2{
@@ -480,6 +481,8 @@ img.s_darts_design_3_content_img_down{
   height: auto;
   display: block;
   margin: 0 auto;
+}
+.s_darts_branding_text_img {
   margin-top: 40px;
 }
 .s_darts_branding_icon{
@@ -502,6 +505,7 @@ img.s_darts_design_3_content_img_down{
 .s_darts_team_text{
   float: left;
   margin-bottom: 40px;
+  margin-top: 10px;
 }
 .s_darts_team_text .h5{
   color: #FFFFFF;
@@ -515,7 +519,7 @@ img.s_darts_design_3_content_img_down{
   color: #FFFFFF;
   font-size: 14px;
   line-height: 14px;
-	font-weight: 400;
+  font-weight: 600;
 }
 .s_darts_team_text p{
   color: #FFFFFF;
@@ -576,7 +580,7 @@ img.s_darts_thanks_download_links_bg{
   font-size: 11px;
   line-height: 14px;
   margin-top: 12px;
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 0;
 }
 a.s_darts_footer_logo{
